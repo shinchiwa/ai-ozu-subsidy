@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>大洲・中小企業のための補助金ガイド ｜ AI-OZU（あいおおず）</title>
+<meta name="description" content="大洲市の中小企業が使える補助金・助成金を、国・愛媛県・大洲市・近隣市町・財団協会まで網羅。AI・DX導入に使える制度を中心に、2026年6月8日時点の申請可否と出典つきで整理。AI-OZU企業版ワークショップ第1回 特別特典。">
+<style>
+  :root{
+    --ink:#2b2622; --sub:#7a7064; --line:#d9d2c7; --accent:#7a5c3e;
+    --paper:#fbf9f5; --band:#efe9df; --band2:#f5f1ea; --hi:#b8442e; --gold:#caa57e;
+    --card:#fffefb; --shadow:0 1px 2px rgba(43,38,34,.04),0 8px 24px rgba(43,38,34,.06);
+    --ok:#3f7d3a; --okbg:#e7efe1; --wait:#a9701d; --waitbg:#f5e9d2;
+    --year:#3a6b6b; --yearbg:#e1edec; --closed:#9a9082; --closedbg:#ece8e1; --check:#b8442e; --checkbg:#f6e2db;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Noto Sans JP",sans-serif;color:var(--ink);margin:0;
+    background:var(--paper);line-height:1.72;-webkit-font-smoothing:antialiased;}
+  .serif{font-family:Georgia,"Yu Mincho","Hiragino Mincho ProN",serif;}
+  a{color:var(--accent);}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px;}
+
+  /* ---- hero ---- */
+  header.hero{background:
+      radial-gradient(1200px 400px at 80% -10%,rgba(202,165,126,.22),transparent),
+      linear-gradient(160deg,#332c26 0%,#43382f 60%,#2b2622 100%);
+    color:#f5efe6;position:relative;overflow:hidden;}
+  header.hero:before{content:"";position:absolute;inset:0;opacity:.06;
+    background-image:radial-gradient(#fff 1px,transparent 1px);background-size:18px 18px;}
+  .hero .wrap{position:relative;padding:38px 22px 40px;}
+  .hero .brandrow{display:flex;align-items:center;gap:12px;margin-bottom:24px;}
+  .hero .logo{font-weight:900;letter-spacing:.04em;font-size:18px;}
+  .hero .logo b{color:var(--gold);}
+  .hero .perk{margin-left:auto;font-size:11.5px;letter-spacing:.16em;border:1px solid rgba(245,239,230,.4);
+    padding:6px 13px;border-radius:999px;color:#f0e7d8;white-space:nowrap;}
+  .hero .eyebrow{font-size:13px;letter-spacing:.24em;color:var(--gold);font-weight:700;margin-bottom:12px;}
+  .hero h1{font-size:clamp(27px,4.6vw,46px);line-height:1.22;font-weight:900;margin:0 0 16px;letter-spacing:.01em;}
+  .hero .lead{font-size:15.5px;max-width:760px;color:#e6ddcf;margin:0 0 8px;}
+  .hero .phil{font-size:14px;color:var(--gold);margin-top:14px;}
+  .hero .phil i{font-style:italic;}
+  .statbar{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px;}
+  .statbar .st{background:rgba(255,255,255,.06);border:1px solid rgba(245,239,230,.16);border-radius:14px;
+    padding:13px 20px;min-width:120px;}
+  .statbar .num{font-size:26px;font-weight:900;color:#fff;line-height:1;}
+  .statbar .lab{font-size:11.5px;color:#cdbfab;letter-spacing:.06em;margin-top:6px;}
+
+  /* ---- intro ---- */
+  .intro{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin:28px 0 6px;}
+  @media(max-width:760px){.intro{grid-template-columns:1fr}}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;box-shadow:var(--shadow);}
+  .panel h2{margin:0 0 10px;font-size:15px;color:var(--accent);letter-spacing:.02em;display:flex;align-items:center;gap:8px;}
+  .panel p{margin:0;font-size:13.5px;color:#4a423b;}
+  .howto{background:var(--band2);}
+  .howto ol{margin:0;padding-left:20px;font-size:13px;}
+  .howto li{margin-bottom:5px;}
+  .howto b{color:var(--hi);}
+
+  /* ---- recommended ---- */
+  .recwrap{margin:22px 0 4px;}
+  .recwrap h2{font-size:17px;margin:0 0 14px;display:flex;align-items:center;gap:9px;letter-spacing:.02em;}
+  .recwrap h2 .pill{font-size:11px;background:var(--gold);color:#3a2e22;padding:3px 11px;border-radius:999px;font-weight:800;letter-spacing:.04em;}
+  .recgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;}
+  .reccard{background:linear-gradient(160deg,#fffdf8,#f7efe2);border:1px solid var(--gold);border-radius:14px;
+    padding:14px 16px;cursor:pointer;transition:.15s;position:relative;}
+  .reccard:hover{transform:translateY(-2px);box-shadow:var(--shadow);}
+  .reccard .rk{position:absolute;top:-9px;left:14px;width:24px;height:24px;border-radius:50%;background:var(--hi);color:#fff;
+    font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 6px rgba(184,68,46,.4);}
+  .reccard .rn{font-size:13.5px;font-weight:800;margin-top:8px;line-height:1.5;color:#3a2e22;}
+
+  /* ---- sticky controls ---- */
+  .controls{position:sticky;top:0;z-index:50;background:rgba(251,249,245,.92);backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);margin-top:26px;padding:12px 0 11px;}
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;}
+  .tab{border:1px solid var(--line);background:var(--card);color:var(--sub);font-size:13.5px;font-weight:700;
+    padding:8px 16px;border-radius:999px;cursor:pointer;transition:.13s;display:flex;align-items:center;gap:7px;white-space:nowrap;}
+  .tab .c{font-size:11px;background:var(--band);color:var(--sub);padding:1px 8px;border-radius:999px;font-weight:800;}
+  .tab:hover{border-color:var(--accent);color:var(--ink);}
+  .tab.on{background:var(--ink);color:#fbf9f5;border-color:var(--ink);}
+  .tab.on .c{background:rgba(255,255,255,.2);color:#fbf9f5;}
+  .tab.on.live{background:var(--ok);border-color:var(--ok);}
+  .subbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:11px;}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;}
+  .chip{border:1px solid var(--line);background:transparent;color:var(--sub);font-size:12px;padding:5px 12px;
+    border-radius:999px;cursor:pointer;transition:.12s;font-weight:600;}
+  .chip:hover{border-color:var(--accent);}
+  .chip.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+  .spacer{flex:1 1 auto;min-width:6px;}
+  .search{position:relative;}
+  .search input{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 14px 8px 34px;
+    font-size:13px;width:200px;color:var(--ink);font-family:inherit;}
+  .search input:focus{outline:none;border-color:var(--accent);}
+  .search:before{content:"🔍";position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:12px;opacity:.5;}
+  .sortsel{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--sub);}
+  .sortsel select{border:1px solid var(--line);background:var(--card);border-radius:9px;padding:7px 10px;font-size:12.5px;
+    color:var(--ink);font-family:inherit;cursor:pointer;}
+
+  /* ---- result meta ---- */
+  .resultmeta{font-size:12.5px;color:var(--sub);margin:18px 0 12px;}
+  .resultmeta b{color:var(--ink);}
+
+  /* ---- cards ---- */
+  .list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:16px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:0;box-shadow:var(--shadow);
+    overflow:hidden;display:flex;flex-direction:column;transition:.15s;border-left:5px solid var(--line);}
+  .card:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(43,38,34,.05),0 14px 34px rgba(43,38,34,.10);}
+  .card.s-受付中{border-left-color:var(--ok);}
+  .card.s-通年・随時{border-left-color:var(--year);}
+  .card.s-受付前{border-left-color:var(--wait);}
+  .card.s-受付終了{border-left-color:var(--closed);}
+  .card.s-要確認{border-left-color:var(--check);}
+  .card .top{padding:16px 18px 12px;}
+  .card .badges{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:10px;}
+  .st-pill{font-size:11.5px;font-weight:800;padding:3px 11px;border-radius:999px;letter-spacing:.02em;}
+  .st-受付中{background:var(--okbg);color:var(--ok);}
+  .st-通年・随時{background:var(--yearbg);color:var(--year);}
+  .st-受付前{background:var(--waitbg);color:var(--wait);}
+  .st-受付終了{background:var(--closedbg);color:#6b6358;}
+  .st-要確認{background:var(--checkbg);color:var(--check);}
+  .rel-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;}
+  .rel-高{background:#efe2cf;color:#7a5c1e;}
+  .rel-中{background:var(--band);color:#7a6a4a;}
+  .rel-低{background:#eef0ea;color:#6f7464;}
+  .lvl-tag{font-size:11px;color:var(--sub);border:1px solid var(--line);padding:2px 9px;border-radius:999px;}
+  .rec-tag{font-size:10.5px;background:var(--hi);color:#fff;padding:2px 9px;border-radius:999px;font-weight:800;letter-spacing:.03em;}
+  .card h3{margin:2px 0 6px;font-size:16px;font-weight:800;line-height:1.42;}
+  .card .prov{font-size:11.5px;color:var(--sub);}
+  .card .body{padding:0 18px 4px;flex:1;}
+  .kvrow{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;border-top:1px solid var(--band);margin-top:10px;}
+  .kv{padding:9px 0;border-bottom:1px dashed var(--line);}
+  .kv .k{font-size:10.5px;color:var(--sub);font-weight:700;letter-spacing:.04em;}
+  .kv .v{font-size:13px;color:var(--ink);margin-top:1px;}
+  .kv .v.amt{font-weight:900;font-size:15px;}
+  .statusline{margin-top:11px;background:var(--band2);border-radius:10px;padding:10px 12px;font-size:12px;}
+  .statusline .k{font-size:10.5px;color:var(--accent);font-weight:800;letter-spacing:.03em;}
+  .statusline .next{margin-top:5px;color:#5a4f44;}
+  .statusline .next b{color:var(--hi);}
+  .aiuse{margin-top:10px;font-size:12.5px;background:#f3f5ef;border:1px solid #e4e8db;border-radius:10px;padding:10px 12px;}
+  .aiuse .k{font-size:10.5px;color:#4d6b3c;font-weight:800;letter-spacing:.03em;}
+  .detail{font-size:12px;color:#5a5149;margin-top:9px;}
+  .detail summary{cursor:pointer;color:var(--accent);font-weight:700;font-size:12px;list-style:none;}
+  .detail summary::-webkit-details-marker{display:none}
+  .detail summary:before{content:"＋ ";}
+  .detail[open] summary:before{content:"－ ";}
+  .detail .dc{margin-top:7px;}
+  .detail .dc div{padding:5px 0;border-top:1px dashed var(--line);}
+  .detail .dc .k{font-size:10.5px;color:var(--sub);font-weight:700;}
+  .card .foot{padding:11px 18px 16px;margin-top:auto;border-top:1px solid var(--band);display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .src{font-size:12px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:5px;
+    background:var(--band);color:var(--accent);padding:6px 13px;border-radius:9px;transition:.12s;}
+  .src:hover{background:var(--accent);color:#fff;}
+  .src.unverified{background:transparent;border:1px dashed var(--line);color:var(--sub);}
+  .srcname{font-size:11px;color:var(--sub);}
+  .verch{font-size:10.5px;color:var(--ok);}
+
+  .empty{text-align:center;padding:60px 20px;color:var(--sub);}
+  .empty .e1{font-size:34px;margin-bottom:10px;}
+
+  /* ---- caveats / footer ---- */
+  .caveat{background:#fbf3e6;border:1px solid #e8d6b6;border-radius:16px;padding:20px 24px;margin:38px 0 0;font-size:13px;color:#6b5530;}
+  .caveat h2{margin:0 0 8px;font-size:15px;color:#8a5a1c;}
+  footer.site{margin:40px 0 0;background:#2b2622;color:#cdbfab;}
+  footer.site .wrap{padding:30px 22px 40px;}
+  footer.site .ft1{font-weight:900;color:#f0e7d8;font-size:15px;margin-bottom:6px;}
+  footer.site .ft1 b{color:var(--gold);}
+  footer.site p{margin:6px 0;font-size:12px;line-height:1.7;}
+  footer.site a{color:var(--gold);}
+  .updated{font-size:11.5px;color:#9a9082;margin-top:14px;}
+
+  @media(max-width:560px){
+    .search input{width:140px;}
+    .kvrow{grid-template-columns:1fr;}
+  }
+
+  /* ---- print (PDF) ---- */
+  .printonly{display:none;}
+  @media print{
+    @page{size:A4;margin:13mm 12mm 15mm;}
+    body{background:#fff;}
+    header.hero,.intro,.recwrap,.controls,.resultmeta,#list,.caveat,footer.site{display:none !important;}
+    .printonly{display:block;}
+    .phead{border-bottom:3px solid var(--accent);padding-bottom:10px;margin-bottom:14px;}
+    .ptitle{font-size:21px;font-weight:900;color:var(--ink);}
+    .psub{font-size:11px;color:var(--sub);margin-top:4px;}
+    h2.plv{font-size:15px;color:#fff;background:var(--accent);padding:5px 12px;border-radius:6px;margin:18px 0 10px;
+      display:flex;justify-content:space-between;break-after:avoid;}
+    h2.plv span{font-weight:600;font-size:11px;opacity:.85;}
+    .pcard{border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin-bottom:9px;break-inside:avoid;background:#fff;}
+    .ph{display:flex;gap:6px;align-items:center;margin-bottom:4px;font-size:9.5px;}
+    .pst{font-weight:800;padding:1px 8px;border-radius:999px;}
+    .pst-受付中{background:var(--okbg);color:var(--ok);}
+    .pst-通年・随時{background:var(--yearbg);color:var(--year);}
+    .pst-受付前{background:var(--waitbg);color:var(--wait);}
+    .pst-受付終了{background:var(--closedbg);color:#6b6358;}
+    .pst-要確認{background:var(--checkbg);color:var(--check);}
+    .prel{color:var(--accent);font-weight:700;}
+    .prec{background:var(--hi);color:#fff;padding:1px 7px;border-radius:999px;font-weight:800;}
+    .pno{margin-left:auto;color:var(--sub);}
+    .pcard h3{font-size:13.5px;font-weight:800;margin:2px 0 2px;line-height:1.4;}
+    .pprov{font-size:9.5px;color:var(--sub);margin-bottom:6px;}
+    table.pt{width:100%;border-collapse:collapse;font-size:10px;}
+    table.pt th{background:var(--band2);text-align:left;width:13%;padding:4px 6px;border:1px solid var(--line);
+      font-weight:700;color:var(--accent);vertical-align:top;font-size:9px;}
+    table.pt td{padding:4px 6px;border:1px solid var(--line);vertical-align:top;color:var(--ink);}
+    .psrc{font-size:9px;color:var(--accent);margin-top:5px;word-break:break-all;}
+    .psrc .purl{color:#1a5fb4;text-decoration:underline;}
+    .pfoot{margin-top:18px;padding-top:10px;border-top:1px solid var(--line);font-size:9px;color:var(--sub);line-height:1.6;}
+    a{text-decoration:none;color:var(--ink);}
+  }
+</style></head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brandrow">
+      <div class="logo">AI-<b>OZU</b> <span style="font-weight:400;font-size:13px;opacity:.75">あいおおず</span></div>
+      <div class="perk">企業版ワークショップ 第1回 ｜ 特別特典</div>
+    </div>
+    <div class="eyebrow">SUBSIDY GUIDE FOR OZU SMEs ／ 補助金ガイド</div>
+    <h1>大洲の中小企業のための<br>補助金ガイド</h1>
+    <p class="lead">国・愛媛県・大洲市・近隣市町・財団／協会まで、中小企業・小規模事業者が使える補助金を網羅しました。とくに<b style="color:var(--gold)">AI・DX・業務効率化</b>に使える制度を厚めに、<b style="color:var(--gold)">2026年6月8日時点の申請可否</b>と<b style="color:var(--gold)">公式の出典リンク</b>つきで整理しています。</p>
+    <p class="phil serif"><i>Invisible AI, Visible Humanity.</i> ― AIは“黒衣（くろこ）”。補助金は、その黒衣を雇うための元手です。</p>
+    <div class="statbar">
+      <div class="st"><div class="num">56</div><div class="lab">掲載制度</div></div>
+      <div class="st"><div class="num" style="color:#aee0a0">31</div><div class="lab">いま申請できる<br>（受付中・通年）</div></div>
+      <div class="st"><div class="num" style="color:var(--gold)">14</div><div class="lab">AI・DX直結</div></div>
+      <div class="st"><div class="num">5</div><div class="lab">提供レベル<br>（国〜財団）</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>📌 このガイドについて</h2>
+      <p>6/10WS参加の小規模事業者（観光/旅館・飲食・製造・小売・サービス、事務棚卸し→AI/DX入門に関心）が「まず何から検討すべきか」の道筋は3ステップです。【ステップ0：無料の伴走相談から】お金をかける前に、愛媛県よろず支援拠点（大洲サテライトあり・無料）、えひめDX推進プロジェクト（無料伴走・7/31申込締切）、伊予銀行の補助金診断で、自社の事務棚卸しと「何にいくら補助が出るか」を整理するのが最初の一歩。費用ゼロ・失敗リスクなしで動けます。【ステップ1：今すぐ動ける『小さく・速い』補助金】(1)大洲市の経営環境IT化等支援（上限10万・1/2・市役所窓口で完結・通年受付2027/2/26まで＝予算次第で早期終了）でSaaS初期費やキャッシュレスを小さく導入。(2)デジタル化・AI導入補助金2026のインボイス枠（小規模は会計ソフトの4/5補助・最も手厚い）／通常枠（生成AI・業務システム）で本格的な業務システムを。1次締切6/15は直前なので、間に合わなければ2次締切公表を待つ運用が安全。(3)人手不足の現場は省力化投資補助金カタログ注文型（随時受付・申請が簡便）。【ステップ2：秋〜冬に向けた仕込み】多言語POP/メニュー・HP・SNSなど『成果が見えやすい』販促は小規模事業者持続化補助金（第20回・受付11/5〜12/15、大洲商工会議所の様式4発行に時間がかかるので逆算が必須）。社員にAIを使わせる研修は人材開発支援助成金リスキリングコース（経費75%＋賃金助成・ただし研修開始1か月前までに計画届提出が絶対条件）。賃上げ＋設備投資なら業務改善助成金（9/1受付開始）。【重要な共通ポイント】国の補助金はほぼ全てGビズIDプライム（取得2〜3週間）が必須なので今すぐ着手を。補助金は後払い（精算払い）なので、自己負担分・つなぎ資金は伊予銀行や市・県の制度融資で補完。複数併用は可能だが「同一経費の重複受給」は不可（経費を分けて申請）。県の観光・収益力系補助金は令和8年度分が春に締切済のものが多く、令和9年度公募（例年4月）に向けた計画づくりが現実的です。</p>
+    </div>
+    <div class="panel howto">
+      <h2>🧭 使い方</h2>
+      <ol>
+        <li>まず<b>「いま申請できる」</b>タブで動ける制度を確認</li>
+        <li><b>ソート</b>で上限額・AI/DX度の高い順に並べ替え</li>
+        <li>各カードの<b>出典リンク</b>で必ず最新の公募要領を確認</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="recwrap">
+    <h2><span class="pill">⭐ おすすめ</span> まず検討したい補助金 TOP7</h2>
+    <div class="recgrid" id="recgrid"></div>
+  </div>
+
+  <div class="controls">
+    <div class="tabs" id="tabs"></div>
+    <div class="subbar">
+      <div class="chips" id="chips"></div>
+      <div class="spacer"></div>
+      <div class="search"><input id="q" type="search" placeholder="キーワード検索" aria-label="検索"></div>
+      <div class="sortsel"><label for="sort">並び替え</label>
+        <select id="sort">
+          <option value="rec">おすすめ順</option>
+          <option value="status">申請できる順</option>
+          <option value="amount">上限額が大きい順</option>
+          <option value="aidx">AI・DX関連度が高い順</option>
+          <option value="level">提供レベル順</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="resultmeta" id="meta"></div>
+  <div class="list" id="list"></div>
+
+  <section class="printonly" id="printall">
+  <div class="phead">
+    <div class="ptitle">大洲の中小企業のための補助金ガイド</div>
+    <div class="psub">AI-OZU（あいおおず）企業版ワークショップ 第1回 特別特典　／　全56件　／　申請可否は2026年6月8日時点の調査</div>
+  </div>
+  <h2 class="plv">国<span>23件</span></h2><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.1</span></div>
+        <h3>省エネルギー投資促進・需要構造転換支援事業費補助金（設備単位型/工場・事業場型）</h3>
+        <div class="pprov">経済産業省／資源エネルギー庁（SII等）／設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>設備単位型は上限1億円（先進設備は条件により上限引上げ）。工場・事業場型は枠により変動</td><th>補助率</th><td>1/3以内（先進枠は中小2/3、設備単位型先進は条件により引上げ）</td></tr>
+          <tr><th>対象</th><td colspan="3">中小企業を含む事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　事務局はSII（環境共創イニシアチブ）。元データのenv.go.jpのURLは環境省の予算事業一覧で本補助金の公募情報ではない（誤り）。SII公式で確認：『令和7年度補正予算 省エネ・非化石転換補助金』として令和8年度実施。工場・事業場型の2次公募は2026/6/1～2026/7/9 17:00必着で受付中。設備単位型の2次公募も2026/6/1～2026/7/9 17:00必着で受付中（いずれも1次は2026/3/30～4/27で終了済）。交付決定9月上旬予定。郵送のみ・持参不可。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">7/9 17:00必着の2次公募に間に合うよう、SIIの補助事業ポータルでアカウント登録→交付申請書類を作成し郵送で提出。設備か工場・事業場かで申請型を選択。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">省エネ性能の高い設備更新。AI/IoT制御による空調・生産設備の最適化（EMS等）を伴う更新で間接的にDX要素を含められる。高熱費対策が必要な旅館・製造業向け。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">省エネ設備・機器への更新費用、EMS導入費等</td></tr>
+        </tbody></table>
+        <div class="psrc">SII（一般社団法人 環境共創イニシアチブ）公式 工場・事業場型 2次公募：<span class="purl">https://sii.or.jp/koujou07r/overview2.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.2</span></div>
+        <h3>中小企業新事業進出補助金（事業再構築補助金の後継）</h3>
+        <div class="pprov">中小企業庁（事務局：中小企業基盤整備機構）／新事業・設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>従業員規模により最大7,000万円（一定の賃上げ等で最大9,000万円との情報あり・要確認）</td><th>補助率</th><td>1/2（2/3に上がる特例あり・要確認）</td></tr>
+          <tr><th>対象</th><td colspan="3">中小企業等。新たな製品・サービスで新市場へ進出する事業（補助下限750万円・補助対象経費1,500万円以上が必要）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　公式ポータルで第4回公募が受付中。申請受付2026/5/19開始、締切2026/6/19 18:00と公式サイトで確認。6/8時点で締切前のため受付中。公募開始（事業概要公表）は2026/3/27。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">6/19 18:00の締切までに電子申請を完了させる。GビズIDプライム・事業計画書の最終確認を急ぐ。間に合わなければ令和8年度中の統合新制度（新事業進出・ものづくり）次回公募を待つ。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">新市場・新事業への進出に伴うAI/DX投資。観光×AIの新サービス、製造業の新分野進出、新業態立ち上げ時のシステム・設備にAIを組込む形で活用。既存事業の効率化ではなく『新事業進出』が要件。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">建物費、機械装置・システム構築費、外注費、技術導入費、専門家経費、広告宣伝費、クラウド利用費等</td></tr>
+        </tbody></table>
+        <div class="psrc">中小企業新事業進出補助金 公式ポータル：<span class="purl">https://shinjigyou-shinshutsu.smrj.go.jp/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX○</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.3</span></div>
+        <h3>デジタル化・AI導入補助金2026 複数者連携枠</h3>
+        <div class="pprov">中小企業庁（事務局：中小企業基盤整備機構）／AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>最大3,000万円（基盤導入経費＋消費動向分析経費等の合計。その他経費上限200万円等）</td><th>補助率</th><td>基盤導入（ソフト）50万円以下3/4・50万円超2/3／ハード1/2／分析・専門家経費2/3</td></tr>
+          <tr><th>対象</th><td colspan="3">10者以上の中小・小規模事業者の連携体（商店街振興組合・商工会議所等が取りまとめ。単独事業者は申請主体になれない）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　公式ポータルで確認。受付開始2026/3/30、締切2026/6/15(月)17:00（公式の事業スケジュールでは『1次締切』として掲載）、交付決定2026/7/23(木)予定。締切が6/8より後のため受付中。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">1次締切2026/6/15(月)17:00までに連携体の交付申請を完了。2次締切は未公表のため公式事業スケジュールで確定後に確認。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">商店街・商業集積地・サプライチェーンの10者以上が連携して面的にDX。地域共通の予約・決済・データ基盤、観光地のキャッシュレス・多言語基盤など。大洲の観光エリアや商店街でが音頭を取り『まとめてAI/DX』する場合に活用余地。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">連携体での共通ITツール・AIツール導入費、ハード、消費動向分析経費、外部専門家経費等</td></tr>
+        </tbody></table>
+        <div class="psrc">デジタル化・AI導入補助金2026 公式（中小機構）：<span class="purl">https://it-shien.smrj.go.jp/applicant/subsidy/digitalbased_multiple_companies/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX◎</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.4</span></div>
+        <h3>デジタル化・AI導入補助金2026 通常枠（旧IT導入補助金）</h3>
+        <div class="pprov">中小企業庁（事務局：中小企業基盤整備機構）／AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>1プロセス以上150万円未満／4プロセス以上450万円以下</td><th>補助率</th><td>1/2以内（賃金要件を満たす場合は2/3以内）</td></tr>
+          <tr><th>対象</th><td colspan="3">中小企業・小規模事業者。登録された『IT導入支援事業者（ベンダー）』と組んで、登録済みITツールを選んで申請する</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　公式ポータルで確認。受付開始2026/3/30、1次締切2026/6/15(月)17:00、交付決定2026/7/23(木)予定。締切6/15は6/8より後のため受付中。2次以降は『確定した募集回のみ公表』の運用で現時点(6/8)未公表。1次に間に合わない場合は2次公表待ち。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">1次締切2026/6/15(月)17:00に向けてGビズIDプライム取得・IT導入支援事業者選定・交付申請を急ぐ。間に合わなければ2次締切の公表を事業スケジュールで待つ。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">事務作業の棚卸し後に入れる業務システムの本命。会計・受発注・在庫・予約・顧客管理などのSaaS、RPA、グループウェアを導入できる。2026年度から生成AIを使ったツール・システムが補助対象として明確化された（ただし事務局に『AIツール』として登録された製品に限る）。クラウド利用料は最大2年分、導入設定・研修・保守も対象。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">ソフトウェア購入費、クラウド利用料（最大2年分・必須）、機能拡張・データ連携・セキュリティ、導入コンサル・設定・研修・保守。PC等の汎用ハードは通常枠では対象外</td></tr>
+        </tbody></table>
+        <div class="psrc">デジタル化・AI導入補助金2026 公式（中小機構）：<span class="purl">https://it-shien.smrj.go.jp/applicant/subsidy/normal/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX◎</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.5</span></div>
+        <h3>デジタル化・AI導入補助金2026 インボイス枠（インボイス対応類型）</h3>
+        <div class="pprov">中小企業庁（事務局：中小企業基盤整備機構）／AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>ソフトウェア最大350万円／ハードウェア（PC・タブレット等）上限10万円・（レジ・券売機等）上限20万円</td><th>補助率</th><td>ソフト50万円以下部分：中小3/4・小規模事業者4/5／50万円超〜350万円部分：一律2/3／ハードは1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">中小企業・小規模事業者（小規模事業者ほど補助率が高い）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　公式ポータルで確認。受付開始2026/3/30、1次締切2026/6/15(月)17:00、交付決定2026/7/23(木)予定。締切が6/8より後のため受付中。2次以降は事業スケジュール上未公表。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">1次締切2026/6/15(月)17:00までに交付申請を完了。間に合わなければ2次公表を待つ。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">会計・受発注・決済ソフトの導入（インボイス制度対応）。小規模事業者は補助率が最も手厚く、自己負担1/5でソフトを入れられる。飲食・小売・旅館のレジ・受発注・会計のデジタル化の入口に最適。PC・タブレット・レジ等のハードも一部対象。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">会計・受発注・決済機能を持つソフト（補助額50万円超は2機能以上）、PC・タブレット・レジ・券売機等のハード、クラウド利用料、導入関連費</td></tr>
+        </tbody></table>
+        <div class="psrc">デジタル化・AI導入補助金2026 公式（中小機構）：<span class="purl">https://it-shien.smrj.go.jp/applicant/subsidy/digitalbase/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX○</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.6</span></div>
+        <h3>デジタル化・AI導入補助金2026 セキュリティ対策推進枠</h3>
+        <div class="pprov">中小企業庁（事務局：中小企業基盤整備機構／IPA）／AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>5万円〜150万円</td><th>補助率</th><td>1/2以内（小規模事業者は2/3以内）</td></tr>
+          <tr><th>対象</th><td colspan="3">中小企業・小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　公式ポータルで確認。受付開始2026/3/30、1次締切2026/6/15(月)17:00、交付決定2026/7/23(木)予定。締切が6/8より後のため受付中。2次以降は事業スケジュール上未公表。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">1次締切2026/6/15(月)17:00までに交付申請を完了。間に合わなければ2次公表を待つ。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">AI・クラウド導入に伴う情報漏えい対策。IPAの『サイバーセキュリティお助け隊サービス』の利用料が対象。攻めのDXではなく守りの補助で、本格導入の前提整備に有効。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">IPA『サイバーセキュリティお助け隊サービスリスト』掲載サービスの利用料（最大2年分）</td></tr>
+        </tbody></table>
+        <div class="psrc">デジタル化・AI導入補助金2026 公式（中小機構／IPA連携）：<span class="purl">https://it-shien.smrj.go.jp/applicant/subsidy/security/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX◎</span>
+          
+          <span class="pno">No.7</span></div>
+        <h3>人材開発支援助成金（事業展開等リスキリング支援コース）</h3>
+        <div class="pprov">厚生労働省（都道府県労働局・ハローワーク）／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>1事業所1年度あたり1億円が上限。経費助成限度（中小・1人1訓練）10〜100h未満30万円／100〜200h未満40万円／200h以上50万円</td><th>補助率</th><td>経費助成率：中小75%・大企業60%／賃金助成：中小960円/時間（大企業480円）</td></tr>
+          <tr><th>対象</th><td colspan="3">事業展開・新分野進出・DX/GX等に伴い新たな知識技能の訓練を行う中小企業等</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　厚生労働省公式ページで実在を確認。通年申請の制度で、訓練開始の原則1か月前まで（サブスク型は契約開始1か月前まで）に職業訓練実施計画届の事前提出が必須。事前提出なしは不支給。令和8年度（〜2027/3/31）までの時限措置で、令和8年度が最終年度の可能性。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">通年なので随時。ただし訓練開始の原則1か月前までに訓練計画届を労働局へ提出する必要があるため、研修計画を逆算して早期着手する。2026/5/14付要領改正で価格設定の疎明書（様式第28号）提出が必要な点に留意。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">生成AI実務研修、Python・データ分析の実践演習、クラウド・セキュリティ習得、DX推進の実践研修の経費（受講料・外部講師費）と訓練中の賃金を補助。『社員にAIを使えるようにする研修』に最もダイレクトに使える本命。DX化を新たな取組として位置づけると該当しやすい。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">OFF-JT訓練の受講料・教材費・外部講師謝金等、訓練期間中の賃金。令和8年改正で中小向け『設備投資加算』新設</td></tr>
+        </tbody></table>
+        <div class="psrc">厚生労働省 人材開発支援助成金 公式：<span class="purl">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX◎</span>
+          
+          <span class="pno">No.8</span></div>
+        <h3>人材開発支援助成金（人への投資促進コース）</h3>
+        <div class="pprov">厚生労働省（都道府県労働局・ハローワーク）／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>1事業所1年度コース全体で2,500万円が上限。定額制訓練の経費助成は受講者1人1か月あたり2万円が上限</td><th>補助率</th><td>中小の経費助成率：高度デジタル人材訓練75%／定額制訓練60%／自発的職業能力開発45%（要件達成で加算あり）</td></tr>
+          <tr><th>対象</th><td colspan="3">デジタル人材・高度人材を育成する訓練、サブスク型研修等を実施する事業主</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　厚労省公式案内ページで通年申請（支給申請前に職業訓練実施計画届の事前提出が必須）と確認。令和8年5月14日付で支給要領改正、受講料等の価格設定に関する疎明書（様式第28号）の提出が必須化された旨も公式で確認。本コースは令和4〜8年度（2027/3末まで）の時限措置で、令和8年度が最終年度。6/8時点で通年受付中だが、計画届の事前提出期限（訓練開始前）に注意。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">訓練計画を固め、訓練開始前（原則1か月前等）までに職業訓練実施計画届と疎明書（様式第28号）を管轄労働局へ提出。令和8年度が時限措置の最終年度のため早期着手。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">高度デジタル人材訓練に経費助成75%。『定額制訓練』はサブスク型eラーニング（AI/DX系オンライン講座の使い放題サービス）の費用が対象になり、小規模事業者でも始めやすい。従業員に生成AI・データ活用のeラーニングを継続受講させる用途に有効。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">OFF-JT受講料、eラーニング・定額制サービス利用料、訓練中賃金等</td></tr>
+        </tbody></table>
+        <div class="psrc">厚生労働省 人材開発支援助成金 公式：<span class="purl">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX○</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.9</span></div>
+        <h3>中小企業省力化投資補助金（カタログ注文型）</h3>
+        <div class="pprov">中小企業庁（事務局：中小企業基盤整備機構）／設備投資・AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>従業員5人以下500万円、6〜20人750万円、21人以上1,000万円（大幅賃上げで各750/1,000/1,500万円）</td><th>補助率</th><td>1/2以下</td></tr>
+          <tr><th>対象</th><td colspan="3">中小・小規模事業者（人手不足の状態にあること）。販売事業者経由で申請</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　公式サイトで『随時公募受付中』と明記。回次区切りのない随時受付で6/8時点も申請可能。なお2026/6/29(月)10:00-18:00はシステムメンテナンスで申請ポータルが全機能停止予定のため、その時間帯は申請不可。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">随時受付なので、GビズID取得後にカタログ掲載製品から導入製品を選び随時申請。6/29のメンテナンス時間帯は避ける。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">カタログ掲載の汎用製品（自動精算機・券売機・配膳ロボット・清掃ロボット・検品自動化機器・RPA等）から選んで導入。旅館・飲食・小売の人手不足解消に直結。申請が簡便で小規模事業者向き。AIソフト単体より省力化機器・ロボット中心。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">カタログ登録済みの省力化製品の導入費（機器本体＋導入経費）</td></tr>
+        </tbody></table>
+        <div class="psrc">中小企業省力化投資補助金（カタログ注文型）公式：<span class="purl">https://shoryokuka.smrj.go.jp/catalog/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.10</span></div>
+        <h3>人材開発支援助成金（人材育成支援コース）</h3>
+        <div class="pprov">厚生労働省（都道府県労働局・ハローワーク）／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>経費助成限度（中小・1人1訓練）10〜100h未満15万円／100〜200h未満30万円／200h以上50万円。1事業所1年度1,000万円</td><th>補助率</th><td>経費助成：中小45%（賃金要件等で+15%＝60%）／賃金助成800円/時間（加算で+200円＝1,000円）</td></tr>
+          <tr><th>対象</th><td colspan="3">10時間以上のOFF-JT等を実施する中小企業等</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　厚労省公式案内ページで人材育成支援コースの掲載を確認。通年申請で、訓練開始前に職業訓練実施計画届の事前提出が必要。令和8年5月14日付要領改正で疎明書（様式第28号）の提出が必須化、人材育成支援コースに『中高年齢者実習型訓練』が新設された旨も公式で確認。6/8時点で通年受付中。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">訓練計画を作成し、訓練開始前（職業訓練実施計画届の提出期限）までに計画届＋疎明書（様式第28号）を管轄労働局へ提出。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">10時間以上のOFF-JT研修が広く対象。ITツール操作・業務システム・基礎的なデジタルスキル研修など、リスキリング要件に当てはまらない一般的な人材育成研修でAI/DXの基礎習得に充当可能。外部セミナー受講に使いやすい。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">OFF-JT外部研修の受講料・教材費・外部講師費、訓練中賃金等</td></tr>
+        </tbody></table>
+        <div class="psrc">厚生労働省 人材開発支援助成金 公式：<span class="purl">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.11</span></div>
+        <h3>キャリアアップ助成金（正社員化コース 他）</h3>
+        <div class="pprov">厚生労働省（都道府県労働局・ハローワーク）／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>正社員化コース：中小で1人最大80万円（各種加算で1人目100万円超も可）</td><th>補助率</th><td>1人あたり定額（コース・対象者により変動）</td></tr>
+          <tr><th>対象</th><td colspan="3">有期・パート等の非正規雇用労働者の正社員化・処遇改善を行う事業主</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　厚労省公式ページで正社員化コースの掲載・令和8年度版パンフレット・支給要領（令和8年4月8日付）・令和8年度申請様式を確認。各コース実施前にキャリアアップ計画書の事前提出が必要、正社員化は転換後賃金支払い後に支給申請する通年制度。令和8年度に『短時間労働者労働時間延長支援コース』新設も確認。6/8時点で通年受付中。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">取組実施日の前日までにキャリアアップ計画を管轄労働局へ提出。正社員化等の実施→転換後6か月の賃金支払い後に支給申請（令和8年4月8日以降の取組は令和8年度様式を使用）。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">AI/DX導入の直接補助ではないが、パート・契約社員を正社員化してDX推進の中核人材を社内に確保・定着させる原資に。AI化で生んだ余力を担い手の処遇改善に振り向ける『セット提案』で価値あり。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">賃金助成型（転換・賃上げ実施に対する定額助成）</td></tr>
+        </tbody></table>
+        <div class="psrc">厚生労働省 キャリアアップ助成金 公式：<span class="purl">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/part_haken/jigyounushi/career.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.12</span></div>
+        <h3>両立支援等助成金（育児休業等支援コース 他）</h3>
+        <div class="pprov">厚生労働省（都道府県労働局）／一般</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>育児休業等支援コースは原則60万円規模（取組内容により変動）</td><th>補助率</th><td>取組内容ごとの定額助成</td></tr>
+          <tr><th>対象</th><td colspan="3">育休の円滑な取得・職場復帰、業務代替体制整備等に取り組む中小企業事業主</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　厚労省公式『子ども・子育て両立支援等助成金のご案内』ページは実在し、令和8（2026）年度版の支給申請の手引きが掲載されている。締切は固定の公募回ではなく、育休取得時＝育休開始から3か月経過の翌日から2か月以内、職場復帰時＝育休終了の翌日から6か月経過の翌日から2か月以内、と各事業所の育休スケジュールに連動する期間内申請。令和8年度も継続。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">対象労働者の育休取得・復帰の時期に応じて所定期間内に、本社所在地の都道府県労働局 雇用環境・均等部（室）へ申請。令和8年度版手引きで様式・要件を確認。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">AI/DX導入の直接補助ではない。育休取得・復帰支援や業務代替体制の整備への助成で、AI・省力化による業務代替・引き継ぎ効率化と組み合わせて人材定着策として案内可能。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">育休復帰支援プラン作成・実施、業務代替体制整備等（定額助成型）</td></tr>
+        </tbody></table>
+        <div class="psrc">厚生労働省 公式（子ども・子育て両立支援等助成金のご案内）：<span class="purl">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/shokuba_kosodate/ryouritsu01/index.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.13</span></div>
+        <h3>中小機構 ハンズオン支援（専門家派遣）</h3>
+        <div class="pprov">独立行政法人 中小企業基盤整備機構／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>補助金ではなく低額自己負担型（専門家1人1日あたり17,500円・税込）</td><th>補助率</th><td>実費の大部分を中小機構が負担（事業者負担は上記定額）</td></tr>
+          <tr><th>対象</th><td colspan="3">中小企業・小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　中小機構公式ページ実在。ハンズオン支援（専門家派遣）の制度概要・利用の流れ・各地域本部連絡先を掲載。最寄りの地域本部企業支援課へ電話で直接申込→ヒアリングという通年・随時運用。締切型ではない。令和8年度の特定の公募回・締切は設定されていない。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">通年随時のため、四国本部（中小機構四国本部 企業支援課）へ電話で申込み、訪問ヒアリング・審査を経て専門家派遣を受ける。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">専門家を数か月〜10か月程度（20回程度）派遣し、業務フロー改善・システム化構想・生産工程見直し等を伴走支援。事務作業の棚卸し〜DX設計の外部専門家を低コストで活用できる。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">経営戦略立案・業務フロー改善・システム化構想・生産工程見直し・品質向上等（専門家派遣サービス）</td></tr>
+        </tbody></table>
+        <div class="psrc">独立行政法人 中小企業基盤整備機構 公式：<span class="purl">https://www.smrj.go.jp/sme/consulting/hands-on/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.14</span></div>
+        <h3>人材確保等支援助成金（テレワークコース）</h3>
+        <div class="pprov">厚生労働省（都道府県労働局）／設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>要確認（制度導入助成・目標達成助成の区分あり。上限は数十万円規模）</td><th>補助率</th><td>取組経費の一部助成、雇用管理改善の効果をあげた場合に支給</td></tr>
+          <tr><th>対象</th><td colspan="3">テレワークを制度導入・実施し雇用管理改善の効果をあげた中小企業事業主</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　厚労省公式ページ実在。令和8年4月1日付で支給要領を一部改正済と明記。雇用関係助成金として通年申請（締切型ではない）。ただしテレワーク機器導入等は計画認定・実施後に申請する流れで、事前の計画提出が前提。具体の上限額・助成率は公式ページの最新案内・支給要領で確認が必要。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">通年受付のため随時申請可能。テレワーク実施計画の作成→管轄の都道府県労働局へ事前相談・提出してから取り組む。最新の支給要領（令和8年4月1日改正版）で対象経費・助成率を確認。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">テレワーク制度の導入に伴う就業規則整備、外部コンサル、労務管理研修、テレワーク用システム導入が対象。クラウド勤怠・グループウェア・オンライン業務システムなどDX的な働き方基盤の整備に活用でき、事務作業のリモート化を進める事業者に適合。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">就業規則等整備費、外部専門家コンサル費、労務管理・労働者研修費、テレワーク用機器の借損料等</td></tr>
+        </tbody></table>
+        <div class="psrc">厚生労働省 公式：<span class="purl">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/telework_zyosei_R3.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付前">受付前</span>
+          <span class="prel">AI/DX◎</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.15</span></div>
+        <h3>中小企業省力化投資補助金（一般型）</h3>
+        <div class="pprov">中小企業庁（事務局：中小企業基盤整備機構）／設備投資・AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>従業員5人以下750万円（賃上特例1,000万円）／6〜20人1,500万円（同2,000万円）／21〜50人3,000万円（同4,000万円）／51〜100人5,000万円（同6,500万円）／101人以上8,000万円（大幅賃上特例で最大1億円）</td><th>補助率</th><td>中小1/2、小規模事業者・再生事業者2/3、大幅賃上特例時は中小も2/3</td></tr>
+          <tr><th>対象</th><td colspan="3">人手不足の中小・小規模事業者。単価50万円(税抜)以上の設備投資が1つ以上必要、付加価値額・給与総額等の要件あり</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付前</b>　公式スケジュールで確認。第6回は申請締切2026/5/15(金)17:00で締切済。現行は第7回で、申請ポータルでの受付開始は2026/7月上旬予定・締切7月下旬予定。6/8時点では第7回の申請ポータル受付はまだ開始されておらず受付前。公募回は年3～4回予定。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">GビズIDプライム取得・事業計画準備を進め、第7回の申請ポータル受付開始（7月上旬予定）を待って申請する。確定日程は公式スケジュールページで再確認。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">カタログにないオーダーメイド型の省力化。AI・IoT・ロボット・RPA・自動化システムを自社業務に合わせて構築。AI需要予測、AI画像検査、業務自動化、AIエージェント開発も対象。事務棚卸しで見えた個別課題の自動化に最適。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">機械装置・システム構築費（機器購入・製作、専用ソフト・情報システム構築、改良・据付費）</td></tr>
+        </tbody></table>
+        <div class="psrc">中小企業省力化投資補助金（一般型）公式 スケジュール：<span class="purl">https://shoryokuka.smrj.go.jp/ippan/schedule/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付前">受付前</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.16</span></div>
+        <h3>業務改善助成金</h3>
+        <div class="pprov">厚生労働省（都道府県労働局）／設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>通常・特例事業者とも最大600万円（令和8年度。従来の物価高騰等特例の最大1,500万円は廃止）。コース別目安：50円30〜130万／70円40〜300万／90円90〜600万円</td><th>補助率</th><td>引上げ前の事業場内最低賃金が1,050円未満なら4/5、1,050円以上なら3/4</td></tr>
+          <tr><th>対象</th><td colspan="3">事業場内最低賃金を一定額以上引き上げ、生産性向上の設備投資を行う中小・小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付前</b>　厚労省公式ページで令和8年度の交付申請受付開始日は『令和8年9月1日』と明記。よって6/8時点は受付前。申請期限は地域別最低賃金発効日前日または令和8年11月30日のいずれか早い日。事業完了期限は令和9年1月31日（やむを得ない場合は事前申出で3月31日まで延長可）。令和8年度は事業場内最低賃金を50円以上引き上げが要件。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">9/1の受付開始に向け、設備投資計画と賃金引上げ計画を夏前から準備。受付開始後すみやかに交付申請（予算枠あり・先着）。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">生産性向上に資する設備投資が対象。POSレジ・予約/受発注システム・自動精算機・券売機・RPA等の業務効率化機器/システム導入に充当可能。事業場内最低賃金の引上げが条件のため、賃上げ予定の事業者向け。AI/DX省力化＋賃上げをセットで進める旅館・飲食・小売に適合。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">機械装置等購入費、システム構築・委託費、経営コンサル費、設置費等。汎用PC・スマホ・タブレットは原則対象外</td></tr>
+        </tbody></table>
+        <div class="psrc">厚生労働省 業務改善助成金 公式：<span class="purl">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付前">受付前</span>
+          <span class="prel">AI/DX○</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.17</span></div>
+        <h3>小規模事業者持続化補助金（一般型・通常枠）第20回</h3>
+        <div class="pprov">中小企業庁（事務局：日本商工会議所・全国商工会連合会）／販路開拓</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>通常50万円。インボイス特例+50万円、賃金引上げ特例+150万円で最大200万円、両特例併用で最大250万円</td><th>補助率</th><td>2/3（賃金引上げ特例の赤字事業者は3/4）</td></tr>
+          <tr><th>対象</th><td colspan="3">従業員20人以下（商業・サービス業は5人以下）の小規模事業者。商工会議所・商工会の事業支援計画書（様式4）を受け経営計画を作成することが必須</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付前</b>　公式特設サイトで確認。第20回の申請受付は2026/11/5(木)〜12/15(火)17:00、事業支援計画書（様式4）発行受付締切は2026/12/4(金)。6/8時点では『第20回（準備中）』と表示され受付前。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">事業支援計画書（様式4）の発行に時間を要するため、地域の商工会議所・商工会へ早期に相談予約し、11/5の受付開始に向け経営計画を準備する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">販路開拓の取組として、ホームページ新規制作・改修、EC・ネット予約システム、多言語POP・メニュー・チラシ制作、SNS活用、生成AIで作った販促物の外注費・広告費に使える。AIツール導入そのものより『AIで作った販促物の制作・広報』が現実的。大洲の観光1社目のアンカー業務（多言語POP/メニュー）と直結。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">機械装置等費、広報費、ウェブサイト関連費、展示会出展費、開発費、委託・外注費等。ウェブサイト関連費は補助対象経費総額の1/4・上限30万円かつ単独申請不可</td></tr>
+        </tbody></table>
+        <div class="psrc">小規模事業者持続化補助金（一般型）公式：<span class="purl">https://r6.jizokukahojokin.info/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付前">受付前</span>
+          <span class="prel">AI/DX○</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.18</span></div>
+        <h3>小規模事業者持続化補助金（創業型）</h3>
+        <div class="pprov">中小企業庁（商工会・商工会議所が支援）／創業</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>最大200万円（インボイス特例で250万円との情報あり・要確認）</td><th>補助率</th><td>2/3</td></tr>
+          <tr><th>対象</th><td colspan="3">創業後1年以内（特定創業支援等事業の支援を受けた等の要件）の小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付前</b>　中小企業庁が2026/5/27に＜創業型＞第4回の公募要領を公開。第4回の申請受付期間は2026/11/5〜12/15 17:00で、6/8時点はまだ受付開始前（受付前）。事業支援計画書（様式4）発行締切は12/4が先に来るため早期相談が必要。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">GビズIDプライムを今のうちに取得し、商工会・商工会議所へ早期に相談して事業支援計画書（様式4）の発行段取りを進める。11/5の受付開始を待って電子申請。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">創業後の販路開拓・業務効率化にAI/DXツール導入を含められる。新規開業の旅館・飲食・サービス業がAI予約・多言語対応等を入れる初期投資に。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">販路開拓・業務効率化経費（機械装置等費、広報費、ウェブサイト関連費等）</td></tr>
+        </tbody></table>
+        <div class="psrc">中小企業庁 公式（公募情報）：<span class="purl">https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260527001.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付前">受付前</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.19</span></div>
+        <h3>事業承継・M&amp;A補助金（専門家活用枠 等）</h3>
+        <div class="pprov">中小企業庁（事務局：中小企業基盤整備機構）／一般</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>枠・類型により異なる（要公募要領確認）</td><th>補助率</th><td>1/2以内（営業利益率低下者・赤字者は2/3以内）</td></tr>
+          <tr><th>対象</th><td colspan="3">M&amp;Aで経営資源を引継ぐ/引き継がせる中小・小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付前</b>　事務局公式ポータル実在。直近は十五次（15次）公募で、公募要領は2026/5/22公表（中小企業庁）、事務局で15次公募説明会の申込を6/5開始と公式に確認。専門家活用枠には『専門家活用枠 小規模売り手支援類型』が6/5新設と公式記載。申請受付（電子申請）は6/8時点でまだ開始されておらず受付前。二次情報では申請期間2026/6/19〜7/24 17:00（予定）とされるが、公式の具体日付はfetchで確定できなかったため『予定』扱い。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">GビズIDプライム（発行に2〜3週間）を取得しておき、十五次公募の申請受付開始（二次情報では6/19予定）に備える。公式ポータルの公募要領ダウンロードページで正式な申請受付期間を確認する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">M&amp;Aによる事業引継ぎ時の専門家費用支援。直接のAI/DX用途ではないが、後継者不在の事業者の存続支援。承継後のDX投資の前提条件づくりに。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">FA・仲介費用、デューデリジェンス費用、セカンドオピニオン、表明保証保険料等</td></tr>
+        </tbody></table>
+        <div class="psrc">事業承継・M&amp;A補助金 事務局 公式ポータル：<span class="purl">https://shoukei-mahojokin.go.jp/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX◎</span>
+          
+          <span class="pno">No.20</span></div>
+        <h3>中小企業経営強化税制（デジタル化設備 C類型 等）</h3>
+        <div class="pprov">中小企業庁／経済産業省／設備投資・AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>税額控除10%（資本金3,000万円超1億円以下は7%）または即時償却（全額）</td><th>補助率</th><td>即時償却 または 取得価額10%（7%）の税額控除を選択</td></tr>
+          <tr><th>対象</th><td colspan="3">資本金1億円以下の法人、従業員1,000人以下の個人事業主等</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　中小企業庁公式情報により、デジタル化設備（C類型）は2025年4月1日（令和7年度税制改正）をもって制度対象外＝廃止。令和8年度はC類型での適用・申請はできない。中小企業経営強化税制自体は令和8年度税制改正対応で継続しており、現行はA・B・D・E類型が対象（設備取得期限は令和9年3月31日まで）。経営力向上計画の認定申請は通年だが、C類型に限れば利用不可のため『要確認』とする。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">C類型を前提とせず、A〜E類型のいずれが自社設備に該当するか認定経営革新等支援機関に確認のうえ経営力向上計画を策定・認定申請する。最新の適用要件は令和8年度税制改正対応版『支援措置活用の手引き』で確認。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">経営力向上計画の認定を受け、デジタル化設備（C類型＝AI・IoT・遠隔操作・自動化に資する設備等）を取得すると即時償却または税額控除。DX投資の実質コストを節税で圧縮。補助金（IT導入・省力化等）と併用可（同一経費の重複は不可）。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">デジタル化設備（C類型）等、経営力向上に資する機械装置・器具備品・ソフトウェア等</td></tr>
+        </tbody></table>
+        <div class="psrc">中小企業庁 中小企業経営強化税制 公式：<span class="purl">https://www.chusho.meti.go.jp/keiei/kyoka/kyoka_zeisei.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.21</span></div>
+        <h3>新事業進出・ものづくり商業サービス補助金（2026年度統合新制度／ものづくり補助金の後継）</h3>
+        <div class="pprov">中小企業庁（事務局：全国中小企業団体中央会）／設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>枠・規模により100万円〜最大9,000万円（大幅賃上げ特例・グローバル枠等。革新的新製品サービス枠は750万〜2,500万円・特例で最大3,500万円見込み）※統合後の予定値</td><th>補助率</th><td>1/2程度（小規模・再生事業者2/3、枠・要件で変動）※要公募要領確認</td></tr>
+          <tr><th>対象</th><td colspan="3">中小・小規模事業者（製品・サービスの高付加価値化、新事業進出を目指す事業者）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　旧ものづくり補助金は第23次公募（公募期間2026/2/6〜5/8 17:00）が現行制度の最終公募で既に締切済。後継の統合新制度（新事業進出・ものづくり）は公募要領が2026年6月公開予定・申請受付2026年8月頃開始予定とされ、6/8時点で公式に確定した公募回・締切が未公表。よって現時点で申請可能な開いた回はなく『要確認』。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">monodukuri-hojo.jp公式ポータルで6月公開予定の統合新制度公募要領を待つ。GビズIDプライムを取得し、8月頃と見込まれる申請受付開始に備えて事業計画を準備する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">新事業進出・新分野展開と設備投資を一体支援。AI画像検査・生産管理システム・自動化設備・観光DXサービス等の設備・システム投資に活用余地。製造業の高付加価値化に向く。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">機械装置・システム構築費、建物費、技術導入費、専門家経費、クラウド利用費、外注費、広告宣伝費等（公募要領で確定）</td></tr>
+        </tbody></table>
+        <div class="psrc">ものづくり補助金 公式総合サイト：<span class="purl">https://portal.monodukuri-hojo.jp/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.22</span></div>
+        <h3>JAPANブランド育成支援（ものづくり補助金 海外市場開拓〈JAPANブランド〉類型）</h3>
+        <div class="pprov">中小企業庁／販路開拓</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>ものづくり補助金の海外市場開拓類型として実施（上限は同補助金の枠に準拠）</td><th>補助率</th><td>1/2（小規模事業者は2/3）</td></tr>
+          <tr><th>対象</th><td colspan="3">海外展開（または海外を見据えた全国展開）を目指す中小・小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　単独のJAPANブランド育成支援補助金は終了し、ものづくり補助金の『海外市場開拓（JAPANブランド）類型』へ統合済み（中小企業庁・各経産局の公式案内で確認）。さらに令和8年度はものづくり補助金自体が省力化投資・新事業進出と統合した新制度へ再編中で、統合新制度の公募要領は2026年6月公開予定・申請受付は2026年8月頃開始予定。よって6/8時点で当類型として申請受付中の公募回は確認できず受付前～要確認。なお中小企業庁の japan_brand ページ（元URL）はfetchがタイムアウトし内容を直接確認できなかった。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">ものづくり補助金公式ポータル（portal.monodukuri-hojo.jp）で2026年6月公開予定の統合新制度公募要領を待ち、海外市場開拓（グローバル）枠の有無・受付開始日を確認。GビズIDプライムを先に取得しておく。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">海外展開を見据えた新商品・サービス開発・ブランディング・販路開拓。多言語ECサイト・AI翻訳・越境ECのDX投資に間接活用可。伝統工芸・特産品の海外展開向け。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">海外展開向けの機械装置・システム構築費、海外旅費、通訳・翻訳費、展示会出展費、ブランディング費等</td></tr>
+        </tbody></table>
+        <div class="psrc">ものづくり補助金 公式総合サイト（中小企業庁／全国中小企業団体中央会）：<span class="purl">https://portal.monodukuri-hojo.jp/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付終了">受付終了</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.23</span></div>
+        <h3>中小企業成長加速化補助金</h3>
+        <div class="pprov">中小企業庁／設備投資・成長投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>補助上限5億円（投資額1億円以上が要件）</td><th>補助率</th><td>1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">売上高100億円超を目指す中小企業（おおむね売上10億円以上100億円未満）。賃上げ要件あり</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付終了</b>　公式ポータル実在。1次公募（採択決定済）、2次公募は受付期間2026/2/24〜3/26 15:00で締切済（872件の有効申請、書面審査結果5/28通知予定）。6/8時点で3次以降の公募スケジュールは公式に未公表。よって現在は受付終了（次回未公表）の状態。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">現在申請できる公募回はない。GビズIDプライムを取得して準備しつつ、公式ポータルの「お知らせ」で次回（3次）公募の公表を待つ。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">売上高100億円超を目指す成長企業の大型設備投資（工場・物流拠点新設、自動化による革新的生産性向上）。AI・自動化設備も対象になりうるが、対象が売上規模の大きい成長企業に限られ、大洲の小規模8組には基本的に不適。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">建物費、機械装置費、外注費、専門家経費など</td></tr>
+        </tbody></table>
+        <div class="psrc">中小企業成長加速化補助金 公式ポータル：<span class="purl">https://growth-100-oku.smrj.go.jp/</span></div>
+      </div><h2 class="plv">愛媛県<span>8件</span></h2><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX◎</span>
+          
+          <span class="pno">No.24</span></div>
+        <h3>令和8年度 愛媛県トライアングルエヒメ横展開補助金（ものづくり・海事）</h3>
+        <div class="pprov">愛媛県（産業創出課）／AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>100万円</td><th>補助率</th><td>補助対象経費の1/2以内</td></tr>
+          <tr><th>対象</th><td colspan="3">県内に本社・本店を置く中小企業者等。トライアングルエヒメ推進事業の採択プロジェクト（ものづくり・海事）の成功事例を導入することが要件</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　愛媛県（産業創出課）公式ページを確認。令和8年度公募中で、募集期間は令和8年5月15日（金）～令和8年9月30日（水）17時必着。6/8は期間内のため受付中。ページ実在を確認。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">9/30 17時必着。公募要領・様式をダウンロードし、ものづくり・海事の横展開要件を満たす計画を作成して産業創出課へ提出。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">ものづくり・海事分野のデジタル実装（AI/IoT/ロボット等）の県採択成功事例を自社に導入。システム構築費・クラウド利用料・専門家経費が対象でDX導入に直結。製造業の事務棚卸し→DX導入の出口に。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">機械装置費、システム構築費、専門家経費、外注費、クラウド利用料、物品購入費、使用料・賃借料</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛県 産業創出課 公式（トライアングルエヒメ横展開補助金）：<span class="purl">https://www.pref.ehime.jp/site/madoguchi/145938.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX◎</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.25</span></div>
+        <h3>えひめDX推進プロジェクト（令和8年度）※補助金ではなく無料伴走支援</h3>
+        <div class="pprov">愛媛県（委託先：有限責任監査法人トーマツ）／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>無料（補助金ではなく伴走支援）</td><th>補助率</th><td>完全無料（県委託事業）</td></tr>
+          <tr><th>対象</th><td colspan="3">県内企業（DX推進に関心がある企業）。採択予定15社</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　公式ページ(page/148773.html、更新日2026/6/4)で令和8年度募集中と確認。申込期限2026/7/31(金)、採択結果は2026/8/26(水)までにメール通知予定、採択予定15社。完全無料の伴走型支援（委託先：有限責任監査法人トーマツ）。6/8時点で申込期限前のため受付中。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">7/31の申込期限までに申込フォームから応募する。補助金ではなく無料伴走支援のため、早めに申込み採択（8/26通知）を待つ。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">DX認定取得に向けた経営ビジョン・DX戦略策定の伴走支援。AI/DX導入の前段（戦略・体制づくり）を専門家が無料で支援。補助金活用の土台づくりに最適。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">対象経費なし（5回のゼミ・ワークショップ＋個別伴走支援を無償提供）</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛県 公式（えひめDX推進プロジェクト）：<span class="purl">https://www.pref.ehime.jp/page/148773.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.26</span></div>
+        <h3>愛媛県中小企業向け制度融資（チャレンジ企業支援資金 等）</h3>
+        <div class="pprov">愛媛県（金融相談窓口）／愛媛県信用保証協会・伊予銀行等／一般</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>融資制度により異なる（要確認）</td><th>補助率</th><td>補助率ではなく融資（利率は最新の利率一覧で要確認。経営安定資金等の設備資金は1.0%利子補給あり）</td></tr>
+          <tr><th>対象</th><td colspan="3">県内の中小企業者。チャレンジ企業支援資金は経営革新計画・先端設備等導入計画の承認者等</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　愛媛県公式（支援の窓口）ページの実在を確認。制度融資のため特定の締切はなく通年運用。利率一覧は令和8年4月1日現在で更新され継続中。チャレンジ企業支援資金（経営革新計画承認・海外展開・空き店舗活用・技術実用化等が対象）を含む。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">通年・随時のため、取引金融機関（伊予銀行等）または愛媛県経営支援課(089-912-2480)・各地方局商工観光課に相談し、最新利率と要件を確認のうえ随時申込。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">チャレンジ企業支援資金は『先端設備等導入計画』『経営革新計画』承認者向けで、DX・先端設備投資の資金調達に活用可能。補助金は精算払い（後払い）のため、自己負担分やつなぎ資金の調達手段として有効。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">設備資金・運転資金（DX設備・システム投資を含む）</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛県 経営支援課（支援の窓口・制度融資）：<span class="purl">https://www.pref.ehime.jp/site/madoguchi/59788.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.27</span></div>
+        <h3>愛媛県 生産性向上設備等投資支援補助金</h3>
+        <div class="pprov">愛媛県（事務局：愛媛県中小企業団体中央会）／設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>通常枠1,000万円／賃上げ枠約1,333万円（令和7年度時点・令和8年度要確認）</td><th>補助率</th><td>通常枠1/2、賃上げ枠2/3（令和7年度時点・令和8年度要確認）</td></tr>
+          <tr><th>対象</th><td colspan="3">県内の中小企業者・個人事業主・組合等</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　原資が物価高騰対応重点支援地方創生臨時交付金のため公募回ごとに条件・時期が変動。愛媛県公式（madoguchi/132941.html）に『（2次）の公募について』が2026/1/26更新で掲載されているが、本文に公募開始日・締切日の記載がなく、当該2次は令和7年度12月補正予算ベース。過去の1次は申請受付令和7年3月3日〜3月28日17時必着。令和8年度（2026年度）の新規公募の有無・締切は公式上未確認。事務局サイト(bp-ehime.or.jp)は証明書エラーで直接確認不可。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">現在募集中か締切済みかが公式で確定できないため、事務局＝愛媛県中小企業団体中央会(089-955-7150)へ電話で現行公募回・締切を直接照会する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">業務効率化・省コスト化のための設備投資。ソフトウェア購入費・サービス利用料が対象に含まれ、業務システム・RPA・自動化ソフト等のDX投資にも充当可能。下限200万円のため比較的大型投資向け。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">機械装置等費、外注費、ソフトウェア購入費、サービス利用料（補助対象経費200万円・税抜以上が要件）</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛県 産業創出課（支援の窓口・2次公募ページ）：<span class="purl">https://www.pref.ehime.jp/site/madoguchi/132941.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX◎</span>
+          
+          <span class="pno">No.28</span></div>
+        <h3>愛媛県産業DXモデル横展開事業費補助金（フラグシップ型／トライアングル型）</h3>
+        <div class="pprov">愛媛県（産業創出課）／えひめ産業振興財団／AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>フラグシップモデル導入型1,000万円／トライアングルエヒメモデル導入型100万円（令和7年度時点・令和8年度要確認）</td><th>補助率</th><td>両類型とも補助対象経費の1/2以内（令和7年度時点・令和8年度要確認）</td></tr>
+          <tr><th>対象</th><td colspan="3">県内に本社・本店を置く中小企業者等（大洲市・近隣市町とも対象）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　公式ページ(madoguchi/106162.html)は実在するが内容は令和7年度のみ（フラグシップ型〜2025/5/7、トライアングル型〜2025/9/30で実施済）。令和8年度の同名公募は公式に未掲載で確認できない。なお産業創出課の関連事業としてR8は『DXはじめの一歩補助金』『DX認定取得加速化』等が別途公募されており、本補助金は再編・名称変更の可能性が高い。現時点で本補助金としての受付有無は断定不可。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">愛媛県産業創出課(089-912-2471)に令和8年度の産業DXモデル横展開（または後継のDXはじめの一歩補助金等）の公募有無・スケジュールを照会する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">県がDX先行モデルとして選定した事例を参考に、自社DX推進に必要なシステム構築・クラウド導入・専門家活用を支援。AIツール・業務システム・多言語/予約システム等に幅広く充当可能。県の本命DX枠。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">機械装置・システム構築費、専門家経費、外注費、クラウド利用費等</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛県 産業創出課 公式：<span class="purl">https://www.pref.ehime.jp/site/madoguchi/106162.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付終了">受付終了</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.29</span></div>
+        <h3>令和8年度 愛媛県古民家等を活用したインバウンド誘客支援事業</h3>
+        <div class="pprov">愛媛県（観光振興課／えひめ国際観光テーマ地区推進協議会）／販路開拓</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>宿泊施設整備型800万円／インバウンド誘客一体型1,500万円</td><th>補助率</th><td>補助対象経費の1/2以内</td></tr>
+          <tr><th>対象</th><td colspan="3">団体・民間事業者（県・市町・個人は除く）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付終了</b>　公式ページ(page/143363.html、更新日2026/4/13)で令和8年度の申請期間は2026/4/13〜2026/5/27（必着）と確認。締切(5/27)は6/8より前のため受付終了。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">今年度は締切済。次回（令和9年度・例年4月頃見込み）に向け、観光振興課／えひめ国際観光テーマ地区推進協議会へ事前相談する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">近隣飲食店等の多言語対応・キャッシュレス対応の環境整備が対象。古民家活用の宿泊施設整備とセットでデジタル決済・多言語化を導入できる。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">古民家・空き家等を活用した宿泊施設の整備・改修、近隣飲食店の多言語・キャッシュレス対応等の環境整備</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛県 観光振興課 公式：<span class="purl">https://www.pref.ehime.jp/page/143363.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付終了">受付終了</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.30</span></div>
+        <h3>令和8年度 愛媛県観光集客力向上支援事業</h3>
+        <div class="pprov">愛媛県（観光振興課）／販路開拓</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>500万円（複数年度の場合は合計額）</td><th>補助率</th><td>補助対象経費の1/2以内</td></tr>
+          <tr><th>対象</th><td colspan="3">観光事業者（宿泊業・観光施設・運輸業・旅行業等）、観光関係団体、観光事業者グループ</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付終了</b>　公式ページ(page/103213.html、更新日2026/4/10)で令和8年度の申請期間は2026/4/10〜2026/5/27（必着）と確認。締切(5/27)は6/8より前のため受付終了。現在は1次審査(6月上旬)〜採択(6月末〜7月上旬)の段階。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">今年度は締切済。次回（令和9年度・例年4月頃公募見込み）に向け、市町の意見書添付が必要なため、所管市町・観光振興課へ早めに相談する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">多言語対応（多言語POP・メニュー・サイト等）が明示的に対象経費。体験型観光コンテンツ造成・周遊商品造成も対象。観光業・旅館・飲食のインバウンド向けデジタル化（多言語化）の入口として有効。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">体験型観光コンテンツ造成、周遊旅行商品造成、二次交通対策、多言語対応、観光ガイド育成等（古民家改修による宿泊・飲食開業は対象外）</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛県 観光振興課 公式：<span class="purl">https://www.pref.ehime.jp/page/103213.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付終了">受付終了</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.31</span></div>
+        <h3>愛媛県 中小企業者収益力強化補助金（令和8年度）</h3>
+        <div class="pprov">愛媛県（事務局：愛媛県商工会連合会／各商工会・商工会議所）／設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>200万円</td><th>補助率</th><td>中小企業者1/2、小規模事業者2/3</td></tr>
+          <tr><th>対象</th><td colspan="3">県内の中小企業者・小規模事業者。経営計画に基づき収益力強化に取り組み、商工会・商工会議所の支援を受けることが要件</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付終了</b>　公式（愛媛県商工会連合会）ページで令和8年度公募の提出締切が令和8年5月29日（金）と確認。これは商工会・商工会議所から事務局への提出締切で、事業者の窓口提出はさらに前。いずれも6/8時点で締切済。年1回公募のため次回は令和9年度（例年3月頃）見込み。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">今年度は締切済。次回令和9年度公募（例年3月頃）に向け、最寄りの商工会・商工会議所へ早期相談・事業計画準備を進める。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">POSレジと社内システムの連携、業務システム・POS等のシステム導入費が対象。生産性向上目的のDX設備投資に充当可能（PC・タブレット等の汎用品は対象外）。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">機械装置・システム導入費、設計費、付帯工事費等（汎用性のあるPC・タブレットは対象外）</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛県商工会連合会 公式（収益力強化補助金案内）：<span class="purl">https://ehime-sci.jp/shueki2026/</span></div>
+      </div><h2 class="plv">大洲市<span>9件</span></h2><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.32</span></div>
+        <h3>大洲市中小企業者・小規模事業者応援事業補助金（創業上乗せ支援）</h3>
+        <div class="pprov">大洲市（商工産業課 商工振興係）／創業</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>200万円</td><th>補助率</th><td>1/2（または融資額のいずれか少ない額）</td></tr>
+          <tr><th>対象</th><td colspan="3">創業者のうち地域密着型・課題対応・融資受領・新規性・商工会議所確認の5要件を全て満たす者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　令和8年度公募中。公式ページで受付期間が令和8年4月1日〜令和9年2月26日と確認でき、受付開始済かつ締切（2027/2/26）は6/8より後。予算上限到達で終了。創業（上乗せ）支援メニューとして掲載を確認。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">創業支援との併用メニュー。予算上限到達で早期終了の恐れあり。大洲市商工産業課 商工振興係へ早めに事前相談。事業実施期限は令和9年3月31日。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">施設改修・機械装置・備品・商品開発費の一部としてDX設備（システム・機器）導入に充当可能。市単独では最大規模の補助。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">施設改修費、機械装置費、備品費、広告宣伝費、商品開発費</td></tr>
+        </tbody></table>
+        <div class="psrc">大洲市 公式（商工産業課）：<span class="purl">https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.33</span></div>
+        <h3>大洲市中小企業者・小規模事業者応援事業補助金（商店街家賃支援）</h3>
+        <div class="pprov">大洲市（商工産業課 商工振興係）／設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>60万円（2年目1/3・3年目1/4に逓減）</td><th>補助率</th><td>1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">市内商店街の空き店舗を利用し週5日以上営業する事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　大洲市公式ページで令和8年度の申請受付が令和8年4月1日(水)〜令和9年2月26日(金)と確認。商店街家賃支援メニュー（補助上限60万円・2年目以降逓減）は対象11事業の一つとして掲載。6/8時点は受付期間内。予算上限到達で早期終了。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">予算枠が埋まる前に早めに商工産業課 商工振興係(0893-24-1722)へ相談し申請。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">直接のAI/DX用途ではないが、空き店舗での新規出店時の固定費圧縮に。浮いた資金をIT投資に回せる。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">市内商店街の空き店舗の賃借料（敷金・礼金除く）</td></tr>
+        </tbody></table>
+        <div class="psrc">大洲市 商工産業課 公式：<span class="purl">https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.34</span></div>
+        <h3>大洲市中小企業者・小規模事業者応援事業補助金（創業支援）</h3>
+        <div class="pprov">大洲市（商工産業課 商工振興係）／創業</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>50万円</td><th>補助率</th><td>1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">市内本店・本社を有し今年度または前年度に創業した中小・小規模事業者（特定創業支援等事業の受講証明が必要）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　令和8年度公募中。公式ページで受付期間が令和8年4月1日〜令和9年2月26日と確認でき、受付開始済かつ締切（2027/2/26）は6/8より後。予算上限到達で終了。創業支援メニューとして掲載を確認。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">予算上限到達で早期終了の恐れあり。大洲市商工産業課 商工振興係へ早めに事前相談し申請準備。事業実施期限は令和9年3月31日。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">創業時の店舗整備・備品費の一部としてPC・タブレット・予約/会計システム等のIT環境整備に充当可能（広報費・委託料・リース料も対象）。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">申請書類作成費、店舗等賃借料、工事費、備品費、調査費、広報費、資格取得費、委託料、リース料</td></tr>
+        </tbody></table>
+        <div class="psrc">大洲市 公式（商工産業課）：<span class="purl">https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.35</span></div>
+        <h3>大洲市中小企業者・小規模事業者応援事業補助金（事業承継支援）</h3>
+        <div class="pprov">大洲市（商工産業課 商工振興係）／設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>50万円</td><th>補助率</th><td>1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">今年度中に事業承継を行う市内中小・小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　令和8年度公募中。公式ページで受付期間が令和8年4月1日〜令和9年2月26日と確認でき、受付開始済かつ締切（2027/2/26）は6/8より後。予算上限到達で終了。事業承継支援メニューとして掲載を確認。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">予算上限到達で早期終了の恐れあり。大洲市商工産業課 商工振興係へ早めに事前相談し申請準備。事業実施期限は令和9年3月31日。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">承継時の工事・備品費の一部として店舗・事務所のIT環境刷新に充当可能。承継を機にレガシー業務のDX化を進める入口に。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">申請書類作成費、工事費、備品費、処分費、選定費（親族外承継のみ）、資格取得費</td></tr>
+        </tbody></table>
+        <div class="psrc">大洲市 公式（商工産業課）：<span class="purl">https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.36</span></div>
+        <h3>大洲市中小企業者・小規模事業者応援事業補助金（労働力確保支援）</h3>
+        <div class="pprov">大洲市（商工産業課 商工振興係）／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>30万円</td><th>補助率</th><td>1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">市内事業者（ハローワーク求人登録業種・正社員募集のみ）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　大洲市公式ページで令和8年度の申請受付が令和8年4月1日(水)〜令和9年2月26日(金)と確認。労働力確保支援メニュー（補助上限30万円・補助率1/2）は対象11事業の一つとして掲載。6/8時点は受付期間内。ただし予算上限到達で早期終了（早い者勝ち）。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">予算枠が埋まる前に早めに商工産業課 商工振興係(0893-24-1722)へ相談し申請。事業実施は2027/3/31まで。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">求人サイト掲載・採用広報の費用に。DX人材採用時の媒体掲載料にも充当可。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">広報費、求人サイト掲載料、企業説明会関連経費、人材紹介手数料</td></tr>
+        </tbody></table>
+        <div class="psrc">大洲市 商工産業課 公式：<span class="purl">https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX◎</span>
+          
+          <span class="pno">No.37</span></div>
+        <h3>大洲市中小企業者・小規模事業者応援事業補助金（経営環境IT化等支援）</h3>
+        <div class="pprov">大洲市（商工産業課 商工振興係）／AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>10万円</td><th>補助率</th><td>1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">大洲市内に店舗または事業所を有する中小・小規模事業者（本店・本社が市外でも市内に店舗・事業所があれば対象）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　大洲市公式ページで令和8年度公募を確認。申請受付は令和8年4月1日（水）〜令和9年2月26日（金）で、6/8時点は受付期間内。予算上限到達で早期終了の早い者勝ち方式。経営環境IT化等支援はソフトウェア導入・キャッシュレス決済機器導入が対象、補助率1/2・上限10万円、事業実施・実績報告は令和9年3月31日まで。申請様式もダウンロード可。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">受付中かつ予算枠の早い者勝ち。大洲市商工産業課に確認のうえ、IT/キャッシュレス導入計画を固めて早期に交付申請（事業着手前申請が原則）。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">ソフトウェア導入（初期費用）、クラウドサービス利用料、キャッシュレス決済機器の購入。生成AIツール・SaaS型業務システム・予約/会計ソフトの初期投資や利用料に充当しやすい。事務作業の棚卸し後の小規模なDX第一歩に最適。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">ソフトウェア導入費（初期投資のみ）、クラウドサービス利用料（ライセンス/アカウント料）、キャッシュレス決済機器購入費</td></tr>
+        </tbody></table>
+        <div class="psrc">大洲市 商工産業課 商工振興係 公式：<span class="purl">https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.38</span></div>
+        <h3>大洲市中小企業者・小規模事業者応援事業補助金（産業財産権取得支援）</h3>
+        <div class="pprov">大洲市（商工産業課 商工振興係）／一般</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>10万円</td><th>補助率</th><td>1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">市内本店・本社を有する中小・小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　大洲市公式ページで令和8年度の申請受付が令和8年4月1日(水)〜令和9年2月26日(金)と確認。産業財産権取得支援メニュー（補助上限10万円・補助率1/2）は対象11事業の一つとして掲載。6/8時点は受付期間内。予算上限到達で早期終了。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">出願・登録費用が発生する前に商工産業課 商工振興係(0893-24-1722)へ相談し申請。予算枠に注意。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">DXで開発した新サービス・新商品の特許/商標出願費用に充当可能。匠の技・地域ブランド商品の知財保護に。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">出願料、審査請求費、登録料、弁理士手続代行費、外国出願費用</td></tr>
+        </tbody></table>
+        <div class="psrc">大洲市 商工産業課 公式：<span class="purl">https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.39</span></div>
+        <h3>大洲市中小企業者・小規模事業者応援事業補助金（資格取得支援）</h3>
+        <div class="pprov">大洲市（商工産業課 商工振興係）／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>5万円（年度内複数申請可）</td><th>補助率</th><td>1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">市内本店・本社を有する中小・小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　令和8年度公募中。公式ページで受付期間が令和8年4月1日〜令和9年2月26日と確認でき、受付開始済かつ締切（2027/2/26）は6/8より後。予算上限額に達した時点で受付終了する旨も明記。資格取得支援は11メニューの1つとして掲載を確認。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">予算上限到達で早期終了の恐れあり。早めに大洲市商工産業課 商工振興係へ事前相談し申請準備を進める。事業実施期限は令和9年3月31日。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">ITパスポート・DX関連検定・生成AI関連講座など、従業員のデジタルスキル習得の受講料・検定料・教材費に充当可能。AIアカデミーの有料講座受講料補助に使える可能性。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">受講料、検定料、教材費、旅費、研修委託料、謝金、賃借料</td></tr>
+        </tbody></table>
+        <div class="psrc">大洲市 公式（商工産業課）：<span class="purl">https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.40</span></div>
+        <h3>大洲市中小企業振興資金融資制度（信用保証料補給・利子補給）</h3>
+        <div class="pprov">大洲市（商工産業課）／愛媛県信用保証協会／指定金融機関／一般</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>融資限度 長期500万円／短期300万円（補給は保証料全額＋利子年0.73%相当）</td><th>補助率</th><td>信用保証料：全額補給／利子：融資額の年0.73%補給</td></tr>
+          <tr><th>対象</th><td colspan="3">市内に事務所を有し市税滞納がなく、愛媛県信用保証協会の保証対象業種を営む中小企業・協同組合</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　大洲市公式ページ（2026/6/1更新）で令和8年度運用中を確認。取扱金融機関へ随時相談・申込する制度で時期制限なし。令和8年6月受付利率2.50%、信用保証料は全額補給、利子補給は年0.73%と明記。完済後に市から補給通知が届く仕組み。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">資金需要に応じて随時、取扱金融機関（指定金融機関）へ相談・申込。利率は毎月改定のため申込時の最新利率を確認。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">DX設備投資・システム導入の運転/設備資金の低利調達に。完済後に信用保証料全額＋利子（年0.73%相当）が補給され、実質的な金利負担を軽減。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">設備資金・運転資金（融資制度。完済後に保証料・利子を補給）</td></tr>
+        </tbody></table>
+        <div class="psrc">大洲市 商工産業課 公式：<span class="purl">https://www.city.ozu.ehime.jp/soshiki/shoukou/22464.html</span></div>
+      </div><h2 class="plv">近隣市町<span>7件</span></h2><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.41</span></div>
+        <h3>内子町 はじめる・つなぐ商工活性化支援事業補助金</h3>
+        <div class="pprov">内子町（町並・地域振興課）／創業・設備投資・事業承継</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>創業・事業拡大50万円（空き店舗活用は100万円）／事業承継50万円（他メニュー併用で最大150万円）</td><th>補助率</th><td>創業・事業拡大1/2／事業承継2/3</td></tr>
+          <tr><th>対象</th><td colspan="3">内子町内に主たる事業所を置く個人事業主・法人。商工業を営む/創業予定で町税滞納がない事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　町並・地域振興課への事前協議制の制度で、令和8年度の公募回・締切・募集期間が公式ページ・内子町商工会ページのいずれにも明記されていない。創業・事業拡大・事業承継を対象に継続中であることは確認できたが、6/8時点で『受付中』と断定できる締切情報がない。事前協議が前提のため、利用希望時はまず町に相談が必要。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">内子町 町並・地域振興課（0893-44-2118）へ事前協議の連絡を取り、令和8年度の受付可否・締切・予算枠を確認する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">事業拡大支援の設備投資枠で、業務システムやPC・POSレジ・デジタル機器の導入費に充当できる可能性。デジタル化専用枠ではないため事前協議で要相談。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">創業・事業拡大・事業承継に伴う経費（店舗改装・設備投資・雇用拡大に伴う事業等。詳細は申請要領・事前協議で確定）</td></tr>
+        </tbody></table>
+        <div class="psrc">内子町 公式（町並・地域振興課）：<span class="purl">https://www.town.uchiko.ehime.jp/soshiki/3/132309.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX◎</span>
+          
+          <span class="pno">No.42</span></div>
+        <h3>八幡浜市 デジタル化対応設備導入支援事業補助金</h3>
+        <div class="pprov">八幡浜市（商工観光課）／AI/DX・設備投資</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>100万円</td><th>補助率</th><td>補助対象経費の1/2以内</td></tr>
+          <tr><th>対象</th><td colspan="3">八幡浜市内の中小企業者・小規模事業者（商工業者）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　八幡浜市の令和8年度商工業向け補助金一覧（公式サイト・施策一覧R8.4月版）に『デジタル化対応設備導入支援事業補助金』という名称の補助金は確認できなかった。R8の商工業向けは『省エネルギー対応設備更新等支援』『生産性向上・収益力強化支援』『宿泊施設魅力アップ改修』『創業等支援』『先端設備等導入計画支援』。デジタル化（ソフトウェア導入費等）は『生産性向上・収益力強化支援事業補助金』（交付要綱第15号・令和8年3月16日制定、令和8年4月1日公募開始、ソフトウェア導入費を補助対象に含む、補助率1/2以内、商工会議所/商工会の伴走支援必須）に統合・包含されている可能性が高い。名称の実在が確認できないため要確認。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">八幡浜市 商工観光課（0894-22-3101）に『デジタル化対応設備導入支援』の名称の制度が存在するか確認。実態は『生産性向上・収益力強化支援事業補助金』（4/1公募開始・受付中）に該当する見込みで、申請には八幡浜商工会議所/保内町商工会の伴走支援が必須。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">業務システム・予約/POSシステム・RPA・多言語翻訳/POS等のソフトウェア導入、デジタル機器の購入に直接充当可能。近隣市町で唯一『デジタル化』を冠した設備導入専用補助。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">機械装置費、ソフトウェア導入費、外注費、設計費、付帯工事費等</td></tr>
+        </tbody></table>
+        <div class="psrc">八幡浜市 公式（商工業 補助金一覧）：<span class="purl">https://www.city.yawatahama.ehime.jp/category/bunya/sangyo/shokogyo/index.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.43</span></div>
+        <h3>八幡浜市 創業等支援事業補助金</h3>
+        <div class="pprov">八幡浜市（商工観光課）／創業・販路開拓</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>新規創業100万円／第二創業50万円／事業規模拡大30万円／事業再建100万円</td><th>補助率</th><td>補助対象経費(税抜)の1/2</td></tr>
+          <tr><th>対象</th><td colspan="3">年度内に八幡浜市内で新規創業/第二創業/事業規模拡大する者（市税滞納なし、3年以上の事業継続意思）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　八幡浜市公式の案内ページ（記事番号1-784『八幡浜市創業等支援事業補助金のご案内』）が実在することをfetchで確認。制度は継続中で、区分は創業（上限100万円）・第二創業（50万円）・事業規模拡大（30万円）・事業再建（100万円）、補助率1/2。事業着手前（交付決定前）の交付申請が必須＝交付決定前の発注・契約・支払いは対象外であることを公式で確認。ただし令和8年度の具体的な受付期間・締切がページに明記されておらず、6/8時点で『受付中』と断定できない。申請前に商工観光課への相談が必須。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">事業を始める前に、八幡浜市 商工観光課（0894-22-3101 / syokokanko@city.yawatahama.ehime.jp）へ相談し、令和8年度の受付可否・予算残・交付申請の手順を確認する（着手前申請が必須のため発注前に動く）。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">設備・備品購入費や広告宣伝費の枠で、創業時のIT機器・ECサイト・SNS広告・デジタルツール導入費に充当できる可能性。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">工事・修繕費、店舗等借入費、設備・備品等購入費、広告宣伝費、申請書類作成費（交付決定後の発注分）</td></tr>
+        </tbody></table>
+        <div class="psrc">八幡浜市 公式（商工観光課）：<span class="purl">https://www.city.yawatahama.ehime.jp/doc/2022032500035</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.44</span></div>
+        <h3>西予市 地域内発型産業創出事業費補助金（新規創業支援）</h3>
+        <div class="pprov">西予市（経済振興課）／創業</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>100万円</td><th>補助率</th><td>事業開始後6か月以内の初期経費の1/2以内</td></tr>
+          <tr><th>対象</th><td colspan="3">西予市内で新規創業または新分野への事業展開を計画する事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　西予市公式の補助金一覧ページ（経済振興課）が実在することをfetchで確認。制度概要は確認でき、対象は市内で新規創業・新分野展開する個人/グループ・法人、補助は初期経費の1/2以内・上限100万円。ただし令和8年度の具体的な申請受付期間・締切・予算枠がページに明記されておらず、6/8時点で『受付中』と断定できない。検索上で見えた『令和8年3月1日までに事業完了』は前年度サイクルの記載の可能性があり、R8の確定日程は要綱・窓口で要確認。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">西予市 経済振興課（0894-62-6408）へ令和8年度の受付期間・予算枠・事業完了期限を確認する。創業前の交付申請が前提のため、事業着手前に相談する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">創業初期経費の枠で、業務システム・ECサイト・デジタル機器の導入費に充当できる可能性（事前確認推奨）。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">新規創業または新分野展開の初期経費（事業開始後6か月以内）</td></tr>
+        </tbody></table>
+        <div class="psrc">西予市 公式（経済振興課）：<span class="purl">https://www.city.seiyo.ehime.jp/kakuka/sangyo_kensetsu/keizai_suishin/hojyokinn/index.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.45</span></div>
+        <h3>伊予市 中小企業・小規模企業等振興補助金</h3>
+        <div class="pprov">伊予市（経済雇用戦略課）／一般（設備投資・販路開拓 等）</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>1事業者あたり合計50万円（上限）</td><th>補助率</th><td>要確認（メニューにより異なる）</td></tr>
+          <tr><th>対象</th><td colspan="3">伊予市内の中小企業者・小規模企業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　元データのURL(emergency/18.html)はHTTP404でリンク切れ。これは旧『物価高騰対策支援補助金』(予算到達で受付終了)の系統ページ。伊予市の中小企業・小規模企業等振興補助金は『創業支援事業・地域産業力強化支援事業・広告PR事業』の3メニューで実在するが、受付窓口は伊予商工会議所で、令和8年度(2026年度)の受付期間・締切・補助率は公式で確認できなかった。早い者勝ち/予算枠型の可能性があり、現時点での申請可否は断定できない。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">伊予商工会議所(089-982-0334)または伊予市役所産業建設部(089-982-1111)に令和8年度の受付期間・予算残・補助メニューを照会する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">対象メニューに設備投資/販路開拓系が含まれ、デジタル機器導入・ECサイト・展示会出展等に充当できる可能性。デジタル化専用枠の有無は要確認。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">要確認（設備投資・販路開拓等の複数メニュー）</td></tr>
+        </tbody></table>
+        <div class="psrc">伊予市公式（検索ヒットページは404）／伊予商工会議所：<span class="purl">https://www.city.iyo.lg.jp/keizaikoyou/management/emergency/18.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.46</span></div>
+        <h3>砥部町 サテライトオフィス等開設支援事業補助金</h3>
+        <div class="pprov">砥部町（産業振興課）／創業・立地（設備投資）</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>要確認</td><th>補助率</th><td>要確認</td></tr>
+          <tr><th>対象</th><td colspan="3">砥部町内にサテライトオフィス等を開設する事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　砥部町企業支援ページ(shigoto_sangyo/kigyoshien/index.html)は実在し、その中に『砥部町サテライトオフィス等開設支援事業補助金』へのリンクが確認できた。制度はワーケーションを契機としたサテライトオフィス誘致・地方創生目的で、オフィス開設後の賃借料・通信回線使用料を補助する内容。ただし詳細ページの本文取得ができず、令和8年度(2026年度)の具体的な公募期間・締切・予算枠は公式で確認できなかった。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">砥部町産業振興課に令和8年度の公募期間・予算枠・対象要件を照会する（企業支援ページ内の補助金詳細リンクを参照）。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">サテライトオフィス開設に伴う通信環境・ICT機器整備に充当できる可能性。AI/DX業務改善そのものより拠点開設向け。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">要確認（サテライトオフィス等の開設経費）</td></tr>
+        </tbody></table>
+        <div class="psrc">砥部町公式ホームページ（企業支援メニュー）：<span class="purl">https://www.town.tobe.ehime.jp/shigoto_sangyo/kigyoshien/index.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付終了">受付終了</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.47</span></div>
+        <h3>松前町 新ビジネス定着促進給付金</h3>
+        <div class="pprov">松前町（産業課）／AI/DX・デジタルシフト</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>10万円（1事業者1回限り・定額）</td><th>補助率</th><td>定額（10万円）</td></tr>
+          <tr><th>対象</th><td colspan="3">松前町内でデジタルシフト・非対面型ビジネスに取り組む事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付終了</b>　元データのURL(soshiki/12/14645.html)はHTTP404。この給付金は新型コロナ対応の単発事業で、申請受付は2020/9/10〜2020/12/28で既に終了済（愛媛県の新ビジネス定着促進給付金に町が10万円上乗せする制度）。令和8年度に同名制度の新規募集は確認できない。なお松前町には別制度『新ビジネスモデル展開促進補助金』(soshiki/12/20996.html)が存在するが、これは名称・内容の異なる別事業。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">本給付金は終了済のため対象外。松前町産業課 商工水産観光係(089-985-4120)で現行の『新ビジネスモデル展開促進補助金』等の別制度を確認する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">非対面・非接触型ビジネスの導入、デジタルシフトに取り組む事業者への定額給付。オンライン予約・EC・キャッシュレス・業務デジタル化の着手金として。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">非対面・非接触型ビジネスの導入、デジタルシフトに係る経費</td></tr>
+        </tbody></table>
+        <div class="psrc">松前町公式ホームページ（J-Net21・公式給付金告知ページ）：<span class="purl">https://www.town.masaki.ehime.jp/soshiki/12/20996.html</span></div>
+      </div><h2 class="plv">財団・協会・金融機関<span>9件</span></h2><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.48</span></div>
+        <h3>賃上げ対応型小規模事業者経営力強化支援事業費補助金（令和8年度）</h3>
+        <div class="pprov">えひめ産業振興財団（サンサポえひめ）／一般</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>要確認</td><th>補助率</th><td>要確認</td></tr>
+          <tr><th>対象</th><td colspan="3">県内の小規模事業者（賃上げに取り組む事業者）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　えひめ産業振興財団（創業支援課）が事務局。令和8年度募集が令和8年6月1日(月)に開始し、1次募集締切は令和8年7月31日(金)。6/8時点で1次受付中。以後2次（8〜9月申請・9月末締切）・3次（10〜11月申請・11月末締切）が予算残額に応じ実施。補助率は通常枠2/3・地場産業枠/コラボ枠3/4、上限100万円（コラボ枠200万円）。愛媛県公式ページ・財団個別ページ双方で確認。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">1次締切7/31までに申請するなら、伴走支援を行う県内支援機関（商工会議所/商工会等）に早急に相談し申請準備に着手。間に合わなければ2次（9月末締切）を狙う。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">小規模事業者の経営力強化（生産性向上・業務効率化を含む可能性）。賃上げ原資確保のための取組支援。DX/効率化ツール導入が対象になるか要確認。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">要確認（経営力強化に資する取組）</td></tr>
+        </tbody></table>
+        <div class="psrc">えひめ産業振興財団 公式（令和8年度賃上げ対応型）：<span class="purl">https://www.ehime-iinet.or.jp/grants-posts/r8-chinage_hojo</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付中">受付中</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.49</span></div>
+        <h3>IT人材獲得支援事業費補助金（令和8年度）</h3>
+        <div class="pprov">えひめ産業振興財団（サンサポえひめ）／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>要確認</td><th>補助率</th><td>要確認</td></tr>
+          <tr><th>対象</th><td colspan="3">県内中小企業等（IT人材の確保を目指す事業者）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付中</b>　えひめ産業振興財団が事務局。令和8年度募集は令和8年4月1日(水)〜令和9年1月15日(金)で、6/8時点で受付中。補助率1/2、1社あたり上限100万円。予算上限到達で募集終了（早い者勝ち）。財団個別ページ（r8_it）で確認。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">随時受付中（予算上限到達で終了）。県外/海外からのIT人材採用（令和7年4月1日以降の雇用契約等が要件）を計画している場合は早期に財団へ相談し申請。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">IT/デジタル人材の確保・採用支援。社内にDX推進人材を入れるための採用活動経費等が想定される（DX内製化の人材面の支援）。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">要確認（IT人材の獲得に係る経費）</td></tr>
+        </tbody></table>
+        <div class="psrc">えひめ産業振興財団 公式（令和8年度IT人材獲得支援）：<span class="purl">https://www.ehime-iinet.or.jp/grants-posts/r8_it</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX◎</span>
+          
+          <span class="pno">No.50</span></div>
+        <h3>えひめ産業振興財団 専門家派遣事業／愛媛県よろず支援拠点（経営相談）</h3>
+        <div class="pprov">公益財団法人えひめ産業振興財団（愛媛県よろず支援拠点）／人材育成</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>無料（相談・派遣費用は財団負担分あり）</td><th>補助率</th><td>相談無料・専門家派遣は原則無料</td></tr>
+          <tr><th>対象</th><td colspan="3">県内中小企業者・小規模事業者・創業者（業種不問）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　愛媛県よろず支援拠点(公式 yorozu-ehime.go.jp)を確認。経営相談は通年・予約制・何度でも無料で実施しており、令和8年度も継続。相談場所ページで大洲市にサテライト相談拠点(大洲商工会議所／毎月第1木曜・第3火曜)があることを確認した。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">通年随時のため、よろず支援拠点の相談申込ページ(yorozu-ehime.go.jp/consultation_apply)または大洲商工会議所(0893-24-4111)経由で無料相談を予約する。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">AI/DX導入の伴走相談・専門家派遣（IT/DX専門家含む）。事務作業の棚卸し、生成AI・業務システム・RPA導入の具体化を無料で相談・伴走支援。補助金申請の事前相談にも有効。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">経営課題全般の相談、専門家（中小企業診断士・IT専門家等）派遣による伴走支援</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛県よろず支援拠点（えひめ産業振興財団）公式：<span class="purl">https://yorozu-ehime.go.jp/access</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX◎</span>
+          
+          <span class="pno">No.51</span></div>
+        <h3>伊予銀行 経営支援プラットフォーム（補助金診断・ビジネスマッチング・DX支援）</h3>
+        <div class="pprov">株式会社伊予銀行（いよぎんデジタルソリューションズ）／AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>—（サービス・コンサル。一部有料/会員制）</td><th>補助率</th><td>—</td></tr>
+          <tr><th>対象</th><td colspan="3">伊予銀行の取引先中小・小規模事業者（取引なしでも相談可の窓口あり）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　伊予銀行の法人経営支援ページが実在。ビジネスマッチング・ICTコンサルティング・SDGs診断・事業承継/M&amp;A・創業支援などの経営支援メニューを常時提供。公募回・締切のある補助金ではなく、銀行の常設サービスのため随時相談可能。ただしページ上に『補助金診断』という名称の明記はなく、利用は各支店/相談窓口への問い合わせが入口。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">随時利用可能。取引のある伊予銀行の支店または法人担当に補助金・DX支援の相談を申し込む。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">補助金診断で自社に合う補助金を特定、ビジネスマッチング、DX支援サービス（Mikatanoワークス等のクラウド型業務ツール）導入支援、ICTコンサルによるAI/DX導入伴走。補助金連動の資金調達も相談可。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">補助金診断、業務システム/グループウェア導入、DX伴走、資金調達（補助金つなぎ融資等）</td></tr>
+        </tbody></table>
+        <div class="psrc">伊予銀行 公式（法人・経営支援）：<span class="purl">https://www.iyobank.co.jp/business/management/index.html</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-通年・随時">通年・随時</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.52</span></div>
+        <h3>愛媛銀行 DX支援／経営相談・補助金申請サポート</h3>
+        <div class="pprov">株式会社愛媛銀行（共通価値創造推進室）／AI/DX</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>—（サービス・コンサル）</td><th>補助率</th><td>—</td></tr>
+          <tr><th>対象</th><td colspan="3">愛媛銀行の取引先中小・小規模事業者</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>通年・随時</b>　愛媛銀行のDX支援ページが実在。現状把握→課題抽出→施策立案→導入/運用サポートの一連の支援と、cybozu・freee・Sansan等の提携ツール、業種別パッケージ事例を掲載。公募回・締切のある補助金ではなく常設の銀行サービスのため随時相談可能。問い合わせは各支店またはお客様サービス部デジタル戦略室。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">随時利用可能。愛媛銀行の各支店またはお客様サービス部デジタル戦略室にDX・補助金相談を申し込む。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">DX支援プログラム（新業務プロセス定着の継続伴走）、外部機関と連携した補助金・助成金の申請書類作成支援、経営相談ワンストップ窓口。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">補助金申請支援、DX導入伴走、経営改善・販路拡大・業務効率化等のコンサル</td></tr>
+        </tbody></table>
+        <div class="psrc">愛媛銀行 公式（DX支援）：<span class="purl">https://www.himegin.co.jp/corporate/dx_support/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-受付前">受付前</span>
+          <span class="prel">AI/DX◎</span>
+          <span class="prec">おすすめ</span>
+          <span class="pno">No.53</span></div>
+        <h3>小規模事業者持続化補助金（大洲商工会議所が申請伴走支援）</h3>
+        <div class="pprov">中小企業庁（全国商工会連合会・日本商工会議所）／窓口：大洲商工会議所／販路開拓</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>通常50万円（特例活用で最大250万円。特定創業支援等事業の支援を受けた創業者は別途上限あり）</td><th>補助率</th><td>2/3（賃金引上げ特例の赤字事業者等は3/4）</td></tr>
+          <tr><th>対象</th><td colspan="3">大洲商工会議所管轄地域内で事業を営み経営計画を策定した小規模事業者（GビズID必須・電子申請）</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>受付前</b>　国の制度（事務局：日本商工会議所・全国商工会連合会）。公式特設サイトで第20回の申請受付期間は2026/11/5（木）〜12/15（火）17:00、事業支援計画書（様式4）発行受付締切は2026/12/4（金）と確認。受付開始は11/5のため6/8時点は受付前。窓口の大洲商工会議所公式ページ（実在確認済み）に「小規模事業者持続化補助金」の案内見出しあり。電子申請のみ・GビズID取得必須。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">11/5の受付開始前に大洲商工会議所（0893-24-4111）へ早期相談し経営計画を作成。様式4発行に日数を要するため12/4締切に間に合うよう逆算し、GビズIDプライムを早めに取得しておく。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">ホームページ開設・予約/管理システム導入・EC構築・多言語POP/メニュー制作・SNS広報などIT活用の販路開拓/業務効率化に充当可能。観光業の多言語対応の鉄板。国の制度を地元商工会議所が伴走支援する形。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">広告宣伝費、IT活用の広報/業務効率化（HP開設・管理システム導入）、店舗改装、展示会出展、機械導入等。ウェブサイト関連費は補助上限の1/4以内かつ単独申請不可</td></tr>
+        </tbody></table>
+        <div class="psrc">小規模事業者持続化補助金 公式特設サイト（日本商工会議所・全国商工会連合会）／窓口：大洲商工会議所：<span class="purl">https://r6.jizokukahojokin.info/</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.54</span></div>
+        <h3>えひめ中小企業応援ファンド 地域密着型ビジネス創出事業助成金</h3>
+        <div class="pprov">公益財団法人えひめ産業振興財団（サンサポえひめ）／販路開拓</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>150万円／件</td><th>補助率</th><td>助成対象経費の1/2以内</td></tr>
+          <tr><th>対象</th><td colspan="3">法人設立後5年未満、または新たな小分類業種へ進出する県内中小企業者等</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　公益財団法人えひめ産業振興財団（サンサポえひめ）の補助金・助成金一覧（2026年6月時点で令和8年度の他補助金は掲載済み）を確認したが、えひめ中小企業応援ファンド助成事業の令和8年度（2026年度）募集・募集予告は掲載されていない。実在するファンド関連ページは令和7年度の募集予告ページ（r7fund_pre）のみで、内容は令和7年度のまま（募集期間 令和7年5月7日〜6月18日＝既に終了）。令和8年度の公募回・締切は未公表のため断定不可。例年5〜6月公募の傾向だが6/8時点で公式告知なし。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">サンサポえひめ産業育成課（TEL 089-960-1201）に令和8年度応援ファンド助成事業の募集予定を直接照会する。Gビズ等は不要だが電子/書面申請の準備として財団サイトの新着告知を継続確認。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">地域資源を活用した新ビジネスの商品開発・販路開拓経費。AI/DXを組み込んだ新サービス開発（多言語対応サービス、観光体験のデジタル化等）の初期経費に充当可能。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">地域資源を活用した課題解決型ビジネスの初期経費（開発・調査・試作・販路開拓等）</td></tr>
+        </tbody></table>
+        <div class="psrc">公益財団法人えひめ産業振興財団（サンサポえひめ）公式：<span class="purl">https://www.ehime-iinet.or.jp/grants</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX○</span>
+          
+          <span class="pno">No.55</span></div>
+        <h3>えひめ中小企業応援ファンド 地域活力創出助成事業（一般枠：商品開発等）</h3>
+        <div class="pprov">公益財団法人えひめ産業振興財団（サンサポえひめ）／販路開拓</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>150万円／件</td><th>補助率</th><td>助成対象経費の1/2以内</td></tr>
+          <tr><th>対象</th><td colspan="3">財団の支援実績がある（または今後活用予定の）県内中小企業者等。個人事業主は対象外</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　サンサポえひめ公式の補助金・助成金一覧（令和8年度分の他補助金は2026年6月までに複数掲載済み）に、えひめ中小企業応援ファンド 地域活力創出助成事業（一般枠）の令和8年度募集案内は存在しない。実在する関連ページは令和7年度の募集予告ページ（r7fund_pre、募集 令和7年5月7日〜6月18日＝終了）のみで令和8年度に更新されていない。令和8年度の公募回・締切は未公表で断定不可。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">サンサポえひめ産業育成課（TEL 089-960-1201）に令和8年度の一般枠募集予定（時期・締切・上限額）を照会。財団サイトの新着情報を継続監視。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">商品開発・改良、デザイン企画、ブランド確立、販路拡大。DXを活かしたブランディング・ECサイト構築・デザイン開発等に充当可。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">商品開発・改良、デザイン企画開発、ブランド確立、販路拡大に要する経費</td></tr>
+        </tbody></table>
+        <div class="psrc">公益財団法人えひめ産業振興財団（サンサポえひめ）公式：<span class="purl">https://www.ehime-iinet.or.jp/grants</span></div>
+      </div><div class="pcard">
+        <div class="ph"><span class="pst pst-要確認">要確認</span>
+          <span class="prel">AI/DX△</span>
+          
+          <span class="pno">No.56</span></div>
+        <h3>えひめ中小企業応援ファンド 地域活力創出助成事業（小規模枠：出展費用助成）</h3>
+        <div class="pprov">公益財団法人えひめ産業振興財団（サンサポえひめ）／販路開拓</div>
+        <table class="pt"><tbody>
+          <tr><th>補助上限</th><td>30万円／件</td><th>補助率</th><td>助成対象経費の1/2以内</td></tr>
+          <tr><th>対象</th><td colspan="3">財団の支援実績がある（または今後活用予定の）県内中小企業者等。個人事業主は対象外</td></tr>
+          <tr><th>申請可否<br>（6/8時点）</th><td colspan="3"><b>要確認</b>　サンサポえひめ公式の補助金・助成金一覧に、えひめ中小企業応援ファンド 地域活力創出助成事業（小規模枠）の令和8年度募集は掲載されていない（一覧には令和8年度の海外出願支援・賃上げ対応型・IT人材獲得支援等は掲載済みだが本ファンドは無し）。実在する関連ページは令和7年度募集予告（r7fund_pre、小規模枠は上限30万円・募集 令和7年5月7日〜6月18日＝終了）のみ。令和8年度の公募回・締切は未公表で断定不可。</td></tr>
+          <tr><th>次の一手</th><td colspan="3">サンサポえひめ産業育成課（TEL 089-960-1201）に令和8年度小規模枠（出展費用助成）の募集予定を照会。展示会出展計画がある場合は募集再開に備えGビズID等の事前準備を進める。</td></tr>
+          <tr><th>AI・DXでの<br>使い道</th><td colspan="3">国内外見本市・展示会への出展費用。AI/DXとの直接関連は薄いが、開発したDX商品・サービスの販路開拓の出口として活用可。</td></tr>
+          <tr><th>対象経費</th><td colspan="3">国内外の見本市・展示会への出展・参加・主催費用</td></tr>
+        </tbody></table>
+        <div class="psrc">公益財団法人えひめ産業振興財団（サンサポえひめ）公式：<span class="purl">https://www.ehime-iinet.or.jp/grants</span></div>
+      </div>
+  <div class="pfoot">本資料はAI-OZUが公開情報をもとに作成した参考資料です。申請可否・金額・締切は変動します。申請前に必ず各出典URLの最新公募要領をご確認ください。（調査基準日：2026年6月8日）<br>ご相談：大洲商工会議所／えひめ産業振興財団 よろず支援拠点／AI-OZU事務局</div>
+</section>
+
+  <div class="caveat"><h2>⚠️ ご利用にあたって（事実確認のお願い）</h2><p>本一覧の補助上限額・補助率・締切は2026年6月8日（令和8年度）時点で確認した情報です。これらは年度・公募回ごとに頻繁に変わります。特に注意すべき点：(1)デジタル化・AI導入補助金は2026年6月時点で確定公表されているのは多くの枠で『1次締切6/15のみ』で、2次以降は『確定した回のみ随時公表』のため、申込前に必ず公式スケジュール（it-shien.smrj.go.jp/schedule/）を再確認すること。(2)ものづくり補助金は第23次（2026/5/8締切）で現行制度が終了し、令和8年度から新事業進出補助金と統合した新制度へ移行（公募要領は6月公開・申請8月頃開始予定）。上限額・補助率・枠は6月公開の要領で必ず再確認。(3)業務改善助成金は令和8年度に上限が最大1,500万円→600万円へ縮小、賃上げコースも50/70/90円の3区分へ再編済み。(4)厚労省の雇用関係助成金（リスキリング等）は『訓練開始前の計画届の事前提出』が共通の絶対条件で、事後申請は不支給。先に始めてしまうと受給できないため、研修・転換を始める前に必ず愛媛労働局・ハローワークへ計画提出を。(5)愛媛県の観光・収益力系補助金（観光集客力向上・古民家インバウンド・収益力強化等）は令和8年度分が春に締切済のものが多く、令和9年度公募（例年4月）に向けた計画づくりが現実的。(6)『要確認』『やや不確実』とした項目（財団系2件、近隣市町補助、テレワーク・両立支援の上限額等）は二次情報依存または詳細未公表のため、申請前に各事務局へ必ず最新の公募要領を照会すること。(7)複数補助金の併用は可能だが『同一経費の重複受給』は不可。数値は捏造せず、不明なものは『要確認』と明記しています。</p></div>
+
+</div>
+
+<footer class="site"><div class="wrap">
+  <div class="ft1">AI-<b>OZU</b>（あいおおず）</div>
+  <p>本資料は、AI-OZU 企業版ワークショップ 第1回ご参加企業への<b style="color:var(--gold)">特別特典</b>として、公開情報をもとに作成した参考資料です。</p>
+  <p>補助金の予算・要件・公募期間は予告なく変更されます。<b style="color:#e8d9c2">申請可否はすべて2026年6月8日時点の調査</b>であり、申請前には各カードの出典リンクから最新の公募要領を必ずご確認ください。記載の数値・日付に保証はありません。</p>
+  <p>ご相談窓口：大洲商工会議所 ／ えひめ産業振興財団 よろず支援拠点 ／ AI-OZU 事務局（バリューマネジメント・キタマネジメント）</p>
+  <div class="updated">最終更新：2026年6月8日　／　主催：大洲ビジョン会議 AI分科会</div>
+</div></footer>
+
+<script>
+const DB = {"items":[{"id":0,"name":"デジタル化・AI導入補助金2026 通常枠（旧IT導入補助金）","provider":"中小企業庁（事務局：中小企業基盤整備機構）","level":"国","category":"AI/DX","rel":"高","target":"中小企業・小規模事業者。登録された『IT導入支援事業者（ベンダー）』と組んで、登録済みITツールを選んで申請する","max_amount":"1プロセス以上150万円未満／4プロセス以上450万円以下","amountVal":4500000,"rate":"1/2以内（賃金要件を満たす場合は2/3以内）","eligible":"ソフトウェア購入費、クラウド利用料（最大2年分・必須）、機能拡張・データ連携・セキュリティ、導入コンサル・設定・研修・保守。PC等の汎用ハードは通常枠では対象外","aiUse":"事務作業の棚卸し後に入れる業務システムの本命。会計・受発注・在庫・予約・顧客管理などのSaaS、RPA、グループウェアを導入できる。2026年度から生成AIを使ったツール・システムが補助対象として明確化された（ただし事務局に『AIツール』として登録された製品に限る）。クラウド利用料は最大2年分、導入設定・研修・保守も対象。","deadline":"令和8年度公募中。受付開始2026/3/30、1次締切2026/6/15(月)17:00（交付決定7/23予定）。6/8時点で確定公表されているのは1次締切のみで、2次以降は『確定した回のみ随時公表』。1次に間に合わなければ2次公表を待つ運用が安全","status":"受付中","statusDetail":"公式ポータルで確認。受付開始2026/3/30、1次締切2026/6/15(月)17:00、交付決定2026/7/23(木)予定。締切6/15は6/8より後のため受付中。2次以降は『確定した募集回のみ公表』の運用で現時点(6/8)未公表。1次に間に合わない場合は2次公表待ち。","nextAction":"1次締切2026/6/15(月)17:00に向けてGビズIDプライム取得・IT導入支援事業者選定・交付申請を急ぐ。間に合わなければ2次締切の公表を事業スケジュールで待つ。","asOf":"2026-06-08","url":"https://it-shien.smrj.go.jp/applicant/subsidy/normal/","sourceUrl":"https://it-shien.smrj.go.jp/applicant/subsidy/normal/","sourceName":"デジタル化・AI導入補助金2026 公式（中小機構）","sourceVerified":true,"confidence":"確実","notes":"8組のAI/DX導入の中核。申請にはGビズIDプライム（取得2〜3週間）＋『みらデジ経営チェック』が必要。生成AIなら自動で対象ではなく、登録済みAIツールに限る点を必ず説明。スケジュールは https://it-shien.smrj.go.jp/schedule/ で要再確認","rec":true,"levelRank":0,"relRank":0},{"id":1,"name":"デジタル化・AI導入補助金2026 インボイス枠（インボイス対応類型）","provider":"中小企業庁（事務局：中小企業基盤整備機構）","level":"国","category":"AI/DX","rel":"高","target":"中小企業・小規模事業者（小規模事業者ほど補助率が高い）","max_amount":"ソフトウェア最大350万円／ハードウェア（PC・タブレット等）上限10万円・（レジ・券売機等）上限20万円","amountVal":3500000,"rate":"ソフト50万円以下部分：中小3/4・小規模事業者4/5／50万円超〜350万円部分：一律2/3／ハードは1/2","eligible":"会計・受発注・決済機能を持つソフト（補助額50万円超は2機能以上）、PC・タブレット・レジ・券売機等のハード、クラウド利用料、導入関連費","aiUse":"会計・受発注・決済ソフトの導入（インボイス制度対応）。小規模事業者は補助率が最も手厚く、自己負担1/5でソフトを入れられる。飲食・小売・旅館のレジ・受発注・会計のデジタル化の入口に最適。PC・タブレット・レジ等のハードも一部対象。","deadline":"令和8年度公募中。受付開始2026/3/30、1次締切2026/6/15(月)17:00（交付決定7/23予定）。2次以降は未公表","status":"受付中","statusDetail":"公式ポータルで確認。受付開始2026/3/30、1次締切2026/6/15(月)17:00、交付決定2026/7/23(木)予定。締切が6/8より後のため受付中。2次以降は事業スケジュール上未公表。","nextAction":"1次締切2026/6/15(月)17:00までに交付申請を完了。間に合わなければ2次公表を待つ。","asOf":"2026-06-08","url":"https://it-shien.smrj.go.jp/applicant/subsidy/digitalbase/","sourceUrl":"https://it-shien.smrj.go.jp/applicant/subsidy/digitalbase/","sourceName":"デジタル化・AI導入補助金2026 公式（中小機構）","sourceVerified":true,"confidence":"確実","notes":"小規模事業者は会計ソフト初期費の4/5まで補助され費用対効果が最大。『請求・会計の手作業をなくしたい』企業に最適。公募要領PDF: https://it-shien.smrj.go.jp/pdf/it2026_koubo_invoice.pdf","rec":true,"levelRank":0,"relRank":0},{"id":2,"name":"デジタル化・AI導入補助金2026 複数者連携枠","provider":"中小企業庁（事務局：中小企業基盤整備機構）","level":"国","category":"AI/DX","rel":"中","target":"10者以上の中小・小規模事業者の連携体（商店街振興組合・商工会議所等が取りまとめ。単独事業者は申請主体になれない）","max_amount":"最大3,000万円（基盤導入経費＋消費動向分析経費等の合計。その他経費上限200万円等）","amountVal":30000000,"rate":"基盤導入（ソフト）50万円以下3/4・50万円超2/3／ハード1/2／分析・専門家経費2/3","eligible":"連携体での共通ITツール・AIツール導入費、ハード、消費動向分析経費、外部専門家経費等","aiUse":"商店街・商業集積地・サプライチェーンの10者以上が連携して面的にDX。地域共通の予約・決済・データ基盤、観光地のキャッシュレス・多言語基盤など。大洲の観光エリアや商店街でが音頭を取り『まとめてAI/DX』する場合に活用余地。","deadline":"令和8年度公募中。1次締切2026/6/15(月)17:00、2次締切2026/8/25。受付開始2026/3/30","status":"受付中","statusDetail":"公式ポータルで確認。受付開始2026/3/30、締切2026/6/15(月)17:00（公式の事業スケジュールでは『1次締切』として掲載）、交付決定2026/7/23(木)予定。締切が6/8より後のため受付中。","nextAction":"1次締切2026/6/15(月)17:00までに連携体の交付申請を完了。2次締切は未公表のため公式事業スケジュールで確定後に確認。","asOf":"2026-06-08","url":"https://it-shien.smrj.go.jp/applicant/subsidy/digitalbased_multiple_companies/","sourceUrl":"https://it-shien.smrj.go.jp/applicant/subsidy/digitalbased_multiple_companies/","sourceName":"デジタル化・AI導入補助金2026 公式（中小機構）","sourceVerified":true,"confidence":"やや不確実","notes":"個社の事務棚卸しには不向き（むしろ通常枠が適合）。地域DMO（キタマネジメント）主導の観光DXとリファラル戦略に親和性が高い。1者あたり個別上限は公募要領で要確認 【最新確認(2026-06-08)】元データは『2次締切2026/8/25』を記載するが、2026/6/8時点の公式事業スケジュール(https://it-shien.smrj.go.jp/schedule/)には2026/8/25は掲載されておらず、公表済みは1次締切2026/6/15(月)17:00のみ。2次締切8/25は公式で未確認のため記載すべきでない（『確定した募集回のみ公表』運用）。","rec":true,"levelRank":0,"relRank":1},{"id":3,"name":"デジタル化・AI導入補助金2026 セキュリティ対策推進枠","provider":"中小企業庁（事務局：中小企業基盤整備機構／IPA）","level":"国","category":"AI/DX","rel":"中","target":"中小企業・小規模事業者","max_amount":"5万円〜150万円","amountVal":1500000,"rate":"1/2以内（小規模事業者は2/3以内）","eligible":"IPA『サイバーセキュリティお助け隊サービスリスト』掲載サービスの利用料（最大2年分）","aiUse":"AI・クラウド導入に伴う情報漏えい対策。IPAの『サイバーセキュリティお助け隊サービス』の利用料が対象。攻めのDXではなく守りの補助で、本格導入の前提整備に有効。","deadline":"令和8年度公募中。1次締切2026/6/15(月)17:00（交付決定7/23予定）。2次以降は未公表","status":"受付中","statusDetail":"公式ポータルで確認。受付開始2026/3/30、1次締切2026/6/15(月)17:00、交付決定2026/7/23(木)予定。締切が6/8より後のため受付中。2次以降は事業スケジュール上未公表。","nextAction":"1次締切2026/6/15(月)17:00までに交付申請を完了。間に合わなければ2次公表を待つ。","asOf":"2026-06-08","url":"https://it-shien.smrj.go.jp/applicant/subsidy/security/","sourceUrl":"https://it-shien.smrj.go.jp/applicant/subsidy/security/","sourceName":"デジタル化・AI導入補助金2026 公式（中小機構／IPA連携）","sourceVerified":true,"confidence":"やや不確実","notes":"対象は『お助け隊サービス』に限定（AI/DXツール全般の導入費ではない）。優先度は中。AI/DX本格導入の補完枠として案内","rec":true,"levelRank":0,"relRank":1},{"id":4,"name":"中小企業省力化投資補助金（一般型）","provider":"中小企業庁（事務局：中小企業基盤整備機構）","level":"国","category":"設備投資・AI/DX","rel":"高","target":"人手不足の中小・小規模事業者。単価50万円(税抜)以上の設備投資が1つ以上必要、付加価値額・給与総額等の要件あり","max_amount":"従業員5人以下750万円（賃上特例1,000万円）／6〜20人1,500万円（同2,000万円）／21〜50人3,000万円（同4,000万円）／51〜100人5,000万円（同6,500万円）／101人以上8,000万円（大幅賃上特例で最大1億円）","amountVal":100000000,"rate":"中小1/2、小規模事業者・再生事業者2/3、大幅賃上特例時は中小も2/3","eligible":"機械装置・システム構築費（機器購入・製作、専用ソフト・情報システム構築、改良・据付費）","aiUse":"カタログにないオーダーメイド型の省力化。AI・IoT・ロボット・RPA・自動化システムを自社業務に合わせて構築。AI需要予測、AI画像検査、業務自動化、AIエージェント開発も対象。事務棚卸しで見えた個別課題の自動化に最適。","deadline":"第6回は2026/5/15締切済。第7回が2026/6/5公募開始済。第7回は申請受付7月上旬〜締切7月下旬（予定）、採択11月中旬予定。確定日程は公式スケジュールで要確認","status":"受付前","statusDetail":"公式スケジュールで確認。第6回は申請締切2026/5/15(金)17:00で締切済。現行は第7回で、申請ポータルでの受付開始は2026/7月上旬予定・締切7月下旬予定。6/8時点では第7回の申請ポータル受付はまだ開始されておらず受付前。公募回は年3～4回予定。","nextAction":"GビズIDプライム取得・事業計画準備を進め、第7回の申請ポータル受付開始（7月上旬予定）を待って申請する。確定日程は公式スケジュールページで再確認。","asOf":"2026-06-08","url":"https://shoryokuka.smrj.go.jp/ippan/","sourceUrl":"https://shoryokuka.smrj.go.jp/ippan/schedule/","sourceName":"中小企業省力化投資補助金（一般型）公式 スケジュール","sourceVerified":true,"confidence":"確実","notes":"AI/自動化のオーダーメイド導入の本命。補助上限が大きいが賃上げ等の事業計画要件と単価50万円以上要件あり。8組のうち本格投資する製造業・大型旅館向け。GビズIDプライム必須。スケジュール: https://shoryokuka.smrj.go.jp/ippan/schedule/ 【最新確認(2026-06-08)】元データは『第7回が2026/6/5公募開始済・受付7月上旬〜』とするが、公式スケジュール上は第5回採択発表が2026/6/5で、第7回はあくまで受付開始7月上旬予定・締切7月下旬予定（6/8時点で申請ポータル未開始＝受付前）。","rec":true,"levelRank":0,"relRank":0},{"id":5,"name":"中小企業省力化投資補助金（カタログ注文型）","provider":"中小企業庁（事務局：中小企業基盤整備機構）","level":"国","category":"設備投資・AI/DX","rel":"中","target":"中小・小規模事業者（人手不足の状態にあること）。販売事業者経由で申請","max_amount":"従業員5人以下500万円、6〜20人750万円、21人以上1,000万円（大幅賃上げで各750/1,000/1,500万円）","amountVal":15000000,"rate":"1/2以下","eligible":"カタログ登録済みの省力化製品の導入費（機器本体＋導入経費）","aiUse":"カタログ掲載の汎用製品（自動精算機・券売機・配膳ロボット・清掃ロボット・検品自動化機器・RPA等）から選んで導入。旅館・飲食・小売の人手不足解消に直結。申請が簡便で小規模事業者向き。AIソフト単体より省力化機器・ロボット中心。","deadline":"令和8年度：随時受付（〜2027年3月末頃）。2026/3/19の制度改定で上限が引き上げ。カタログ製品は拡充中","status":"通年・随時","statusDetail":"公式サイトで『随時公募受付中』と明記。回次区切りのない随時受付で6/8時点も申請可能。なお2026/6/29(月)10:00-18:00はシステムメンテナンスで申請ポータルが全機能停止予定のため、その時間帯は申請不可。","nextAction":"随時受付なので、GビズID取得後にカタログ掲載製品から導入製品を選び随時申請。6/29のメンテナンス時間帯は避ける。","asOf":"2026-06-08","url":"https://shoryokuka.smrj.go.jp/catalog/","sourceUrl":"https://shoryokuka.smrj.go.jp/catalog/","sourceName":"中小企業省力化投資補助金（カタログ注文型）公式","sourceVerified":true,"confidence":"確実","notes":"随時受付で使いやすく、デジタル化の最初の一歩に向く。導入したい製品がカタログに登録済みかが鍵。汎用AIソフト・コンサル費は対象外","rec":true,"levelRank":0,"relRank":1},{"id":6,"name":"中小企業経営強化税制（デジタル化設備 C類型 等）","provider":"中小企業庁／経済産業省","level":"国","category":"設備投資・AI/DX","rel":"高","target":"資本金1億円以下の法人、従業員1,000人以下の個人事業主等","max_amount":"税額控除10%（資本金3,000万円超1億円以下は7%）または即時償却（全額）","amountVal":100000000,"rate":"即時償却 または 取得価額10%（7%）の税額控除を選択","eligible":"デジタル化設備（C類型）等、経営力向上に資する機械装置・器具備品・ソフトウェア等","aiUse":"経営力向上計画の認定を受け、デジタル化設備（C類型＝AI・IoT・遠隔操作・自動化に資する設備等）を取得すると即時償却または税額控除。DX投資の実質コストを節税で圧縮。補助金（IT導入・省力化等）と併用可（同一経費の重複は不可）。","deadline":"令和8年度税制改正で対応継続。適用には経営力向上計画の認定が必要、C類型は認定経営革新等支援機関の事前確認書も必要。最新の適用期限は改正対応版の手引きで要確認","status":"要確認","statusDetail":"中小企業庁公式情報により、デジタル化設備（C類型）は2025年4月1日（令和7年度税制改正）をもって制度対象外＝廃止。令和8年度はC類型での適用・申請はできない。中小企業経営強化税制自体は令和8年度税制改正対応で継続しており、現行はA・B・D・E類型が対象（設備取得期限は令和9年3月31日まで）。経営力向上計画の認定申請は通年だが、C類型に限れば利用不可のため『要確認』とする。","nextAction":"C類型を前提とせず、A〜E類型のいずれが自社設備に該当するか認定経営革新等支援機関に確認のうえ経営力向上計画を策定・認定申請する。最新の適用要件は令和8年度税制改正対応版『支援措置活用の手引き』で確認。","asOf":"2026-06-08","url":"https://www.chusho.meti.go.jp/keiei/kyoka/kyoka_zeisei.html","sourceUrl":"https://www.chusho.meti.go.jp/keiei/kyoka/kyoka_zeisei.html","sourceName":"中小企業庁 中小企業経営強化税制 公式","sourceVerified":true,"confidence":"確実","notes":"補助金ではなく税制優遇。旧DX投資促進税制は2025年3月末廃止のため後継として案内。設備投資の節税策 【最新確認(2026-06-08)】元データの『C類型 等』は不正確。デジタル化設備C類型は2025/4/1以降廃止され令和8年度は利用不可。現在有効なのはA・B・D・E類型（設備取得期限：令和9年3月末まで）。C類型に必要だった経済産業局確認書もC類型廃止に伴い不要。","rec":false,"levelRank":0,"relRank":0},{"id":7,"name":"小規模事業者持続化補助金（一般型・通常枠）第20回","provider":"中小企業庁（事務局：日本商工会議所・全国商工会連合会）","level":"国","category":"販路開拓","rel":"中","target":"従業員20人以下（商業・サービス業は5人以下）の小規模事業者。商工会議所・商工会の事業支援計画書（様式4）を受け経営計画を作成することが必須","max_amount":"通常50万円。インボイス特例+50万円、賃金引上げ特例+150万円で最大200万円、両特例併用で最大250万円","amountVal":2500000,"rate":"2/3（賃金引上げ特例の赤字事業者は3/4）","eligible":"機械装置等費、広報費、ウェブサイト関連費、展示会出展費、開発費、委託・外注費等。ウェブサイト関連費は補助対象経費総額の1/4・上限30万円かつ単独申請不可","aiUse":"販路開拓の取組として、ホームページ新規制作・改修、EC・ネット予約システム、多言語POP・メニュー・チラシ制作、SNS活用、生成AIで作った販促物の外注費・広告費に使える。AIツール導入そのものより『AIで作った販促物の制作・広報』が現実的。大洲の観光1社目のアンカー業務（多言語POP/メニュー）と直結。","deadline":"第20回：申請受付2026/11/5〜12/15 17:00、事業支援計画書（様式4）発行受付締切2026/12/4。6/8時点では受付前で、商工会議所への早期相談が必要","status":"受付前","statusDetail":"公式特設サイトで確認。第20回の申請受付は2026/11/5(木)〜12/15(火)17:00、事業支援計画書（様式4）発行受付締切は2026/12/4(金)。6/8時点では『第20回（準備中）』と表示され受付前。","nextAction":"事業支援計画書（様式4）の発行に時間を要するため、地域の商工会議所・商工会へ早期に相談予約し、11/5の受付開始に向け経営計画を準備する。","asOf":"2026-06-08","url":"https://r6.jizokukahojokin.info/","sourceUrl":"https://r6.jizokukahojokin.info/","sourceName":"小規模事業者持続化補助金（一般型）公式","sourceVerified":true,"confidence":"確実","notes":"観光・飲食・小売の8組に最も入口になりやすい定番。電子申請のみ・GビズIDプライム必須。様式4発行締切(12/4)が申請締切(12/15)より早い点に注意。大洲は大洲商工会議所(0893-24-4111)が窓口。HP制作だけ目当てだと対象外になる点に注意","rec":true,"levelRank":0,"relRank":1},{"id":8,"name":"小規模事業者持続化補助金（創業型）","provider":"中小企業庁（商工会・商工会議所が支援）","level":"国","category":"創業","rel":"中","target":"創業後1年以内（特定創業支援等事業の支援を受けた等の要件）の小規模事業者","max_amount":"最大200万円（インボイス特例で250万円との情報あり・要確認）","amountVal":2500000,"rate":"2/3","eligible":"販路開拓・業務効率化経費（機械装置等費、広報費、ウェブサイト関連費等）","aiUse":"創業後の販路開拓・業務効率化にAI/DXツール導入を含められる。新規開業の旅館・飲食・サービス業がAI予約・多言語対応等を入れる初期投資に。","deadline":"令和7年度補正予算事業として令和8年度実施。具体の上限額・公募回は要確認","status":"受付前","statusDetail":"中小企業庁が2026/5/27に＜創業型＞第4回の公募要領を公開。第4回の申請受付期間は2026/11/5〜12/15 17:00で、6/8時点はまだ受付開始前（受付前）。事業支援計画書（様式4）発行締切は12/4が先に来るため早期相談が必要。","nextAction":"GビズIDプライムを今のうちに取得し、商工会・商工会議所へ早期に相談して事業支援計画書（様式4）の発行段取りを進める。11/5の受付開始を待って電子申請。","asOf":"2026-06-08","url":"https://www.chusho.meti.go.jp/koukai/yosan/r8/jizoku_sougyo.pdf","sourceUrl":"https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260527001.html","sourceName":"中小企業庁 公式（公募情報）","sourceVerified":true,"confidence":"やや不確実","notes":"創業メンバーがいる場合の選択肢。大洲市の特定創業支援等事業（いよぎん未来起業塾等）受講で対象に。上限額は最新公募要領で要確認 【最新確認(2026-06-08)】元データは『具体の上限額・公募回は要確認』だが、第4回（受付2026/11/5〜12/15、公募要領2026/5/27公開）が公式に確定済み。補助上限は創業型で最大200万円（一部解説では賃金引上げ特例等を含め最大250万円）。","rec":true,"levelRank":0,"relRank":1},{"id":9,"name":"中小企業新事業進出補助金（事業再構築補助金の後継）","provider":"中小企業庁（事務局：中小企業基盤整備機構）","level":"国","category":"新事業・設備投資","rel":"中","target":"中小企業等。新たな製品・サービスで新市場へ進出する事業（補助下限750万円・補助対象経費1,500万円以上が必要）","max_amount":"従業員規模により最大7,000万円（一定の賃上げ等で最大9,000万円との情報あり・要確認）","amountVal":90000000,"rate":"1/2（2/3に上がる特例あり・要確認）","eligible":"建物費、機械装置・システム構築費、外注費、技術導入費、専門家経費、広告宣伝費、クラウド利用費等","aiUse":"新市場・新事業への進出に伴うAI/DX投資。観光×AIの新サービス、製造業の新分野進出、新業態立ち上げ時のシステム・設備にAIを組込む形で活用。既存事業の効率化ではなく『新事業進出』が要件。","deadline":"第4回公募：2026/3/27〜6/19 18:00で受付中。採択9月末頃。令和8年度中にものづくり補助金と統合予定","status":"受付中","statusDetail":"公式ポータルで第4回公募が受付中。申請受付2026/5/19開始、締切2026/6/19 18:00と公式サイトで確認。6/8時点で締切前のため受付中。公募開始（事業概要公表）は2026/3/27。","nextAction":"6/19 18:00の締切までに電子申請を完了させる。GビズIDプライム・事業計画書の最終確認を急ぐ。間に合わなければ令和8年度中の統合新制度（新事業進出・ものづくり）次回公募を待つ。","asOf":"2026-06-08","url":"https://shinjigyou-shinshutsu.smrj.go.jp/","sourceUrl":"https://shinjigyou-shinshutsu.smrj.go.jp/","sourceName":"中小企業新事業進出補助金 公式ポータル","sourceVerified":true,"confidence":"やや不確実","notes":"棚卸し・小規模DXにはオーバースペック。本格的に新事業へ踏み出す事業者向け。GビズID取得を考えると6/19締切は実質困難で、統合後制度(8月公募予定)を待つのが現実的","rec":false,"levelRank":0,"relRank":1},{"id":10,"name":"新事業進出・ものづくり商業サービス補助金（2026年度統合新制度／ものづくり補助金の後継）","provider":"中小企業庁（事務局：全国中小企業団体中央会）","level":"国","category":"設備投資","rel":"中","target":"中小・小規模事業者（製品・サービスの高付加価値化、新事業進出を目指す事業者）","max_amount":"枠・規模により100万円〜最大9,000万円（大幅賃上げ特例・グローバル枠等。革新的新製品サービス枠は750万〜2,500万円・特例で最大3,500万円見込み）※統合後の予定値","amountVal":90000000,"rate":"1/2程度（小規模・再生事業者2/3、枠・要件で変動）※要公募要領確認","eligible":"機械装置・システム構築費、建物費、技術導入費、専門家経費、クラウド利用費、外注費、広告宣伝費等（公募要領で確定）","aiUse":"新事業進出・新分野展開と設備投資を一体支援。AI画像検査・生産管理システム・自動化設備・観光DXサービス等の設備・システム投資に活用余地。製造業の高付加価値化に向く。","deadline":"旧ものづくり補助金第23次（2026/5/8締切）が現行制度の最終公募。統合新制度は公募要領2026年6月公開予定・申請受付2026年8月頃開始予定（年3回程度）。上限額・補助率・枠は6月公開要領で要確認","status":"要確認","statusDetail":"旧ものづくり補助金は第23次公募（公募期間2026/2/6〜5/8 17:00）が現行制度の最終公募で既に締切済。後継の統合新制度（新事業進出・ものづくり）は公募要領が2026年6月公開予定・申請受付2026年8月頃開始予定とされ、6/8時点で公式に確定した公募回・締切が未公表。よって現時点で申請可能な開いた回はなく『要確認』。","nextAction":"monodukuri-hojo.jp公式ポータルで6月公開予定の統合新制度公募要領を待つ。GビズIDプライムを取得し、8月頃と見込まれる申請受付開始に備えて事業計画を準備する。","asOf":"2026-06-08","url":"https://portal.monodukuri-hojo.jp/","sourceUrl":"https://portal.monodukuri-hojo.jp/","sourceName":"ものづくり補助金 公式総合サイト","sourceVerified":true,"confidence":"やや不確実","notes":"制度統合の過渡期で内容が大きく変わる。AI/DX入門にはデジタル化・AI導入補助金や省力化補助金の方が直接的。製品開発・大型設備投資を伴う製造業向け。6月公開の新要領で必ず再確認 【最新確認(2026-06-08)】第23次公募の公募期間は『2026/2/6〜5/8 17:00』（元データの『第23次2026/5/8締切』と整合）。統合新制度の上限額・補助率・枠・受付日程は6月公開予定の公募要領で確定するため、確定前は断定不可。","rec":false,"levelRank":0,"relRank":1},{"id":11,"name":"人材開発支援助成金（事業展開等リスキリング支援コース）","provider":"厚生労働省（都道府県労働局・ハローワーク）","level":"国","category":"人材育成","rel":"高","target":"事業展開・新分野進出・DX/GX等に伴い新たな知識技能の訓練を行う中小企業等","max_amount":"1事業所1年度あたり1億円が上限。経費助成限度（中小・1人1訓練）10〜100h未満30万円／100〜200h未満40万円／200h以上50万円","amountVal":100000000,"rate":"経費助成率：中小75%・大企業60%／賃金助成：中小960円/時間（大企業480円）","eligible":"OFF-JT訓練の受講料・教材費・外部講師謝金等、訓練期間中の賃金。令和8年改正で中小向け『設備投資加算』新設","aiUse":"生成AI実務研修、Python・データ分析の実践演習、クラウド・セキュリティ習得、DX推進の実践研修の経費（受講料・外部講師費）と訓練中の賃金を補助。『社員にAIを使えるようにする研修』に最もダイレクトに使える本命。DX化を新たな取組として位置づけると該当しやすい。","deadline":"通年申請。ただし訓練計画届を訓練開始の原則1か月前までに提出必須（提出なしは不支給）。令和4〜8年度末（2027/3/31）までの時限措置で、令和8年度が最終年度の可能性。早期着手推奨","status":"通年・随時","statusDetail":"厚生労働省公式ページで実在を確認。通年申請の制度で、訓練開始の原則1か月前まで（サブスク型は契約開始1か月前まで）に職業訓練実施計画届の事前提出が必須。事前提出なしは不支給。令和8年度（〜2027/3/31）までの時限措置で、令和8年度が最終年度の可能性。","nextAction":"通年なので随時。ただし訓練開始の原則1か月前までに訓練計画届を労働局へ提出する必要があるため、研修計画を逆算して早期着手する。2026/5/14付要領改正で価格設定の疎明書（様式第28号）提出が必要な点に留意。","asOf":"2026-06-08","url":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html","sourceUrl":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html","sourceName":"厚生労働省 人材開発支援助成金 公式","sourceVerified":true,"confidence":"確実","notes":"令和8年3月改正で認定支援機関（または労働局）の確認が必要に。『DX概論のみ』の研修は対象外で具体的ツール習得を含む実践内容が必須。最新パンフレット: https://www.mhlw.go.jp/content/11600000/001103827.pdf","rec":false,"levelRank":0,"relRank":0},{"id":12,"name":"人材開発支援助成金（人への投資促進コース）","provider":"厚生労働省（都道府県労働局・ハローワーク）","level":"国","category":"人材育成","rel":"高","target":"デジタル人材・高度人材を育成する訓練、サブスク型研修等を実施する事業主","max_amount":"1事業所1年度コース全体で2,500万円が上限。定額制訓練の経費助成は受講者1人1か月あたり2万円が上限","amountVal":25000000,"rate":"中小の経費助成率：高度デジタル人材訓練75%／定額制訓練60%／自発的職業能力開発45%（要件達成で加算あり）","eligible":"OFF-JT受講料、eラーニング・定額制サービス利用料、訓練中賃金等","aiUse":"高度デジタル人材訓練に経費助成75%。『定額制訓練』はサブスク型eラーニング（AI/DX系オンライン講座の使い放題サービス）の費用が対象になり、小規模事業者でも始めやすい。従業員に生成AI・データ活用のeラーニングを継続受講させる用途に有効。","deadline":"通年申請（訓練計画届の事前提出が必要）。令和4〜8年度末（2027/3末）までの時限措置。令和8年5月14日付で要領改正（価格設定の疎明書提出が必要等）","status":"通年・随時","statusDetail":"厚労省公式案内ページで通年申請（支給申請前に職業訓練実施計画届の事前提出が必須）と確認。令和8年5月14日付で支給要領改正、受講料等の価格設定に関する疎明書（様式第28号）の提出が必須化された旨も公式で確認。本コースは令和4〜8年度（2027/3末まで）の時限措置で、令和8年度が最終年度。6/8時点で通年受付中だが、計画届の事前提出期限（訓練開始前）に注意。","nextAction":"訓練計画を固め、訓練開始前（原則1か月前等）までに職業訓練実施計画届と疎明書（様式第28号）を管轄労働局へ提出。令和8年度が時限措置の最終年度のため早期着手。","asOf":"2026-06-08","url":"https://www.mhlw.go.jp/content/11800000/001705830.pdf","sourceUrl":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html","sourceName":"厚生労働省 人材開発支援助成金 公式","sourceVerified":true,"confidence":"やや不確実","notes":"定額制訓練は小規模事業者がAI/DX学習を低リスクで始める入口として有用。助成率・上限はメニューにより細分化、最終値は最新パンフレットで要確認","rec":false,"levelRank":0,"relRank":0},{"id":13,"name":"人材開発支援助成金（人材育成支援コース）","provider":"厚生労働省（都道府県労働局・ハローワーク）","level":"国","category":"人材育成","rel":"中","target":"10時間以上のOFF-JT等を実施する中小企業等","max_amount":"経費助成限度（中小・1人1訓練）10〜100h未満15万円／100〜200h未満30万円／200h以上50万円。1事業所1年度1,000万円","amountVal":10000000,"rate":"経費助成：中小45%（賃金要件等で+15%＝60%）／賃金助成800円/時間（加算で+200円＝1,000円）","eligible":"OFF-JT外部研修の受講料・教材費・外部講師費、訓練中賃金等","aiUse":"10時間以上のOFF-JT研修が広く対象。ITツール操作・業務システム・基礎的なデジタルスキル研修など、リスキリング要件に当てはまらない一般的な人材育成研修でAI/DXの基礎習得に充当可能。外部セミナー受講に使いやすい。","deadline":"通年申請。訓練開始6か月前〜1か月前までに職業訓練実施計画届を事前提出。令和8年5月14日版要領で疎明書（様式第28号）提出が必須化","status":"通年・随時","statusDetail":"厚労省公式案内ページで人材育成支援コースの掲載を確認。通年申請で、訓練開始前に職業訓練実施計画届の事前提出が必要。令和8年5月14日付要領改正で疎明書（様式第28号）の提出が必須化、人材育成支援コースに『中高年齢者実習型訓練』が新設された旨も公式で確認。6/8時点で通年受付中。","nextAction":"訓練計画を作成し、訓練開始前（職業訓練実施計画届の提出期限）までに計画届＋疎明書（様式第28号）を管轄労働局へ提出。","asOf":"2026-06-08","url":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html","sourceUrl":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyufukin/d01-1.html","sourceName":"厚生労働省 人材開発支援助成金 公式","sourceVerified":true,"confidence":"やや不確実","notes":"新分野・DX関連訓練ならリスキリング支援コース（75%）の方が手厚い。まずそちらの該当可否を検討し、外れる一般研修を本コースで拾う設計が合理的","rec":false,"levelRank":0,"relRank":1},{"id":14,"name":"業務改善助成金","provider":"厚生労働省（都道府県労働局）","level":"国","category":"設備投資","rel":"中","target":"事業場内最低賃金を一定額以上引き上げ、生産性向上の設備投資を行う中小・小規模事業者","max_amount":"通常・特例事業者とも最大600万円（令和8年度。従来の物価高騰等特例の最大1,500万円は廃止）。コース別目安：50円30〜130万／70円40〜300万／90円90〜600万円","amountVal":15000000,"rate":"引上げ前の事業場内最低賃金が1,050円未満なら4/5、1,050円以上なら3/4","eligible":"機械装置等購入費、システム構築・委託費、経営コンサル費、設置費等。汎用PC・スマホ・タブレットは原則対象外","aiUse":"生産性向上に資する設備投資が対象。POSレジ・予約/受発注システム・自動精算機・券売機・RPA等の業務効率化機器/システム導入に充当可能。事業場内最低賃金の引上げが条件のため、賃上げ予定の事業者向け。AI/DX省力化＋賃上げをセットで進める旅館・飲食・小売に適合。","deadline":"令和8年度は交付申請受付開始が令和8年9月1日。申請期限は地域別最低賃金発効日前日または令和8年11月末日の早い日。事業完了期限令和9年1月31日（延長で3/31）。夏前から準備推奨","status":"受付前","statusDetail":"厚労省公式ページで令和8年度の交付申請受付開始日は『令和8年9月1日』と明記。よって6/8時点は受付前。申請期限は地域別最低賃金発効日前日または令和8年11月30日のいずれか早い日。事業完了期限は令和9年1月31日（やむを得ない場合は事前申出で3月31日まで延長可）。令和8年度は事業場内最低賃金を50円以上引き上げが要件。","nextAction":"9/1の受付開始に向け、設備投資計画と賃金引上げ計画を夏前から準備。受付開始後すみやかに交付申請（予算枠あり・先着）。","asOf":"2026-06-08","url":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html","sourceUrl":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/zigyonushi/shienjigyou/03.html","sourceName":"厚生労働省 業務改善助成金 公式","sourceVerified":true,"confidence":"確実","notes":"最低賃金引上げが必須要件のため賃上げ計画がない事業者には不向き。賃上げコースは50/70/90円の3区分（従来の30円・45円コースは廃止）。9月受付開始のため夏前から見積取得・賃上げ計画づくりを 【最新確認(2026-06-08)】元データの『令和8年11月末日』は公式で『令和8年11月30日』。賃金引上げ要件は50円以上（令和8年度）。","rec":false,"levelRank":0,"relRank":1},{"id":15,"name":"キャリアアップ助成金（正社員化コース 他）","provider":"厚生労働省（都道府県労働局・ハローワーク）","level":"国","category":"人材育成","rel":"低","target":"有期・パート等の非正規雇用労働者の正社員化・処遇改善を行う事業主","max_amount":"正社員化コース：中小で1人最大80万円（各種加算で1人目100万円超も可）","amountVal":1000000,"rate":"1人あたり定額（コース・対象者により変動）","eligible":"賃金助成型（転換・賃上げ実施に対する定額助成）","aiUse":"AI/DX導入の直接補助ではないが、パート・契約社員を正社員化してDX推進の中核人材を社内に確保・定着させる原資に。AI化で生んだ余力を担い手の処遇改善に振り向ける『セット提案』で価値あり。","deadline":"通年（キャリアアップ計画書の事前提出と、転換後6か月の賃金支払い後に申請）。令和8年4月8日付で要領更新","status":"通年・随時","statusDetail":"厚労省公式ページで正社員化コースの掲載・令和8年度版パンフレット・支給要領（令和8年4月8日付）・令和8年度申請様式を確認。各コース実施前にキャリアアップ計画書の事前提出が必要、正社員化は転換後賃金支払い後に支給申請する通年制度。令和8年度に『短時間労働者労働時間延長支援コース』新設も確認。6/8時点で通年受付中。","nextAction":"取組実施日の前日までにキャリアアップ計画を管轄労働局へ提出。正社員化等の実施→転換後6か月の賃金支払い後に支給申請（令和8年4月8日以降の取組は令和8年度様式を使用）。","asOf":"2026-06-08","url":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/part_haken/jigyounushi/career.html","sourceUrl":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/part_haken/jigyounushi/career.html","sourceName":"厚生労働省 キャリアアップ助成金 公式","sourceVerified":true,"confidence":"確実","notes":"AI/DX関連性は低いが人材確保・定着策として案内価値あり。賃金規定等改定コース・賞与退職金制度導入コース等もあり","rec":false,"levelRank":0,"relRank":2},{"id":16,"name":"人材確保等支援助成金（テレワークコース）","provider":"厚生労働省（都道府県労働局）","level":"国","category":"設備投資","rel":"中","target":"テレワークを制度導入・実施し雇用管理改善の効果をあげた中小企業事業主","max_amount":"要確認（制度導入助成・目標達成助成の区分あり。上限は数十万円規模）","amountVal":0,"rate":"取組経費の一部助成、雇用管理改善の効果をあげた場合に支給","eligible":"就業規則等整備費、外部専門家コンサル費、労務管理・労働者研修費、テレワーク用機器の借損料等","aiUse":"テレワーク制度の導入に伴う就業規則整備、外部コンサル、労務管理研修、テレワーク用システム導入が対象。クラウド勤怠・グループウェア・オンライン業務システムなどDX的な働き方基盤の整備に活用でき、事務作業のリモート化を進める事業者に適合。","deadline":"通年申請。令和8年4月1日付で要領一部改正。具体的上限額・助成率は最新案内で要確認","status":"通年・随時","statusDetail":"厚労省公式ページ実在。令和8年4月1日付で支給要領を一部改正済と明記。雇用関係助成金として通年申請（締切型ではない）。ただしテレワーク機器導入等は計画認定・実施後に申請する流れで、事前の計画提出が前提。具体の上限額・助成率は公式ページの最新案内・支給要領で確認が必要。","nextAction":"通年受付のため随時申請可能。テレワーク実施計画の作成→管轄の都道府県労働局へ事前相談・提出してから取り組む。最新の支給要領（令和8年4月1日改正版）で対象経費・助成率を確認。","asOf":"2026-06-08","url":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/telework_zyosei_R3.html","sourceUrl":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/telework_zyosei_R3.html","sourceName":"厚生労働省 公式","sourceVerified":true,"confidence":"要確認","notes":"上限額・助成率の最新値は公式パンフレット未確認のため要確認。観光・接客中心の事業者にはテレワーク要件が合いにくいが、バックオフィスのリモート化を進める層に有効","rec":false,"levelRank":0,"relRank":1},{"id":17,"name":"中小機構 ハンズオン支援（専門家派遣）","provider":"独立行政法人 中小企業基盤整備機構","level":"国","category":"人材育成","rel":"中","target":"中小企業・小規模事業者","max_amount":"補助金ではなく低額自己負担型（専門家1人1日あたり17,500円・税込）","amountVal":17500,"rate":"実費の大部分を中小機構が負担（事業者負担は上記定額）","eligible":"経営戦略立案・業務フロー改善・システム化構想・生産工程見直し・品質向上等（専門家派遣サービス）","aiUse":"専門家を数か月〜10か月程度（20回程度）派遣し、業務フロー改善・システム化構想・生産工程見直し等を伴走支援。事務作業の棚卸し〜DX設計の外部専門家を低コストで活用できる。","deadline":"通年実施（令和8年度も継続）。最寄りの四国本部に電話申込→訪問ヒアリング→審査","status":"通年・随時","statusDetail":"中小機構公式ページ実在。ハンズオン支援（専門家派遣）の制度概要・利用の流れ・各地域本部連絡先を掲載。最寄りの地域本部企業支援課へ電話で直接申込→ヒアリングという通年・随時運用。締切型ではない。令和8年度の特定の公募回・締切は設定されていない。","nextAction":"通年随時のため、四国本部（中小機構四国本部 企業支援課）へ電話で申込み、訪問ヒアリング・審査を経て専門家派遣を受ける。","asOf":"2026-06-08","url":"https://www.smrj.go.jp/sme/consulting/hands-on/","sourceUrl":"https://www.smrj.go.jp/sme/consulting/hands-on/","sourceName":"独立行政法人 中小企業基盤整備機構 公式","sourceVerified":true,"confidence":"確実","notes":"補助金ではなく低廉な専門家派遣制度。AI分科会の伴走コンサルと併用・補完可能。DX設計を外部専門家とまず作る入口として有効","rec":false,"levelRank":0,"relRank":1},{"id":18,"name":"中小企業成長加速化補助金","provider":"中小企業庁","level":"国","category":"設備投資・成長投資","rel":"低","target":"売上高100億円超を目指す中小企業（おおむね売上10億円以上100億円未満）。賃上げ要件あり","max_amount":"補助上限5億円（投資額1億円以上が要件）","amountVal":500000000,"rate":"1/2","eligible":"建物費、機械装置費、外注費、専門家経費など","aiUse":"売上高100億円超を目指す成長企業の大型設備投資（工場・物流拠点新設、自動化による革新的生産性向上）。AI・自動化設備も対象になりうるが、対象が売上規模の大きい成長企業に限られ、大洲の小規模8組には基本的に不適。","deadline":"第1回・第2次公募とも受付終了。第3次（次回）公募の日程は2026/6/8時点で未公表。公式ポータルで要確認","status":"受付終了","statusDetail":"公式ポータル実在。1次公募（採択決定済）、2次公募は受付期間2026/2/24〜3/26 15:00で締切済（872件の有効申請、書面審査結果5/28通知予定）。6/8時点で3次以降の公募スケジュールは公式に未公表。よって現在は受付終了（次回未公表）の状態。","nextAction":"現在申請できる公募回はない。GビズIDプライムを取得して準備しつつ、公式ポータルの「お知らせ」で次回（3次）公募の公表を待つ。","asOf":"2026-06-08","url":"https://growth-100-oku.smrj.go.jp/","sourceUrl":"https://growth-100-oku.smrj.go.jp/","sourceName":"中小企業成長加速化補助金 公式ポータル","sourceVerified":true,"confidence":"やや不確実","notes":"対象が売上10億〜100億円規模の成長志向企業で、大洲の小規模8組には規模・要件とも不適合。参考情報として掲載。8組への推奨対象からは外すべき 【最新確認(2026-06-08)】元データは「第1回・第2次公募とも受付終了。第3次の日程は未公表」と記載。公式で2次の受付期間が2026/2/24〜3/26 15:00と確認できたため補足。","rec":false,"levelRank":0,"relRank":2},{"id":19,"name":"事業承継・M&A補助金（専門家活用枠 等）","provider":"中小企業庁（事務局：中小企業基盤整備機構）","level":"国","category":"一般","rel":"低","target":"M&Aで経営資源を引継ぐ/引き継がせる中小・小規模事業者","max_amount":"枠・類型により異なる（要公募要領確認）","amountVal":0,"rate":"1/2以内（営業利益率低下者・赤字者は2/3以内）","eligible":"FA・仲介費用、デューデリジェンス費用、セカンドオピニオン、表明保証保険料等","aiUse":"M&Aによる事業引継ぎ時の専門家費用支援。直接のAI/DX用途ではないが、後継者不在の事業者の存続支援。承継後のDX投資の前提条件づくりに。","deadline":"令和8年度実施。直近の十四次公募は2026/2/27〜4/3で実施。次回回次は公募要領で要確認","status":"受付前","statusDetail":"事務局公式ポータル実在。直近は十五次（15次）公募で、公募要領は2026/5/22公表（中小企業庁）、事務局で15次公募説明会の申込を6/5開始と公式に確認。専門家活用枠には『専門家活用枠 小規模売り手支援類型』が6/5新設と公式記載。申請受付（電子申請）は6/8時点でまだ開始されておらず受付前。二次情報では申請期間2026/6/19〜7/24 17:00（予定）とされるが、公式の具体日付はfetchで確定できなかったため『予定』扱い。","nextAction":"GビズIDプライム（発行に2〜3週間）を取得しておき、十五次公募の申請受付開始（二次情報では6/19予定）に備える。公式ポータルの公募要領ダウンロードページで正式な申請受付期間を確認する。","asOf":"2026-06-08","url":"https://shoukei-mahojokin.go.jp/","sourceUrl":"https://shoukei-mahojokin.go.jp/","sourceName":"事業承継・M&A補助金 事務局 公式ポータル","sourceVerified":true,"confidence":"やや不確実","notes":"上限額・補助率は買い手/売り手類型で異なる。承継を機にレガシー業務をDX化する文脈で案内価値あり 【最新確認(2026-06-08)】元データは「直近の十四次公募は2026/2/27〜4/3で実施。次回回次は要確認」。6/8時点では十五次公募の公募要領が公表済（5/22）で、説明会申込が6/5開始済。次回回次は『十五次』と特定できる。","rec":false,"levelRank":0,"relRank":2},{"id":20,"name":"省エネルギー投資促進・需要構造転換支援事業費補助金（設備単位型/工場・事業場型）","provider":"経済産業省／資源エネルギー庁（SII等）","level":"国","category":"設備投資","rel":"低","target":"中小企業を含む事業者","max_amount":"設備単位型は上限1億円（先進設備は条件により上限引上げ）。工場・事業場型は枠により変動","amountVal":100000000,"rate":"1/3以内（先進枠は中小2/3、設備単位型先進は条件により引上げ）","eligible":"省エネ設備・機器への更新費用、EMS導入費等","aiUse":"省エネ性能の高い設備更新。AI/IoT制御による空調・生産設備の最適化（EMS等）を伴う更新で間接的にDX要素を含められる。高熱費対策が必要な旅館・製造業向け。","deadline":"令和8年度実施。複数枠・複数回公募。最新の公募回・締切はSII/エネ特ポータルで要確認","status":"受付中","statusDetail":"事務局はSII（環境共創イニシアチブ）。元データのenv.go.jpのURLは環境省の予算事業一覧で本補助金の公募情報ではない（誤り）。SII公式で確認：『令和7年度補正予算 省エネ・非化石転換補助金』として令和8年度実施。工場・事業場型の2次公募は2026/6/1～2026/7/9 17:00必着で受付中。設備単位型の2次公募も2026/6/1～2026/7/9 17:00必着で受付中（いずれも1次は2026/3/30～4/27で終了済）。交付決定9月上旬予定。郵送のみ・持参不可。","nextAction":"7/9 17:00必着の2次公募に間に合うよう、SIIの補助事業ポータルでアカウント登録→交付申請書類を作成し郵送で提出。設備か工場・事業場かで申請型を選択。","asOf":"2026-06-08","url":"https://www.env.go.jp/earth/earth/ondanka/enetoku/2026/","sourceUrl":"https://sii.or.jp/koujou07r/overview2.html","sourceName":"SII（一般社団法人 環境共創イニシアチブ）公式 工場・事業場型 2次公募","sourceVerified":true,"confidence":"やや不確実","notes":"純粋なAI/DX補助ではないが、AI制御EMS・脱炭素DXと絡めて提案可。高熱費の旅館・製造業向け 【最新確認(2026-06-08)】事業名称・事務局URLが誤り。正しくは事務局＝一般社団法人 環境共創イニシアチブ（SII）、現行制度名は『令和7年度補正予算 省エネ・非化石転換補助金（工場・事業場型／設備単位型）』。公式URLは env.go.jp ではなく sii.or.jp。工場・事業場型2次=https://sii.or.jp/koujou07r/overview2.html、設備単位型2次=https://sii.or.jp/setsubi07r/overview2.html（ともに2026/6/1～7/9）。","rec":false,"levelRank":0,"relRank":2},{"id":21,"name":"両立支援等助成金（育児休業等支援コース 他）","provider":"厚生労働省（都道府県労働局）","level":"国","category":"一般","rel":"低","target":"育休の円滑な取得・職場復帰、業務代替体制整備等に取り組む中小企業事業主","max_amount":"育児休業等支援コースは原則60万円規模（取組内容により変動）","amountVal":600000,"rate":"取組内容ごとの定額助成","eligible":"育休復帰支援プラン作成・実施、業務代替体制整備等（定額助成型）","aiUse":"AI/DX導入の直接補助ではない。育休取得・復帰支援や業務代替体制の整備への助成で、AI・省力化による業務代替・引き継ぎ効率化と組み合わせて人材定着策として案内可能。","deadline":"通年（育休開始/復帰後の所定期間内に申請）。令和8年度も継続","status":"通年・随時","statusDetail":"厚労省公式『子ども・子育て両立支援等助成金のご案内』ページは実在し、令和8（2026）年度版の支給申請の手引きが掲載されている。締切は固定の公募回ではなく、育休取得時＝育休開始から3か月経過の翌日から2か月以内、職場復帰時＝育休終了の翌日から6か月経過の翌日から2か月以内、と各事業所の育休スケジュールに連動する期間内申請。令和8年度も継続。","nextAction":"対象労働者の育休取得・復帰の時期に応じて所定期間内に、本社所在地の都道府県労働局 雇用環境・均等部（室）へ申請。令和8年度版手引きで様式・要件を確認。","asOf":"2026-06-08","url":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/shokuba_kosodate/ryouritsu01/index.html","sourceUrl":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/shokuba_kosodate/ryouritsu01/index.html","sourceName":"厚生労働省 公式（子ども・子育て両立支援等助成金のご案内）","sourceVerified":true,"confidence":"やや不確実","notes":"AI/DX関連性は低く本WSの主目的とは距離があるが、人材確保・定着の文脈で参考情報として提供","rec":false,"levelRank":0,"relRank":2},{"id":22,"name":"JAPANブランド育成支援（ものづくり補助金 海外市場開拓〈JAPANブランド〉類型）","provider":"中小企業庁","level":"国","category":"販路開拓","rel":"低","target":"海外展開（または海外を見据えた全国展開）を目指す中小・小規模事業者","max_amount":"ものづくり補助金の海外市場開拓類型として実施（上限は同補助金の枠に準拠）","amountVal":0,"rate":"1/2（小規模事業者は2/3）","eligible":"海外展開向けの機械装置・システム構築費、海外旅費、通訳・翻訳費、展示会出展費、ブランディング費等","aiUse":"海外展開を見据えた新商品・サービス開発・ブランディング・販路開拓。多言語ECサイト・AI翻訳・越境ECのDX投資に間接活用可。伝統工芸・特産品の海外展開向け。","deadline":"単独の補助金は終了し、ものづくり補助金の一類型へ統合済。令和8年度は統合新制度（新事業進出・ものづくり）のグローバル枠等で継続見込み。最新の枠構成は公募要領で要確認","status":"要確認","statusDetail":"単独のJAPANブランド育成支援補助金は終了し、ものづくり補助金の『海外市場開拓（JAPANブランド）類型』へ統合済み（中小企業庁・各経産局の公式案内で確認）。さらに令和8年度はものづくり補助金自体が省力化投資・新事業進出と統合した新制度へ再編中で、統合新制度の公募要領は2026年6月公開予定・申請受付は2026年8月頃開始予定。よって6/8時点で当類型として申請受付中の公募回は確認できず受付前～要確認。なお中小企業庁の japan_brand ページ（元URL）はfetchがタイムアウトし内容を直接確認できなかった。","nextAction":"ものづくり補助金公式ポータル（portal.monodukuri-hojo.jp）で2026年6月公開予定の統合新制度公募要領を待ち、海外市場開拓（グローバル）枠の有無・受付開始日を確認。GビズIDプライムを先に取得しておく。","asOf":"2026-06-08","url":"https://www.chusho.meti.go.jp/shogyo/chiiki/japan_brand/","sourceUrl":"https://portal.monodukuri-hojo.jp/","sourceName":"ものづくり補助金 公式総合サイト（中小企業庁／全国中小企業団体中央会）","sourceVerified":false,"confidence":"要確認","notes":"大洲の伝統工芸・特産品のインバウンド/越境展開向け。2026年度は統合新制度の枠組みで要再確認 【最新確認(2026-06-08)】単独補助金としては終了。ものづくり補助金の一類型へ統合済みで、令和8年度は統合新制度（ものづくり商業サービス省力化・革新的開発・新事業・海外展開促進事業）へ再編中。","rec":false,"levelRank":0,"relRank":2},{"id":23,"name":"令和8年度 愛媛県トライアングルエヒメ横展開補助金（ものづくり・海事）","provider":"愛媛県（産業創出課）","level":"愛媛県","category":"AI/DX","rel":"高","target":"県内に本社・本店を置く中小企業者等。トライアングルエヒメ推進事業の採択プロジェクト（ものづくり・海事）の成功事例を導入することが要件","max_amount":"100万円","amountVal":1000000,"rate":"補助対象経費の1/2以内","eligible":"機械装置費、システム構築費、専門家経費、外注費、クラウド利用料、物品購入費、使用料・賃借料","aiUse":"ものづくり・海事分野のデジタル実装（AI/IoT/ロボット等）の県採択成功事例を自社に導入。システム構築費・クラウド利用料・専門家経費が対象でDX導入に直結。製造業の事務棚卸し→DX導入の出口に。","deadline":"令和8年度公募中。募集期間2026/5/15〜2026/9/30 17時必着。現在申請可能","status":"受付中","statusDetail":"愛媛県（産業創出課）公式ページを確認。令和8年度公募中で、募集期間は令和8年5月15日（金）～令和8年9月30日（水）17時必着。6/8は期間内のため受付中。ページ実在を確認。","nextAction":"9/30 17時必着。公募要領・様式をダウンロードし、ものづくり・海事の横展開要件を満たす計画を作成して産業創出課へ提出。","asOf":"2026-06-08","url":"https://www.pref.ehime.jp/site/madoguchi/145938.html","sourceUrl":"https://www.pref.ehime.jp/site/madoguchi/145938.html","sourceName":"愛媛県 産業創出課 公式（トライアングルエヒメ横展開補助金）","sourceVerified":true,"confidence":"確実","notes":"大洲の製造業（裾野100社の最終ターゲット層）向け。県採択プロジェクトの横展開が要件のため、どの成功モデルを導入するかが鍵。上限100万円と小さめだが、令和8年度に現在公募中なのが大きな利点","rec":false,"levelRank":1,"relRank":0},{"id":24,"name":"愛媛県産業DXモデル横展開事業費補助金（フラグシップ型／トライアングル型）","provider":"愛媛県（産業創出課）／えひめ産業振興財団","level":"愛媛県","category":"AI/DX","rel":"高","target":"県内に本社・本店を置く中小企業者等（大洲市・近隣市町とも対象）","max_amount":"フラグシップモデル導入型1,000万円／トライアングルエヒメモデル導入型100万円（令和7年度時点・令和8年度要確認）","amountVal":10000000,"rate":"両類型とも補助対象経費の1/2以内（令和7年度時点・令和8年度要確認）","eligible":"機械装置・システム構築費、専門家経費、外注費、クラウド利用費等","aiUse":"県がDX先行モデルとして選定した事例を参考に、自社DX推進に必要なシステム構築・クラウド導入・専門家活用を支援。AIツール・業務システム・多言語/予約システム等に幅広く充当可能。県の本命DX枠。","deadline":"令和7年度はフラグシップ型〜5/7、トライアングル型〜9/30で実施。令和8年度の同名公募は本調査時点で未確認。上記『トライアングルエヒメ横展開補助金』へ再編・継続している可能性が高い。要確認","status":"要確認","statusDetail":"公式ページ(madoguchi/106162.html)は実在するが内容は令和7年度のみ（フラグシップ型〜2025/5/7、トライアングル型〜2025/9/30で実施済）。令和8年度の同名公募は公式に未掲載で確認できない。なお産業創出課の関連事業としてR8は『DXはじめの一歩補助金』『DX認定取得加速化』等が別途公募されており、本補助金は再編・名称変更の可能性が高い。現時点で本補助金としての受付有無は断定不可。","nextAction":"愛媛県産業創出課(089-912-2471)に令和8年度の産業DXモデル横展開（または後継のDXはじめの一歩補助金等）の公募有無・スケジュールを照会する。","asOf":"2026-06-08","url":"https://www.pref.ehime.jp/site/madoguchi/106162.html","sourceUrl":"https://www.pref.ehime.jp/site/madoguchi/106162.html","sourceName":"愛媛県 産業創出課 公式","sourceVerified":true,"confidence":"やや不確実","notes":"令和8年度は名称・スキームが『トライアングルエヒメ横展開補助金』へ再編された可能性が高い。最新の枠組みは愛媛県産業創出課(089-912-2471)に要確認","rec":false,"levelRank":1,"relRank":0},{"id":25,"name":"えひめDX推進プロジェクト（令和8年度）※補助金ではなく無料伴走支援","provider":"愛媛県（委託先：有限責任監査法人トーマツ）","level":"愛媛県","category":"人材育成","rel":"高","target":"県内企業（DX推進に関心がある企業）。採択予定15社","max_amount":"無料（補助金ではなく伴走支援）","amountVal":0,"rate":"完全無料（県委託事業）","eligible":"対象経費なし（5回のゼミ・ワークショップ＋個別伴走支援を無償提供）","aiUse":"DX認定取得に向けた経営ビジョン・DX戦略策定の伴走支援。AI/DX導入の前段（戦略・体制づくり）を専門家が無料で支援。補助金活用の土台づくりに最適。","deadline":"令和8年度募集中。申込期限7月31日(金)、採択結果8月26日(水)通知予定。現在申込可能","status":"受付中","statusDetail":"公式ページ(page/148773.html、更新日2026/6/4)で令和8年度募集中と確認。申込期限2026/7/31(金)、採択結果は2026/8/26(水)までにメール通知予定、採択予定15社。完全無料の伴走型支援（委託先：有限責任監査法人トーマツ）。6/8時点で申込期限前のため受付中。","nextAction":"7/31の申込期限までに申込フォームから応募する。補助金ではなく無料伴走支援のため、早めに申込み採択（8/26通知）を待つ。","asOf":"2026-06-08","url":"https://www.pref.ehime.jp/page/148773.html","sourceUrl":"https://www.pref.ehime.jp/page/148773.html","sourceName":"愛媛県 公式（えひめDX推進プロジェクト）","sourceVerified":true,"confidence":"確実","notes":"補助金ではなく無料の専門家伴走支援。費用ゼロで参加ハードルが低く、『事務棚卸し→DX』に関心のある事業者の戦略整理・DX認定取得に最適。補助金申請の前段として有効。採択枠15社と限定的なので早期申込を","rec":true,"levelRank":1,"relRank":0},{"id":26,"name":"令和8年度 愛媛県観光集客力向上支援事業","provider":"愛媛県（観光振興課）","level":"愛媛県","category":"販路開拓","rel":"中","target":"観光事業者（宿泊業・観光施設・運輸業・旅行業等）、観光関係団体、観光事業者グループ","max_amount":"500万円（複数年度の場合は合計額）","amountVal":5000000,"rate":"補助対象経費の1/2以内","eligible":"体験型観光コンテンツ造成、周遊旅行商品造成、二次交通対策、多言語対応、観光ガイド育成等（古民家改修による宿泊・飲食開業は対象外）","aiUse":"多言語対応（多言語POP・メニュー・サイト等）が明示的に対象経費。体験型観光コンテンツ造成・周遊商品造成も対象。観光業・旅館・飲食のインバウンド向けデジタル化（多言語化）の入口として有効。","deadline":"令和8年度公募は2026/4/10〜5/27で締切済。次回は令和9年度（例年4月頃）要確認","status":"受付終了","statusDetail":"公式ページ(page/103213.html、更新日2026/4/10)で令和8年度の申請期間は2026/4/10〜2026/5/27（必着）と確認。締切(5/27)は6/8より前のため受付終了。現在は1次審査(6月上旬)〜採択(6月末〜7月上旬)の段階。","nextAction":"今年度は締切済。次回（令和9年度・例年4月頃公募見込み）に向け、市町の意見書添付が必要なため、所管市町・観光振興課へ早めに相談する。","asOf":"2026-06-08","url":"https://www.pref.ehime.jp/page/103213.html","sourceUrl":"https://www.pref.ehime.jp/page/103213.html","sourceName":"愛媛県 観光振興課 公式","sourceVerified":true,"confidence":"確実","notes":"大洲の観光業1社目戦略と直結。多言語POP/メニューが対象でアンカー業務候補と相性が良い。令和8年度は締切済のため、令和9年度公募に向けた計画づくりを支援する形が現実的。キタマネジメント（DMO）との連携で採択親和性が高い","rec":false,"levelRank":1,"relRank":1},{"id":27,"name":"令和8年度 愛媛県古民家等を活用したインバウンド誘客支援事業","provider":"愛媛県（観光振興課／えひめ国際観光テーマ地区推進協議会）","level":"愛媛県","category":"販路開拓","rel":"中","target":"団体・民間事業者（県・市町・個人は除く）","max_amount":"宿泊施設整備型800万円／インバウンド誘客一体型1,500万円","amountVal":15000000,"rate":"補助対象経費の1/2以内","eligible":"古民家・空き家等を活用した宿泊施設の整備・改修、近隣飲食店の多言語・キャッシュレス対応等の環境整備","aiUse":"近隣飲食店等の多言語対応・キャッシュレス対応の環境整備が対象。古民家活用の宿泊施設整備とセットでデジタル決済・多言語化を導入できる。","deadline":"令和8年度公募は2026/4/13〜5/27で締切済。次回は令和9年度要確認","status":"受付終了","statusDetail":"公式ページ(page/143363.html、更新日2026/4/13)で令和8年度の申請期間は2026/4/13〜2026/5/27（必着）と確認。締切(5/27)は6/8より前のため受付終了。","nextAction":"今年度は締切済。次回（令和9年度・例年4月頃見込み）に向け、観光振興課／えひめ国際観光テーマ地区推進協議会へ事前相談する。","asOf":"2026-06-08","url":"https://www.pref.ehime.jp/page/143363.html","sourceUrl":"https://www.pref.ehime.jp/page/143363.html","sourceName":"愛媛県 観光振興課 公式","sourceVerified":true,"confidence":"確実","notes":"大洲の歴史的景観・古民家活用（NIPPONIA等の文脈）と非常に親和性が高い。上限が大きく観光まちづくり型の案件向き。令和8年度は締切済","rec":false,"levelRank":1,"relRank":1},{"id":28,"name":"愛媛県 中小企業者収益力強化補助金（令和8年度）","provider":"愛媛県（事務局：愛媛県商工会連合会／各商工会・商工会議所）","level":"愛媛県","category":"設備投資","rel":"中","target":"県内の中小企業者・小規模事業者。経営計画に基づき収益力強化に取り組み、商工会・商工会議所の支援を受けることが要件","max_amount":"200万円","amountVal":2000000,"rate":"中小企業者1/2、小規模事業者2/3","eligible":"機械装置・システム導入費、設計費、付帯工事費等（汎用性のあるPC・タブレットは対象外）","aiUse":"POSレジと社内システムの連携、業務システム・POS等のシステム導入費が対象。生産性向上目的のDX設備投資に充当可能（PC・タブレット等の汎用品は対象外）。","deadline":"令和8年度公募は提出締切2026/5/29で締切済（年1回）。次回は令和9年度（例年3月頃）要確認","status":"受付終了","statusDetail":"公式（愛媛県商工会連合会）ページで令和8年度公募の提出締切が令和8年5月29日（金）と確認。これは商工会・商工会議所から事務局への提出締切で、事業者の窓口提出はさらに前。いずれも6/8時点で締切済。年1回公募のため次回は令和9年度（例年3月頃）見込み。","nextAction":"今年度は締切済。次回令和9年度公募（例年3月頃）に向け、最寄りの商工会・商工会議所へ早期相談・事業計画準備を進める。","asOf":"2026-06-08","url":"https://ehime-sci.jp/shueki2026/","sourceUrl":"https://ehime-sci.jp/shueki2026/","sourceName":"愛媛県商工会連合会 公式（収益力強化補助金案内）","sourceVerified":true,"confidence":"確実","notes":"8組の小規模事業者に最も身近な県の設備投資補助。地元の大洲商工会議所が窓口。AI/DX専用ではないがシステム導入に使える。令和8年度は締切済のため令和9年度の公募開始に向けた準備が現実的","rec":false,"levelRank":1,"relRank":1},{"id":29,"name":"愛媛県 生産性向上設備等投資支援補助金","provider":"愛媛県（事務局：愛媛県中小企業団体中央会）","level":"愛媛県","category":"設備投資","rel":"中","target":"県内の中小企業者・個人事業主・組合等","max_amount":"通常枠1,000万円／賃上げ枠約1,333万円（令和7年度時点・令和8年度要確認）","amountVal":13330000,"rate":"通常枠1/2、賃上げ枠2/3（令和7年度時点・令和8年度要確認）","eligible":"機械装置等費、外注費、ソフトウェア購入費、サービス利用料（補助対象経費200万円・税抜以上が要件）","aiUse":"業務効率化・省コスト化のための設備投資。ソフトウェア購入費・サービス利用料が対象に含まれ、業務システム・RPA・自動化ソフト等のDX投資にも充当可能。下限200万円のため比較的大型投資向け。","deadline":"原資が物価高騰対応の臨時交付金のため公募回ごとに条件が変動。直近は年度初め（春）の短期公募の傾向。令和8年度の新規募集は愛媛県中小企業団体中央会に要確認","status":"要確認","statusDetail":"原資が物価高騰対応重点支援地方創生臨時交付金のため公募回ごとに条件・時期が変動。愛媛県公式（madoguchi/132941.html）に『（2次）の公募について』が2026/1/26更新で掲載されているが、本文に公募開始日・締切日の記載がなく、当該2次は令和7年度12月補正予算ベース。過去の1次は申請受付令和7年3月3日〜3月28日17時必着。令和8年度（2026年度）の新規公募の有無・締切は公式上未確認。事務局サイト(bp-ehime.or.jp)は証明書エラーで直接確認不可。","nextAction":"現在募集中か締切済みかが公式で確定できないため、事務局＝愛媛県中小企業団体中央会(089-955-7150)へ電話で現行公募回・締切を直接照会する。","asOf":"2026-06-08","url":"https://bp-ehime.or.jp/sk/","sourceUrl":"https://www.pref.ehime.jp/site/madoguchi/132941.html","sourceName":"愛媛県 産業創出課（支援の窓口・2次公募ページ）","sourceVerified":true,"confidence":"要確認","notes":"下限200万円のため小規模な事務効率化ツール導入には不向き。製造業の設備更新＋システム連携など大型案件向き。募集期間が短いため早期確認を。国の補助金との同一経費重複は不可","rec":false,"levelRank":1,"relRank":1},{"id":30,"name":"愛媛県中小企業向け制度融資（チャレンジ企業支援資金 等）","provider":"愛媛県（金融相談窓口）／愛媛県信用保証協会・伊予銀行等","level":"愛媛県","category":"一般","rel":"中","target":"県内の中小企業者。チャレンジ企業支援資金は経営革新計画・先端設備等導入計画の承認者等","max_amount":"融資制度により異なる（要確認）","amountVal":0,"rate":"補助率ではなく融資（利率は最新の利率一覧で要確認。経営安定資金等の設備資金は1.0%利子補給あり）","eligible":"設備資金・運転資金（DX設備・システム投資を含む）","aiUse":"チャレンジ企業支援資金は『先端設備等導入計画』『経営革新計画』承認者向けで、DX・先端設備投資の資金調達に活用可能。補助金は精算払い（後払い）のため、自己負担分やつなぎ資金の調達手段として有効。","deadline":"通年。利率は随時更新。最新条件は金融相談窓口(089-912-2481)で要確認","status":"通年・随時","statusDetail":"愛媛県公式（支援の窓口）ページの実在を確認。制度融資のため特定の締切はなく通年運用。利率一覧は令和8年4月1日現在で更新され継続中。チャレンジ企業支援資金（経営革新計画承認・海外展開・空き店舗活用・技術実用化等が対象）を含む。","nextAction":"通年・随時のため、取引金融機関（伊予銀行等）または愛媛県経営支援課(089-912-2480)・各地方局商工観光課に相談し、最新利率と要件を確認のうえ随時申込。","asOf":"2026-06-08","url":"https://www.pref.ehime.jp/site/madoguchi/59788.html","sourceUrl":"https://www.pref.ehime.jp/site/madoguchi/59788.html","sourceName":"愛媛県 経営支援課（支援の窓口・制度融資）","sourceVerified":true,"confidence":"やや不確実","notes":"補助金ではなく融資。伊予銀行との連携で活用しやすい。DX投資は『先端設備等導入計画』承認とセットにすると条件が有利になる可能性 【最新確認(2026-06-08)】元データの問い合わせ先について、公式ページ記載は経営支援課089-912-2480（記載の089-912-2481は要確認）。受付・利率は最新を金融機関窓口で確認の運用は妥当。","rec":false,"levelRank":1,"relRank":1},{"id":31,"name":"大洲市中小企業者・小規模事業者応援事業補助金（経営環境IT化等支援）","provider":"大洲市（商工産業課 商工振興係）","level":"大洲市","category":"AI/DX","rel":"高","target":"大洲市内に店舗または事業所を有する中小・小規模事業者（本店・本社が市外でも市内に店舗・事業所があれば対象）","max_amount":"10万円","amountVal":100000,"rate":"1/2","eligible":"ソフトウェア導入費（初期投資のみ）、クラウドサービス利用料（ライセンス/アカウント料）、キャッシュレス決済機器購入費","aiUse":"ソフトウェア導入（初期費用）、クラウドサービス利用料、キャッシュレス決済機器の購入。生成AIツール・SaaS型業務システム・予約/会計ソフトの初期投資や利用料に充当しやすい。事務作業の棚卸し後の小規模なDX第一歩に最適。","deadline":"令和8年度公募中。申請受付2026/4/1〜2027/2/26（予算上限到達で終了・早い者勝ち）、事業実施期限2027/3/31","status":"受付中","statusDetail":"大洲市公式ページで令和8年度公募を確認。申請受付は令和8年4月1日（水）〜令和9年2月26日（金）で、6/8時点は受付期間内。予算上限到達で早期終了の早い者勝ち方式。経営環境IT化等支援はソフトウェア導入・キャッシュレス決済機器導入が対象、補助率1/2・上限10万円、事業実施・実績報告は令和9年3月31日まで。申請様式もダウンロード可。","nextAction":"受付中かつ予算枠の早い者勝ち。大洲市商工産業課に確認のうえ、IT/キャッシュレス導入計画を固めて早期に交付申請（事業着手前申請が原則）。","asOf":"2026-06-08","url":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceUrl":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceName":"大洲市 商工産業課 商工振興係 公式","sourceVerified":true,"confidence":"確実","notes":"大洲市が独自に提供する唯一の明確なデジタル化/IT化支援。上限10万円と小さいが補助率1/2で市役所窓口で完結、観光・飲食・小売・サービス業の最初のDX導入（POSレジ・予約・キャッシュレス・SaaS）に向く。問い合わせ：商工産業課0893-24-1722","rec":false,"levelRank":2,"relRank":0},{"id":32,"name":"大洲市中小企業者・小規模事業者応援事業補助金（資格取得支援）","provider":"大洲市（商工産業課 商工振興係）","level":"大洲市","category":"人材育成","rel":"中","target":"市内本店・本社を有する中小・小規模事業者","max_amount":"5万円（年度内複数申請可）","amountVal":50000,"rate":"1/2","eligible":"受講料、検定料、教材費、旅費、研修委託料、謝金、賃借料","aiUse":"ITパスポート・DX関連検定・生成AI関連講座など、従業員のデジタルスキル習得の受講料・検定料・教材費に充当可能。AIアカデミーの有料講座受講料補助に使える可能性。","deadline":"令和8年度公募中。受付2026/4/1〜2027/2/26、予算上限到達で終了","status":"受付中","statusDetail":"令和8年度公募中。公式ページで受付期間が令和8年4月1日〜令和9年2月26日と確認でき、受付開始済かつ締切（2027/2/26）は6/8より後。予算上限額に達した時点で受付終了する旨も明記。資格取得支援は11メニューの1つとして掲載を確認。","nextAction":"予算上限到達で早期終了の恐れあり。早めに大洲市商工産業課 商工振興係へ事前相談し申請準備を進める。事業実施期限は令和9年3月31日。","asOf":"2026-06-08","url":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceUrl":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceName":"大洲市 公式（商工産業課）","sourceVerified":true,"confidence":"確実","notes":"年度内複数申請可で使い勝手が良い。対象講座の範囲は市役所に要確認。AIアカデミーの講座受講と相性が良い","rec":false,"levelRank":2,"relRank":1},{"id":33,"name":"大洲市中小企業者・小規模事業者応援事業補助金（創業上乗せ支援）","provider":"大洲市（商工産業課 商工振興係）","level":"大洲市","category":"創業","rel":"中","target":"創業者のうち地域密着型・課題対応・融資受領・新規性・商工会議所確認の5要件を全て満たす者","max_amount":"200万円","amountVal":2000000,"rate":"1/2（または融資額のいずれか少ない額）","eligible":"施設改修費、機械装置費、備品費、広告宣伝費、商品開発費","aiUse":"施設改修・機械装置・備品・商品開発費の一部としてDX設備（システム・機器）導入に充当可能。市単独では最大規模の補助。","deadline":"令和8年度公募中。受付2026/4/1〜2027/2/26、予算上限到達で終了","status":"受付中","statusDetail":"令和8年度公募中。公式ページで受付期間が令和8年4月1日〜令和9年2月26日と確認でき、受付開始済かつ締切（2027/2/26）は6/8より後。予算上限到達で終了。創業（上乗せ）支援メニューとして掲載を確認。","nextAction":"創業支援との併用メニュー。予算上限到達で早期終了の恐れあり。大洲市商工産業課 商工振興係へ早めに事前相談。事業実施期限は令和9年3月31日。","asOf":"2026-06-08","url":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceUrl":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceName":"大洲市 公式（商工産業課）","sourceVerified":true,"confidence":"確実","notes":"創業支援の上乗せメニュー。融資を受けることが前提（補助額は融資額が上限）。要件が厳しいため要事前相談","rec":false,"levelRank":2,"relRank":1},{"id":34,"name":"大洲市中小企業者・小規模事業者応援事業補助金（創業支援）","provider":"大洲市（商工産業課 商工振興係）","level":"大洲市","category":"創業","rel":"中","target":"市内本店・本社を有し今年度または前年度に創業した中小・小規模事業者（特定創業支援等事業の受講証明が必要）","max_amount":"50万円","amountVal":500000,"rate":"1/2","eligible":"申請書類作成費、店舗等賃借料、工事費、備品費、調査費、広報費、資格取得費、委託料、リース料","aiUse":"創業時の店舗整備・備品費の一部としてPC・タブレット・予約/会計システム等のIT環境整備に充当可能（広報費・委託料・リース料も対象）。","deadline":"令和8年度公募中。受付2026/4/1〜2027/2/26、予算上限到達で終了","status":"受付中","statusDetail":"令和8年度公募中。公式ページで受付期間が令和8年4月1日〜令和9年2月26日と確認でき、受付開始済かつ締切（2027/2/26）は6/8より後。予算上限到達で終了。創業支援メニューとして掲載を確認。","nextAction":"予算上限到達で早期終了の恐れあり。大洲市商工産業課 商工振興係へ早めに事前相談し申請準備。事業実施期限は令和9年3月31日。","asOf":"2026-06-08","url":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceUrl":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceName":"大洲市 公式（商工産業課）","sourceVerified":true,"confidence":"確実","notes":"市の特定創業支援等事業（いよぎん未来起業塾等）受講で証明書が出ると本補助の対象に。問い合わせ：商工産業課0893-24-1722","rec":false,"levelRank":2,"relRank":1},{"id":35,"name":"大洲市中小企業者・小規模事業者応援事業補助金（事業承継支援）","provider":"大洲市（商工産業課 商工振興係）","level":"大洲市","category":"設備投資","rel":"中","target":"今年度中に事業承継を行う市内中小・小規模事業者","max_amount":"50万円","amountVal":500000,"rate":"1/2","eligible":"申請書類作成費、工事費、備品費、処分費、選定費（親族外承継のみ）、資格取得費","aiUse":"承継時の工事・備品費の一部として店舗・事務所のIT環境刷新に充当可能。承継を機にレガシー業務のDX化を進める入口に。","deadline":"令和8年度公募中。受付2026/4/1〜2027/2/26、予算上限到達で終了","status":"受付中","statusDetail":"令和8年度公募中。公式ページで受付期間が令和8年4月1日〜令和9年2月26日と確認でき、受付開始済かつ締切（2027/2/26）は6/8より後。予算上限到達で終了。事業承継支援メニューとして掲載を確認。","nextAction":"予算上限到達で早期終了の恐れあり。大洲市商工産業課 商工振興係へ早めに事前相談し申請準備。事業実施期限は令和9年3月31日。","asOf":"2026-06-08","url":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceUrl":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceName":"大洲市 公式（商工産業課）","sourceVerified":true,"confidence":"確実","notes":"後継者へのバトンタッチ時の設備更新支援","rec":false,"levelRank":2,"relRank":1},{"id":36,"name":"大洲市中小企業者・小規模事業者応援事業補助金（労働力確保支援）","provider":"大洲市（商工産業課 商工振興係）","level":"大洲市","category":"人材育成","rel":"低","target":"市内事業者（ハローワーク求人登録業種・正社員募集のみ）","max_amount":"30万円","amountVal":300000,"rate":"1/2","eligible":"広報費、求人サイト掲載料、企業説明会関連経費、人材紹介手数料","aiUse":"求人サイト掲載・採用広報の費用に。DX人材採用時の媒体掲載料にも充当可。","deadline":"令和8年度公募中。受付2026/4/1〜2027/2/26、予算上限到達で終了","status":"受付中","statusDetail":"大洲市公式ページで令和8年度の申請受付が令和8年4月1日(水)〜令和9年2月26日(金)と確認。労働力確保支援メニュー（補助上限30万円・補助率1/2）は対象11事業の一つとして掲載。6/8時点は受付期間内。ただし予算上限到達で早期終了（早い者勝ち）。","nextAction":"予算枠が埋まる前に早めに商工産業課 商工振興係(0893-24-1722)へ相談し申請。事業実施は2027/3/31まで。","asOf":"2026-06-08","url":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceUrl":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceName":"大洲市 商工産業課 公式","sourceVerified":true,"confidence":"確実","notes":"同枠に人材確保支援・インターンシップ実施支援・外国人技能実習生受入支援（各上限30万）も別メニューで存在","rec":false,"levelRank":2,"relRank":2},{"id":37,"name":"大洲市中小企業者・小規模事業者応援事業補助金（商店街家賃支援）","provider":"大洲市（商工産業課 商工振興係）","level":"大洲市","category":"設備投資","rel":"低","target":"市内商店街の空き店舗を利用し週5日以上営業する事業者","max_amount":"60万円（2年目1/3・3年目1/4に逓減）","amountVal":600000,"rate":"1/2","eligible":"市内商店街の空き店舗の賃借料（敷金・礼金除く）","aiUse":"直接のAI/DX用途ではないが、空き店舗での新規出店時の固定費圧縮に。浮いた資金をIT投資に回せる。","deadline":"令和8年度公募中。受付2026/4/1〜2027/2/26、予算上限到達で終了","status":"受付中","statusDetail":"大洲市公式ページで令和8年度の申請受付が令和8年4月1日(水)〜令和9年2月26日(金)と確認。商店街家賃支援メニュー（補助上限60万円・2年目以降逓減）は対象11事業の一つとして掲載。6/8時点は受付期間内。予算上限到達で早期終了。","nextAction":"予算枠が埋まる前に早めに商工産業課 商工振興係(0893-24-1722)へ相談し申請。","asOf":"2026-06-08","url":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceUrl":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceName":"大洲市 商工産業課 公式","sourceVerified":true,"confidence":"確実","notes":"大洲の歴史的町並み（おはなはん通り等）での出店促進に。3年間逓減方式","rec":false,"levelRank":2,"relRank":2},{"id":38,"name":"大洲市中小企業者・小規模事業者応援事業補助金（産業財産権取得支援）","provider":"大洲市（商工産業課 商工振興係）","level":"大洲市","category":"一般","rel":"低","target":"市内本店・本社を有する中小・小規模事業者","max_amount":"10万円","amountVal":100000,"rate":"1/2","eligible":"出願料、審査請求費、登録料、弁理士手続代行費、外国出願費用","aiUse":"DXで開発した新サービス・新商品の特許/商標出願費用に充当可能。匠の技・地域ブランド商品の知財保護に。","deadline":"令和8年度公募中。受付2026/4/1〜2027/2/26、予算上限到達で終了","status":"受付中","statusDetail":"大洲市公式ページで令和8年度の申請受付が令和8年4月1日(水)〜令和9年2月26日(金)と確認。産業財産権取得支援メニュー（補助上限10万円・補助率1/2）は対象11事業の一つとして掲載。6/8時点は受付期間内。予算上限到達で早期終了。","nextAction":"出願・登録費用が発生する前に商工産業課 商工振興係(0893-24-1722)へ相談し申請。予算枠に注意。","asOf":"2026-06-08","url":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceUrl":"https://www.city.ozu.ehime.jp/soshiki/shoukou/26248.html","sourceName":"大洲市 商工産業課 公式","sourceVerified":true,"confidence":"確実","notes":"出願不成立でも返還不要。Neural Craft等のプロダクト由来商標にも","rec":false,"levelRank":2,"relRank":2},{"id":39,"name":"大洲市中小企業振興資金融資制度（信用保証料補給・利子補給）","provider":"大洲市（商工産業課）／愛媛県信用保証協会／指定金融機関","level":"大洲市","category":"一般","rel":"中","target":"市内に事務所を有し市税滞納がなく、愛媛県信用保証協会の保証対象業種を営む中小企業・協同組合","max_amount":"融資限度 長期500万円／短期300万円（補給は保証料全額＋利子年0.73%相当）","amountVal":5000000,"rate":"信用保証料：全額補給／利子：融資額の年0.73%補給","eligible":"設備資金・運転資金（融資制度。完済後に保証料・利子を補給）","aiUse":"DX設備投資・システム導入の運転/設備資金の低利調達に。完済後に信用保証料全額＋利子（年0.73%相当）が補給され、実質的な金利負担を軽減。","deadline":"令和8年度運用中。当月貸付利率は毎月改定（令和8年6月＝2.50%）","status":"通年・随時","statusDetail":"大洲市公式ページ（2026/6/1更新）で令和8年度運用中を確認。取扱金融機関へ随時相談・申込する制度で時期制限なし。令和8年6月受付利率2.50%、信用保証料は全額補給、利子補給は年0.73%と明記。完済後に市から補給通知が届く仕組み。","nextAction":"資金需要に応じて随時、取扱金融機関（指定金融機関）へ相談・申込。利率は毎月改定のため申込時の最新利率を確認。","asOf":"2026-06-08","url":"https://www.city.ozu.ehime.jp/soshiki/shoukou/22464.html","sourceUrl":"https://www.city.ozu.ehime.jp/soshiki/shoukou/22464.html","sourceName":"大洲市 商工産業課 公式","sourceVerified":true,"confidence":"確実","notes":"補助金ではなく低利融資＋補給制度。融資を期日までに完済し市税滞納がないことが補給の条件。設備投資型DXの資金調達手段として有効","rec":false,"levelRank":2,"relRank":1},{"id":40,"name":"内子町 はじめる・つなぐ商工活性化支援事業補助金","provider":"内子町（町並・地域振興課）","level":"近隣市町","category":"創業・設備投資・事業承継","rel":"中","target":"内子町内に主たる事業所を置く個人事業主・法人。商工業を営む/創業予定で町税滞納がない事業者","max_amount":"創業・事業拡大50万円（空き店舗活用は100万円）／事業承継50万円（他メニュー併用で最大150万円）","amountVal":1500000,"rate":"創業・事業拡大1/2／事業承継2/3","eligible":"創業・事業拡大・事業承継に伴う経費（店舗改装・設備投資・雇用拡大に伴う事業等。詳細は申請要領・事前協議で確定）","aiUse":"事業拡大支援の設備投資枠で、業務システムやPC・POSレジ・デジタル機器の導入費に充当できる可能性。デジタル化専用枠ではないため事前協議で要相談。","deadline":"要確認（通年の事前協議制。令和8年度の公募回・締切は明記されておらず、町並・地域振興課0893-44-2118への事前協議が必須）","status":"要確認","statusDetail":"町並・地域振興課への事前協議制の制度で、令和8年度の公募回・締切・募集期間が公式ページ・内子町商工会ページのいずれにも明記されていない。創業・事業拡大・事業承継を対象に継続中であることは確認できたが、6/8時点で『受付中』と断定できる締切情報がない。事前協議が前提のため、利用希望時はまず町に相談が必要。","nextAction":"内子町 町並・地域振興課（0893-44-2118）へ事前協議の連絡を取り、令和8年度の受付可否・締切・予算枠を確認する。","asOf":"2026-06-08","url":"https://www.town.uchiko.ehime.jp/soshiki/3/132309.html","sourceUrl":"https://www.town.uchiko.ehime.jp/soshiki/3/132309.html","sourceName":"内子町 公式（町並・地域振興課）","sourceVerified":false,"confidence":"やや不確実","notes":"申請前に町との事前協議が必須。空き店舗活用で上限が倍増する点が特徴。観光・飲食・小売の出店/改装に向く","rec":false,"levelRank":3,"relRank":1},{"id":41,"name":"八幡浜市 デジタル化対応設備導入支援事業補助金","provider":"八幡浜市（商工観光課）","level":"近隣市町","category":"AI/DX・設備投資","rel":"高","target":"八幡浜市内の中小企業者・小規模事業者（商工業者）","max_amount":"100万円","amountVal":1000000,"rate":"補助対象経費の1/2以内","eligible":"機械装置費、ソフトウェア導入費、外注費、設計費、付帯工事費等","aiUse":"業務システム・予約/POSシステム・RPA・多言語翻訳/POS等のソフトウェア導入、デジタル機器の購入に直接充当可能。近隣市町で唯一『デジタル化』を冠した設備導入専用補助。","deadline":"要確認（市の事業者支援施策一覧R8.4月版に掲載確認。令和8年度の具体的な公募期間・締切は商工観光課で要確認）","status":"要確認","statusDetail":"八幡浜市の令和8年度商工業向け補助金一覧（公式サイト・施策一覧R8.4月版）に『デジタル化対応設備導入支援事業補助金』という名称の補助金は確認できなかった。R8の商工業向けは『省エネルギー対応設備更新等支援』『生産性向上・収益力強化支援』『宿泊施設魅力アップ改修』『創業等支援』『先端設備等導入計画支援』。デジタル化（ソフトウェア導入費等）は『生産性向上・収益力強化支援事業補助金』（交付要綱第15号・令和8年3月16日制定、令和8年4月1日公募開始、ソフトウェア導入費を補助対象に含む、補助率1/2以内、商工会議所/商工会の伴走支援必須）に統合・包含されている可能性が高い。名称の実在が確認できないため要確認。","nextAction":"八幡浜市 商工観光課（0894-22-3101）に『デジタル化対応設備導入支援』の名称の制度が存在するか確認。実態は『生産性向上・収益力強化支援事業補助金』（4/1公募開始・受付中）に該当する見込みで、申請には八幡浜商工会議所/保内町商工会の伴走支援が必須。","asOf":"2026-06-08","url":"https://www.city.yawatahama.ehime.jp/category/bunya/sangyo/shokogyo/more@docs_1.html","sourceUrl":"https://www.city.yawatahama.ehime.jp/category/bunya/sangyo/shokogyo/index.html","sourceName":"八幡浜市 公式（商工業 補助金一覧）","sourceVerified":true,"confidence":"要確認","notes":"金額・率は検索由来のため最新公募要領で要確認。八幡浜市の事業者向け（大洲市の8組は対象外）。近隣市町の参考情報 【最新確認(2026-06-08)】『デジタル化対応設備導入支援事業補助金』という名称はR8の八幡浜市公式一覧に見当たらない。デジタル設備（ソフトウェア導入費等）は『八幡浜市 生産性向上・収益力強化支援事業補助金』（令和8年4月1日公募開始、交付要綱第15号）でカバーされている可能性が高い。該当する場合の公式URL: https://www.city.yawatahama.ehime.jp/doc/2026021900059","rec":false,"levelRank":3,"relRank":0},{"id":42,"name":"八幡浜市 創業等支援事業補助金","provider":"八幡浜市（商工観光課）","level":"近隣市町","category":"創業・販路開拓","rel":"中","target":"年度内に八幡浜市内で新規創業/第二創業/事業規模拡大する者（市税滞納なし、3年以上の事業継続意思）","max_amount":"新規創業100万円／第二創業50万円／事業規模拡大30万円／事業再建100万円","amountVal":1000000,"rate":"補助対象経費(税抜)の1/2","eligible":"工事・修繕費、店舗等借入費、設備・備品等購入費、広告宣伝費、申請書類作成費（交付決定後の発注分）","aiUse":"設備・備品購入費や広告宣伝費の枠で、創業時のIT機器・ECサイト・SNS広告・デジタルツール導入費に充当できる可能性。","deadline":"要確認（事業着手前の交付申請が条件。令和8年度の受付期間は商工観光課で要確認）","status":"要確認","statusDetail":"八幡浜市公式の案内ページ（記事番号1-784『八幡浜市創業等支援事業補助金のご案内』）が実在することをfetchで確認。制度は継続中で、区分は創業（上限100万円）・第二創業（50万円）・事業規模拡大（30万円）・事業再建（100万円）、補助率1/2。事業着手前（交付決定前）の交付申請が必須＝交付決定前の発注・契約・支払いは対象外であることを公式で確認。ただし令和8年度の具体的な受付期間・締切がページに明記されておらず、6/8時点で『受付中』と断定できない。申請前に商工観光課への相談が必須。","nextAction":"事業を始める前に、八幡浜市 商工観光課（0894-22-3101 / syokokanko@city.yawatahama.ehime.jp）へ相談し、令和8年度の受付可否・予算残・交付申請の手順を確認する（着手前申請が必須のため発注前に動く）。","asOf":"2026-06-08","url":"https://www.city.yawatahama.ehime.jp/doc/2022032500035","sourceUrl":"https://www.city.yawatahama.ehime.jp/doc/2022032500035","sourceName":"八幡浜市 公式（商工観光課）","sourceVerified":true,"confidence":"やや不確実","notes":"八幡浜市の事業者向け（大洲市の8組は対象外）。観光・飲食の新規出店や業態転換に。近隣市町の参考情報","rec":false,"levelRank":3,"relRank":1},{"id":43,"name":"西予市 地域内発型産業創出事業費補助金（新規創業支援）","provider":"西予市（経済振興課）","level":"近隣市町","category":"創業","rel":"中","target":"西予市内で新規創業または新分野への事業展開を計画する事業者","max_amount":"100万円","amountVal":1000000,"rate":"事業開始後6か月以内の初期経費の1/2以内","eligible":"新規創業または新分野展開の初期経費（事業開始後6か月以内）","aiUse":"創業初期経費の枠で、業務システム・ECサイト・デジタル機器の導入費に充当できる可能性（事前確認推奨）。","deadline":"要確認（令和8年度の公募期間・予算枠は経済振興課0894-62-6408で要確認）","status":"要確認","statusDetail":"西予市公式の補助金一覧ページ（経済振興課）が実在することをfetchで確認。制度概要は確認でき、対象は市内で新規創業・新分野展開する個人/グループ・法人、補助は初期経費の1/2以内・上限100万円。ただし令和8年度の具体的な申請受付期間・締切・予算枠がページに明記されておらず、6/8時点で『受付中』と断定できない。検索上で見えた『令和8年3月1日までに事業完了』は前年度サイクルの記載の可能性があり、R8の確定日程は要綱・窓口で要確認。","nextAction":"西予市 経済振興課（0894-62-6408）へ令和8年度の受付期間・予算枠・事業完了期限を確認する。創業前の交付申請が前提のため、事業着手前に相談する。","asOf":"2026-06-08","url":"https://www.city.seiyo.ehime.jp/kakuka/sangyo_kensetsu/keizai_suishin/hojyokinn/index.html","sourceUrl":"https://www.city.seiyo.ehime.jp/kakuka/sangyo_kensetsu/keizai_suishin/hojyokinn/index.html","sourceName":"西予市 公式（経済振興課）","sourceVerified":true,"confidence":"やや不確実","notes":"西予市の事業者向け。創業・新分野展開向け。近隣市町の参考情報","rec":false,"levelRank":3,"relRank":1},{"id":44,"name":"伊予市 中小企業・小規模企業等振興補助金","provider":"伊予市（経済雇用戦略課）","level":"近隣市町","category":"一般（設備投資・販路開拓 等）","rel":"中","target":"伊予市内の中小企業者・小規模企業者","max_amount":"1事業者あたり合計50万円（上限）","amountVal":500000,"rate":"要確認（メニューにより異なる）","eligible":"要確認（設備投資・販路開拓等の複数メニュー）","aiUse":"対象メニューに設備投資/販路開拓系が含まれ、デジタル機器導入・ECサイト・展示会出展等に充当できる可能性。デジタル化専用枠の有無は要確認。","deadline":"要確認（令和8年度の受付期間・メニュー内訳・補助率は経済雇用戦略課または伊予商工会議所で要確認）","status":"要確認","statusDetail":"元データのURL(emergency/18.html)はHTTP404でリンク切れ。これは旧『物価高騰対策支援補助金』(予算到達で受付終了)の系統ページ。伊予市の中小企業・小規模企業等振興補助金は『創業支援事業・地域産業力強化支援事業・広告PR事業』の3メニューで実在するが、受付窓口は伊予商工会議所で、令和8年度(2026年度)の受付期間・締切・補助率は公式で確認できなかった。早い者勝ち/予算枠型の可能性があり、現時点での申請可否は断定できない。","nextAction":"伊予商工会議所(089-982-0334)または伊予市役所産業建設部(089-982-1111)に令和8年度の受付期間・予算残・補助メニューを照会する。","asOf":"2026-06-08","url":"https://www.city.iyo.lg.jp/keizaikoyou/management/emergency/18.html","sourceUrl":"https://www.city.iyo.lg.jp/keizaikoyou/management/emergency/18.html","sourceName":"伊予市公式（検索ヒットページは404）／伊予商工会議所","sourceVerified":false,"confidence":"要確認","notes":"伊予市の事業者向け。メニュー内訳・補助率の一次情報が確認しきれず。近隣市町の参考情報 【最新確認(2026-06-08)】元データのurl https://www.city.iyo.lg.jp/keizaikoyou/management/emergency/18.html は2026/6/8時点で404。振興補助金の申請窓口は伊予商工会議所(089-982-0334)が業務委託先。","rec":false,"levelRank":3,"relRank":1},{"id":45,"name":"松前町 新ビジネス定着促進給付金","provider":"松前町（産業課）","level":"近隣市町","category":"AI/DX・デジタルシフト","rel":"中","target":"松前町内でデジタルシフト・非対面型ビジネスに取り組む事業者","max_amount":"10万円（1事業者1回限り・定額）","amountVal":100000,"rate":"定額（10万円）","eligible":"非対面・非接触型ビジネスの導入、デジタルシフトに係る経費","aiUse":"非対面・非接触型ビジネスの導入、デジタルシフトに取り組む事業者への定額給付。オンライン予約・EC・キャッシュレス・業務デジタル化の着手金として。","deadline":"要確認（コロナ対策由来のため令和8年度の存続自体が不確実。産業課で要確認）","status":"受付終了","statusDetail":"元データのURL(soshiki/12/14645.html)はHTTP404。この給付金は新型コロナ対応の単発事業で、申請受付は2020/9/10〜2020/12/28で既に終了済（愛媛県の新ビジネス定着促進給付金に町が10万円上乗せする制度）。令和8年度に同名制度の新規募集は確認できない。なお松前町には別制度『新ビジネスモデル展開促進補助金』(soshiki/12/20996.html)が存在するが、これは名称・内容の異なる別事業。","nextAction":"本給付金は終了済のため対象外。松前町産業課 商工水産観光係(089-985-4120)で現行の『新ビジネスモデル展開促進補助金』等の別制度を確認する。","asOf":"2026-06-08","url":"https://www.town.masaki.ehime.jp/soshiki/12/14645.html","sourceUrl":"https://www.town.masaki.ehime.jp/soshiki/12/20996.html","sourceName":"松前町公式ホームページ（J-Net21・公式給付金告知ページ）","sourceVerified":false,"confidence":"要確認","notes":"松前町の事業者向け。金額は小さいが入口として手軽。制度の存続自体が要確認。近隣市町の参考情報 【最新確認(2026-06-08)】本給付金はコロナ対応の単発事業で2020/12/28申請締切済。令和8年度の新規受付なし(=受付終了)。元データURLは404。後継・類似として松前町『新ビジネスモデル展開促進補助金』があるが別制度のため要個別確認。","rec":false,"levelRank":3,"relRank":1},{"id":46,"name":"砥部町 サテライトオフィス等開設支援事業補助金","provider":"砥部町（産業振興課）","level":"近隣市町","category":"創業・立地（設備投資）","rel":"低","target":"砥部町内にサテライトオフィス等を開設する事業者","max_amount":"要確認","amountVal":0,"rate":"要確認","eligible":"要確認（サテライトオフィス等の開設経費）","aiUse":"サテライトオフィス開設に伴う通信環境・ICT機器整備に充当できる可能性。AI/DX業務改善そのものより拠点開設向け。","deadline":"要確認（詳細・令和8年度公募は産業振興課で要確認）","status":"要確認","statusDetail":"砥部町企業支援ページ(shigoto_sangyo/kigyoshien/index.html)は実在し、その中に『砥部町サテライトオフィス等開設支援事業補助金』へのリンクが確認できた。制度はワーケーションを契機としたサテライトオフィス誘致・地方創生目的で、オフィス開設後の賃借料・通信回線使用料を補助する内容。ただし詳細ページの本文取得ができず、令和8年度(2026年度)の具体的な公募期間・締切・予算枠は公式で確認できなかった。","nextAction":"砥部町産業振興課に令和8年度の公募期間・予算枠・対象要件を照会する（企業支援ページ内の補助金詳細リンクを参照）。","asOf":"2026-06-08","url":"https://www.town.tobe.ehime.jp/shigoto_sangyo/kigyoshien/index.html","sourceUrl":"https://www.town.tobe.ehime.jp/shigoto_sangyo/kigyoshien/index.html","sourceName":"砥部町公式ホームページ（企業支援メニュー）","sourceVerified":true,"confidence":"要確認","notes":"砥部町の事業者向け。金額等の一次情報は未確認。近隣市町の参考情報","rec":false,"levelRank":3,"relRank":2},{"id":47,"name":"えひめ産業振興財団 専門家派遣事業／愛媛県よろず支援拠点（経営相談）","provider":"公益財団法人えひめ産業振興財団（愛媛県よろず支援拠点）","level":"財団・協会・金融機関","category":"人材育成","rel":"高","target":"県内中小企業者・小規模事業者・創業者（業種不問）","max_amount":"無料（相談・派遣費用は財団負担分あり）","amountVal":0,"rate":"相談無料・専門家派遣は原則無料","eligible":"経営課題全般の相談、専門家（中小企業診断士・IT専門家等）派遣による伴走支援","aiUse":"AI/DX導入の伴走相談・専門家派遣（IT/DX専門家含む）。事務作業の棚卸し、生成AI・業務システム・RPA導入の具体化を無料で相談・伴走支援。補助金申請の事前相談にも有効。","deadline":"通年・随時受付（予約制）。令和8年度も継続見込み。大洲市にもサテライト相談拠点あり","status":"通年・随時","statusDetail":"愛媛県よろず支援拠点(公式 yorozu-ehime.go.jp)を確認。経営相談は通年・予約制・何度でも無料で実施しており、令和8年度も継続。相談場所ページで大洲市にサテライト相談拠点(大洲商工会議所／毎月第1木曜・第3火曜)があることを確認した。","nextAction":"通年随時のため、よろず支援拠点の相談申込ページ(yorozu-ehime.go.jp/consultation_apply)または大洲商工会議所(0893-24-4111)経由で無料相談を予約する。","asOf":"2026-06-08","url":"https://yorozu-ehime.go.jp/","sourceUrl":"https://yorozu-ehime.go.jp/access","sourceName":"愛媛県よろず支援拠点（えひめ産業振興財団）公式","sourceVerified":true,"confidence":"確実","notes":"AI/DX導入の最初の入口として最有力。何度でも無料。よろず：089-960-1131／財団：089-960-1100。大洲サテライトあり＝8組の伴走に直結","rec":false,"levelRank":4,"relRank":0},{"id":48,"name":"伊予銀行 経営支援プラットフォーム（補助金診断・ビジネスマッチング・DX支援）","provider":"株式会社伊予銀行（いよぎんデジタルソリューションズ）","level":"財団・協会・金融機関","category":"AI/DX","rel":"高","target":"伊予銀行の取引先中小・小規模事業者（取引なしでも相談可の窓口あり）","max_amount":"—（サービス・コンサル。一部有料/会員制）","amountVal":0,"rate":"—","eligible":"補助金診断、業務システム/グループウェア導入、DX伴走、資金調達（補助金つなぎ融資等）","aiUse":"補助金診断で自社に合う補助金を特定、ビジネスマッチング、DX支援サービス（Mikatanoワークス等のクラウド型業務ツール）導入支援、ICTコンサルによるAI/DX導入伴走。補助金連動の資金調達も相談可。","deadline":"通年・随時。令和8年度も継続提供","status":"通年・随時","statusDetail":"伊予銀行の法人経営支援ページが実在。ビジネスマッチング・ICTコンサルティング・SDGs診断・事業承継/M&A・創業支援などの経営支援メニューを常時提供。公募回・締切のある補助金ではなく、銀行の常設サービスのため随時相談可能。ただしページ上に『補助金診断』という名称の明記はなく、利用は各支店/相談窓口への問い合わせが入口。","nextAction":"随時利用可能。取引のある伊予銀行の支店または法人担当に補助金・DX支援の相談を申し込む。","asOf":"2026-06-08","url":"https://www.iyobank.co.jp/business/management/index.html","sourceUrl":"https://www.iyobank.co.jp/business/management/index.html","sourceName":"伊予銀行 公式（法人・経営支援）","sourceVerified":true,"confidence":"確実","notes":"伊予銀行経由で最も動かしやすい伴走窓口。補助金診断→申請→つなぎ融資まで一気通貫 【最新確認(2026-06-08)】公式ページ上では『補助金診断』という名称は明示されておらず、ICTコンサルティング/ビジネスマッチング等として提供。サービス名の表記に注意。","rec":false,"levelRank":4,"relRank":0},{"id":49,"name":"愛媛銀行 DX支援／経営相談・補助金申請サポート","provider":"株式会社愛媛銀行（共通価値創造推進室）","level":"財団・協会・金融機関","category":"AI/DX","rel":"中","target":"愛媛銀行の取引先中小・小規模事業者","max_amount":"—（サービス・コンサル）","amountVal":0,"rate":"—","eligible":"補助金申請支援、DX導入伴走、経営改善・販路拡大・業務効率化等のコンサル","aiUse":"DX支援プログラム（新業務プロセス定着の継続伴走）、外部機関と連携した補助金・助成金の申請書類作成支援、経営相談ワンストップ窓口。","deadline":"通年・随時。令和8年度も継続提供","status":"通年・随時","statusDetail":"愛媛銀行のDX支援ページが実在。現状把握→課題抽出→施策立案→導入/運用サポートの一連の支援と、cybozu・freee・Sansan等の提携ツール、業種別パッケージ事例を掲載。公募回・締切のある補助金ではなく常設の銀行サービスのため随時相談可能。問い合わせは各支店またはお客様サービス部デジタル戦略室。","nextAction":"随時利用可能。愛媛銀行の各支店またはお客様サービス部デジタル戦略室にDX・補助金相談を申し込む。","asOf":"2026-06-08","url":"https://www.himegin.co.jp/corporate/dx_support/","sourceUrl":"https://www.himegin.co.jp/corporate/dx_support/","sourceName":"愛媛銀行 公式（DX支援）","sourceVerified":true,"confidence":"確実","notes":"伊予銀行と並ぶ地銀の選択肢。取引行に応じて使い分け。補助金は外部連携での申請書類作成支援が中心 【最新確認(2026-06-08)】公式ページ（dx_support）はDX支援が主内容で、『補助金申請サポート』という独立メニューの明記は確認できず。補助金支援の有無は窓口要確認。","rec":false,"levelRank":4,"relRank":1},{"id":50,"name":"賃上げ対応型小規模事業者経営力強化支援事業費補助金（令和8年度）","provider":"えひめ産業振興財団（サンサポえひめ）","level":"財団・協会・金融機関","category":"一般","rel":"中","target":"県内の小規模事業者（賃上げに取り組む事業者）","max_amount":"要確認","amountVal":0,"rate":"要確認","eligible":"要確認（経営力強化に資する取組）","aiUse":"小規模事業者の経営力強化（生産性向上・業務効率化を含む可能性）。賃上げ原資確保のための取組支援。DX/効率化ツール導入が対象になるか要確認。","deadline":"令和8年度募集開始2026/6/1。詳細な上限・補助率・締切は財団サイトで要確認","status":"受付中","statusDetail":"えひめ産業振興財団（創業支援課）が事務局。令和8年度募集が令和8年6月1日(月)に開始し、1次募集締切は令和8年7月31日(金)。6/8時点で1次受付中。以後2次（8〜9月申請・9月末締切）・3次（10〜11月申請・11月末締切）が予算残額に応じ実施。補助率は通常枠2/3・地場産業枠/コラボ枠3/4、上限100万円（コラボ枠200万円）。愛媛県公式ページ・財団個別ページ双方で確認。","nextAction":"1次締切7/31までに申請するなら、伴走支援を行う県内支援機関（商工会議所/商工会等）に早急に相談し申請準備に着手。間に合わなければ2次（9月末締切）を狙う。","asOf":"2026-06-08","url":"https://www.ehime-iinet.or.jp/grants","sourceUrl":"https://www.ehime-iinet.or.jp/grants-posts/r8-chinage_hojo","sourceName":"えひめ産業振興財団 公式（令和8年度賃上げ対応型）","sourceVerified":true,"confidence":"要確認","notes":"8組のような小規模事業者に直結し得る財団補助金。詳細未公表。財団 産業育成課(089-960-1100)に要確認 【最新確認(2026-06-08)】募集期間は令和8年6月1日〜（1次締切7月31日）。補助率・上限が判明：通常枠2/3・地場産業枠/コラボ枠3/4、上限100万円（コラボ枠のみ200万円）。","rec":false,"levelRank":4,"relRank":1},{"id":51,"name":"IT人材獲得支援事業費補助金（令和8年度）","provider":"えひめ産業振興財団（サンサポえひめ）","level":"財団・協会・金融機関","category":"人材育成","rel":"中","target":"県内中小企業等（IT人材の確保を目指す事業者）","max_amount":"要確認","amountVal":0,"rate":"要確認","eligible":"要確認（IT人材の獲得に係る経費）","aiUse":"IT/デジタル人材の確保・採用支援。社内にDX推進人材を入れるための採用活動経費等が想定される（DX内製化の人材面の支援）。","deadline":"令和8年度募集開始2026/5/1。上限・補助率・締切の詳細は財団サイトで要確認","status":"受付中","statusDetail":"えひめ産業振興財団が事務局。令和8年度募集は令和8年4月1日(水)〜令和9年1月15日(金)で、6/8時点で受付中。補助率1/2、1社あたり上限100万円。予算上限到達で募集終了（早い者勝ち）。財団個別ページ（r8_it）で確認。","nextAction":"随時受付中（予算上限到達で終了）。県外/海外からのIT人材採用（令和7年4月1日以降の雇用契約等が要件）を計画している場合は早期に財団へ相談し申請。","asOf":"2026-06-08","url":"https://www.ehime-iinet.or.jp/grants","sourceUrl":"https://www.ehime-iinet.or.jp/grants-posts/r8_it","sourceName":"えひめ産業振興財団 公式（令和8年度IT人材獲得支援）","sourceVerified":true,"confidence":"要確認","notes":"DXの内製化を担う人材確保に関する財団補助金。8組の多くは小規模で採用余力が限定的なため優先度は中程度。財団(089-960-1100)に要確認 【最新確認(2026-06-08)】元データの『募集開始2026/5/1』は財団サイトへの掲載日であり、実際の募集期間は令和8年4月1日〜令和9年1月15日。補助率1/2・上限100万円・予算上限到達で終了。","rec":false,"levelRank":4,"relRank":1},{"id":52,"name":"えひめ中小企業応援ファンド 地域密着型ビジネス創出事業助成金","provider":"公益財団法人えひめ産業振興財団（サンサポえひめ）","level":"財団・協会・金融機関","category":"販路開拓","rel":"中","target":"法人設立後5年未満、または新たな小分類業種へ進出する県内中小企業者等","max_amount":"150万円／件","amountVal":1500000,"rate":"助成対象経費の1/2以内","eligible":"地域資源を活用した課題解決型ビジネスの初期経費（開発・調査・試作・販路開拓等）","aiUse":"地域資源を活用した新ビジネスの商品開発・販路開拓経費。AI/DXを組み込んだ新サービス開発（多言語対応サービス、観光体験のデジタル化等）の初期経費に充当可能。","deadline":"令和7年度は5/7〜6/18で募集済。令和8年度の公募回・締切は要確認（例年5月頃募集予告→5〜6月公募の見込み）","status":"要確認","statusDetail":"公益財団法人えひめ産業振興財団（サンサポえひめ）の補助金・助成金一覧（2026年6月時点で令和8年度の他補助金は掲載済み）を確認したが、えひめ中小企業応援ファンド助成事業の令和8年度（2026年度）募集・募集予告は掲載されていない。実在するファンド関連ページは令和7年度の募集予告ページ（r7fund_pre）のみで、内容は令和7年度のまま（募集期間 令和7年5月7日〜6月18日＝既に終了）。令和8年度の公募回・締切は未公表のため断定不可。例年5〜6月公募の傾向だが6/8時点で公式告知なし。","nextAction":"サンサポえひめ産業育成課（TEL 089-960-1201）に令和8年度応援ファンド助成事業の募集予定を直接照会する。Gビズ等は不要だが電子/書面申請の準備として財団サイトの新着告知を継続確認。","asOf":"2026-06-08","url":"https://www.ehime-iinet.or.jp/grants-posts/r7fund_pre","sourceUrl":"https://www.ehime-iinet.or.jp/grants","sourceName":"公益財団法人えひめ産業振興財団（サンサポえひめ）公式","sourceVerified":true,"confidence":"やや不確実","notes":"AI/DXは直接の対象ではないが新ビジネスの構成要素として活用可。財団の専門家派遣と組み合わせ可能。問合せ：産業育成課089-960-1100","rec":false,"levelRank":4,"relRank":1},{"id":53,"name":"えひめ中小企業応援ファンド 地域活力創出助成事業（一般枠：商品開発等）","provider":"公益財団法人えひめ産業振興財団（サンサポえひめ）","level":"財団・協会・金融機関","category":"販路開拓","rel":"中","target":"財団の支援実績がある（または今後活用予定の）県内中小企業者等。個人事業主は対象外","max_amount":"150万円／件","amountVal":1500000,"rate":"助成対象経費の1/2以内","eligible":"商品開発・改良、デザイン企画開発、ブランド確立、販路拡大に要する経費","aiUse":"商品開発・改良、デザイン企画、ブランド確立、販路拡大。DXを活かしたブランディング・ECサイト構築・デザイン開発等に充当可。","deadline":"令和7年度は5/7〜6/18で募集済。令和8年度の公募回・締切は要確認","status":"要確認","statusDetail":"サンサポえひめ公式の補助金・助成金一覧（令和8年度分の他補助金は2026年6月までに複数掲載済み）に、えひめ中小企業応援ファンド 地域活力創出助成事業（一般枠）の令和8年度募集案内は存在しない。実在する関連ページは令和7年度の募集予告ページ（r7fund_pre、募集 令和7年5月7日〜6月18日＝終了）のみで令和8年度に更新されていない。令和8年度の公募回・締切は未公表で断定不可。","nextAction":"サンサポえひめ産業育成課（TEL 089-960-1201）に令和8年度の一般枠募集予定（時期・締切・上限額）を照会。財団サイトの新着情報を継続監視。","asOf":"2026-06-08","url":"https://www.ehime-iinet.or.jp/grants-posts/r7fund_pre","sourceUrl":"https://www.ehime-iinet.or.jp/grants","sourceName":"公益財団法人えひめ産業振興財団（サンサポえひめ）公式","sourceVerified":true,"confidence":"やや不確実","notes":"個人事業主除外に注意。法人格のある旅館・製造業向き","rec":false,"levelRank":4,"relRank":1},{"id":54,"name":"えひめ中小企業応援ファンド 地域活力創出助成事業（小規模枠：出展費用助成）","provider":"公益財団法人えひめ産業振興財団（サンサポえひめ）","level":"財団・協会・金融機関","category":"販路開拓","rel":"低","target":"財団の支援実績がある（または今後活用予定の）県内中小企業者等。個人事業主は対象外","max_amount":"30万円／件","amountVal":300000,"rate":"助成対象経費の1/2以内","eligible":"国内外の見本市・展示会への出展・参加・主催費用","aiUse":"国内外見本市・展示会への出展費用。AI/DXとの直接関連は薄いが、開発したDX商品・サービスの販路開拓の出口として活用可。","deadline":"令和7年度は5/7〜6/18で募集済。令和8年度の公募回・締切は要確認","status":"要確認","statusDetail":"サンサポえひめ公式の補助金・助成金一覧に、えひめ中小企業応援ファンド 地域活力創出助成事業（小規模枠）の令和8年度募集は掲載されていない（一覧には令和8年度の海外出願支援・賃上げ対応型・IT人材獲得支援等は掲載済みだが本ファンドは無し）。実在する関連ページは令和7年度募集予告（r7fund_pre、小規模枠は上限30万円・募集 令和7年5月7日〜6月18日＝終了）のみ。令和8年度の公募回・締切は未公表で断定不可。","nextAction":"サンサポえひめ産業育成課（TEL 089-960-1201）に令和8年度小規模枠（出展費用助成）の募集予定を照会。展示会出展計画がある場合は募集再開に備えGビズID等の事前準備を進める。","asOf":"2026-06-08","url":"https://www.ehime-iinet.or.jp/grants-posts/r7fund_pre","sourceUrl":"https://www.ehime-iinet.or.jp/grants","sourceName":"公益財団法人えひめ産業振興財団（サンサポえひめ）公式","sourceVerified":true,"confidence":"やや不確実","notes":"小口・使いやすいが個人事業主除外","rec":false,"levelRank":4,"relRank":2},{"id":55,"name":"小規模事業者持続化補助金（大洲商工会議所が申請伴走支援）","provider":"中小企業庁（全国商工会連合会・日本商工会議所）／窓口：大洲商工会議所","level":"財団・協会・金融機関","category":"販路開拓","rel":"高","target":"大洲商工会議所管轄地域内で事業を営み経営計画を策定した小規模事業者（GビズID必須・電子申請）","max_amount":"通常50万円（特例活用で最大250万円。特定創業支援等事業の支援を受けた創業者は別途上限あり）","amountVal":2500000,"rate":"2/3（賃金引上げ特例の赤字事業者等は3/4）","eligible":"広告宣伝費、IT活用の広報/業務効率化（HP開設・管理システム導入）、店舗改装、展示会出展、機械導入等。ウェブサイト関連費は補助上限の1/4以内かつ単独申請不可","aiUse":"ホームページ開設・予約/管理システム導入・EC構築・多言語POP/メニュー制作・SNS広報などIT活用の販路開拓/業務効率化に充当可能。観光業の多言語対応の鉄板。国の制度を地元商工会議所が伴走支援する形。","deadline":"国の制度のため令和8年度も継続（第20回：申請受付2026/11/5〜12/15）。大洲商工会議所の案内ページに最新公募回・締切の明記がない場合があり、商工会議所(0893-24-4111)で要確認","status":"受付前","statusDetail":"国の制度（事務局：日本商工会議所・全国商工会連合会）。公式特設サイトで第20回の申請受付期間は2026/11/5（木）〜12/15（火）17:00、事業支援計画書（様式4）発行受付締切は2026/12/4（金）と確認。受付開始は11/5のため6/8時点は受付前。窓口の大洲商工会議所公式ページ（実在確認済み）に「小規模事業者持続化補助金」の案内見出しあり。電子申請のみ・GビズID取得必須。","nextAction":"11/5の受付開始前に大洲商工会議所（0893-24-4111）へ早期相談し経営計画を作成。様式4発行に日数を要するため12/4締切に間に合うよう逆算し、GビズIDプライムを早めに取得しておく。","asOf":"2026-06-08","url":"https://www.ozu-cci.com/subsidy","sourceUrl":"https://r6.jizokukahojokin.info/","sourceName":"小規模事業者持続化補助金 公式特設サイト（日本商工会議所・全国商工会連合会）／窓口：大洲商工会議所","sourceVerified":true,"confidence":"確実","notes":"国の持続化補助金（上の国レベル項目と同一制度）だが、大洲商工会議所が経営計画策定〜様式4発行〜申請まで伴走する点が地域窓口として重要。8組の最優先案内先。AI/DXとの相性が最も良い（HP・多言語・予約システム）","rec":true,"levelRank":4,"relRank":0}],"recommended":["デジタル化・AI導入補助金2026 通常枠（生成AI・業務システム導入の本命／1次6/15締切・以降随時）","デジタル化・AI導入補助金2026 インボイス枠（小規模は会計ソフト4/5補助で最も手厚い／レジ・ハードも対象）","大洲市 経営環境IT化等支援（上限10万・1/2・市役所完結・通年受付＝最も手軽な地元の第一歩）","小規模事業者持続化補助金 第20回（多言語POP・HP・SNSなど成果が見えやすい販促／受付11/5〜12/15・大洲商工会議所が伴走）","中小企業省力化投資補助金 カタログ注文型（券売機・配膳/清掃ロボット等／随時受付・申請が簡便で人手不足解消に直結）","人材開発支援助成金 事業展開等リスキリング支援コース（生成AI研修の経費75%＋賃金助成／研修開始1か月前の計画届が必須）","えひめDX推進プロジェクト＋県よろず支援拠点（無料伴走支援／補助金の前段で事務棚卸し・戦略整理・申請相談ができる入口）"],"summary":"6/10WS参加の小規模事業者（観光/旅館・飲食・製造・小売・サービス、事務棚卸し→AI/DX入門に関心）が「まず何から検討すべきか」の道筋は3ステップです。【ステップ0：無料の伴走相談から】お金をかける前に、愛媛県よろず支援拠点（大洲サテライトあり・無料）、えひめDX推進プロジェクト（無料伴走・7/31申込締切）、伊予銀行の補助金診断で、自社の事務棚卸しと「何にいくら補助が出るか」を整理するのが最初の一歩。費用ゼロ・失敗リスクなしで動けます。【ステップ1：今すぐ動ける『小さく・速い』補助金】(1)大洲市の経営環境IT化等支援（上限10万・1/2・市役所窓口で完結・通年受付2027/2/26まで＝予算次第で早期終了）でSaaS初期費やキャッシュレスを小さく導入。(2)デジタル化・AI導入補助金2026のインボイス枠（小規模は会計ソフトの4/5補助・最も手厚い）／通常枠（生成AI・業務システム）で本格的な業務システムを。1次締切6/15は直前なので、間に合わなければ2次締切公表を待つ運用が安全。(3)人手不足の現場は省力化投資補助金カタログ注文型（随時受付・申請が簡便）。【ステップ2：秋〜冬に向けた仕込み】多言語POP/メニュー・HP・SNSなど『成果が見えやすい』販促は小規模事業者持続化補助金（第20回・受付11/5〜12/15、大洲商工会議所の様式4発行に時間がかかるので逆算が必須）。社員にAIを使わせる研修は人材開発支援助成金リスキリングコース（経費75%＋賃金助成・ただし研修開始1か月前までに計画届提出が絶対条件）。賃上げ＋設備投資なら業務改善助成金（9/1受付開始）。【重要な共通ポイント】国の補助金はほぼ全てGビズIDプライム（取得2〜3週間）が必須なので今すぐ着手を。補助金は後払い（精算払い）なので、自己負担分・つなぎ資金は伊予銀行や市・県の制度融資で補完。複数併用は可能だが「同一経費の重複受給」は不可（経費を分けて申請）。県の観光・収益力系補助金は令和8年度分が春に締切済のものが多く、令和9年度公募（例年4月）に向けた計画づくりが現実的です。","caveats":"本一覧の補助上限額・補助率・締切は2026年6月8日（令和8年度）時点で確認した情報です。これらは年度・公募回ごとに頻繁に変わります。特に注意すべき点：(1)デジタル化・AI導入補助金は2026年6月時点で確定公表されているのは多くの枠で『1次締切6/15のみ』で、2次以降は『確定した回のみ随時公表』のため、申込前に必ず公式スケジュール（it-shien.smrj.go.jp/schedule/）を再確認すること。(2)ものづくり補助金は第23次（2026/5/8締切）で現行制度が終了し、令和8年度から新事業進出補助金と統合した新制度へ移行（公募要領は6月公開・申請8月頃開始予定）。上限額・補助率・枠は6月公開の要領で必ず再確認。(3)業務改善助成金は令和8年度に上限が最大1,500万円→600万円へ縮小、賃上げコースも50/70/90円の3区分へ再編済み。(4)厚労省の雇用関係助成金（リスキリング等）は『訓練開始前の計画届の事前提出』が共通の絶対条件で、事後申請は不支給。先に始めてしまうと受給できないため、研修・転換を始める前に必ず愛媛労働局・ハローワークへ計画提出を。(5)愛媛県の観光・収益力系補助金（観光集客力向上・古民家インバウンド・収益力強化等）は令和8年度分が春に締切済のものが多く、令和9年度公募（例年4月）に向けた計画づくりが現実的。(6)『要確認』『やや不確実』とした項目（財団系2件、近隣市町補助、テレワーク・両立支援の上限額等）は二次情報依存または詳細未公表のため、申請前に各事務局へ必ず最新の公募要領を照会すること。(7)複数補助金の併用は可能だが『同一経費の重複受給』は不可。数値は捏造せず、不明なものは『要確認』と明記しています。","stats":{"total":56,"open":31,"aidx":14,"rec":10}};
+const RELLAB = {高:'AI/DX ◎',中:'AI/DX ○',低:'AI/DX △'};
+const STORDER = {'受付中':0,'通年・随時':1,'受付前':2,'要確認':3,'受付終了':4};
+const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+const TABS = [
+  {key:'rec',  label:'⭐ おすすめ', test:i=>i.rec},
+  {key:'open', label:'🟢 いま申請できる', live:true, test:i=>i.status==='受付中'||i.status==='通年・随時'},
+  {key:'aidx', label:'🤖 AI・DX直結', test:i=>i.rel==='高'},
+  {key:'all',  label:'📋 すべて', test:()=>true},
+];
+const LEVELS = ['国','愛媛県','大洲市','近隣市町','財団・協会・金融機関'];
+
+let state = {tab:'rec', levels:new Set(), q:'', sort:'rec'};
+
+// ---- recommended cards ----
+function renderRec(){
+  const g = document.getElementById('recgrid');
+  g.innerHTML = DB.recommended.map((r,idx)=>{
+    return '<div class="reccard" data-q="'+esc(r.replace(/（.*$/,''))+'"><div class="rk">'+(idx+1)+'</div><div class="rn">'+esc(r)+'</div></div>';
+  }).join('');
+  g.querySelectorAll('.reccard').forEach(el=>el.addEventListener('click',()=>{
+    state.tab='all'; document.getElementById('q').value=el.dataset.q; state.q=el.dataset.q;
+    syncTabs(); render(); document.querySelector('.controls').scrollIntoView({behavior:'smooth'});
+  }));
+}
+
+// ---- tabs & chips ----
+function renderTabs(){
+  document.getElementById('tabs').innerHTML = TABS.map(t=>{
+    const n = DB.items.filter(t.test).length;
+    return '<button class="tab'+(t.live?' live-tab':'')+'" data-k="'+t.key+'">'+t.label+' <span class="c">'+n+'</span></button>';
+  }).join('');
+  document.querySelectorAll('#tabs .tab').forEach(b=>b.addEventListener('click',()=>{state.tab=b.dataset.k;syncTabs();render();}));
+  document.getElementById('chips').innerHTML =
+    '<button class="chip" data-l="__all">すべての提供元</button>' +
+    LEVELS.map(l=>'<button class="chip" data-l="'+esc(l)+'">'+esc(l)+'</button>').join('');
+  document.querySelectorAll('#chips .chip').forEach(c=>c.addEventListener('click',()=>{
+    const l=c.dataset.l;
+    if(l==='__all'){state.levels.clear();}
+    else{ state.levels.has(l)?state.levels.delete(l):state.levels.add(l); }
+    syncChips(); render();
+  }));
+  syncTabs(); syncChips();
+}
+function syncTabs(){
+  document.querySelectorAll('#tabs .tab').forEach(b=>{
+    const on=b.dataset.k===state.tab; b.classList.toggle('on',on);
+    b.classList.toggle('live', on && b.classList.contains('live-tab'));
+  });
+}
+function syncChips(){
+  document.querySelectorAll('#chips .chip').forEach(c=>{
+    if(c.dataset.l==='__all') c.classList.toggle('on',state.levels.size===0);
+    else c.classList.toggle('on',state.levels.has(c.dataset.l));
+  });
+}
+
+// ---- filter + sort ----
+function current(){
+  const tab = TABS.find(t=>t.key===state.tab);
+  let arr = DB.items.filter(tab.test);
+  if(state.levels.size) arr = arr.filter(i=>state.levels.has(i.level));
+  if(state.q){
+    const q=state.q.trim().toLowerCase();
+    arr = arr.filter(i=>(i.name+i.provider+i.category+i.aiUse+i.target+i.level).toLowerCase().includes(q));
+  }
+  const s=state.sort;
+  arr=arr.slice().sort((a,b)=>{
+    if(s==='amount') return b.amountVal-a.amountVal || a.levelRank-b.levelRank;
+    if(s==='aidx') return a.relRank-b.relRank || b.amountVal-a.amountVal;
+    if(s==='status') return (STORDER[a.status]??9)-(STORDER[b.status]??9) || b.amountVal-a.amountVal;
+    if(s==='level') return a.levelRank-b.levelRank || a.relRank-b.relRank;
+    // rec(default)
+    return (b.rec-a.rec) || a.relRank-b.relRank || b.amountVal-a.amountVal;
+  });
+  return arr;
+}
+
+function card(i){
+  const src = i.sourceUrl
+    ? '<a class="src'+(i.sourceVerified?'':' unverified')+'" href="'+esc(i.sourceUrl)+'" target="_blank" rel="noopener">'+(i.sourceVerified?'✓ ':'')+'公式の出典を見る ↗</a>'
+    : '<span class="src unverified">出典URLは要確認</span>';
+  const srcname = i.sourceName ? '<span class="srcname">'+esc(i.sourceName)+'</span>' : '';
+  const statusBox = '<div class="statusline"><span class="k">申請可否（'+esc(i.asOf)+' 時点）：'+esc(i.status)+'</span>'+
+    (i.statusDetail?'<div style="margin-top:4px;color:#5a4f44;">'+esc(i.statusDetail)+'</div>':'<div style="margin-top:4px;color:#5a4f44;">'+esc(i.deadline||'—')+'</div>')+
+    (i.nextAction?'<div class="next">▶ 次の一手：<b>'+esc(i.nextAction)+'</b></div>':'')+'</div>';
+  const aiBox = i.aiUse?'<div class="aiuse"><div class="k">AI・DXでの使い道</div><div style="margin-top:3px">'+esc(i.aiUse)+'</div></div>':'';
+  const detail = (i.eligible||i.notes)?
+    '<details class="detail"><summary>対象経費・備考を見る</summary><div class="dc">'+
+    (i.eligible?'<div><span class="k">対象経費</span><br>'+esc(i.eligible)+'</div>':'')+
+    (i.notes?'<div><span class="k">備考</span><br>'+esc(i.notes)+'</div>':'')+
+    '</div></details>':'';
+  return '<article class="card s-'+esc(i.status)+'">'+
+    '<div class="top"><div class="badges">'+
+      '<span class="st-pill st-'+esc(i.status)+'">'+esc(i.status)+'</span>'+
+      '<span class="rel-pill rel-'+esc(i.rel)+'">'+RELLAB[i.rel]+'</span>'+
+      '<span class="lvl-tag">'+esc(i.level)+'</span>'+
+      (i.rec?'<span class="rec-tag">おすすめ</span>':'')+
+    '</div>'+
+    '<h3>'+esc(i.name)+'</h3>'+
+    '<div class="prov">'+esc(i.provider)+(i.category?'　/　'+esc(i.category):'')+'</div></div>'+
+    '<div class="body">'+
+      '<div class="kvrow">'+
+        '<div class="kv"><div class="k">補助上限</div><div class="v amt">'+esc(i.max_amount||'—')+'</div></div>'+
+        '<div class="kv"><div class="k">補助率</div><div class="v">'+esc(i.rate||'—')+'</div></div>'+
+        '<div class="kv" style="grid-column:1/-1"><div class="k">対象</div><div class="v">'+esc(i.target||'—')+'</div></div>'+
+      '</div>'+
+      statusBox + aiBox + detail +
+    '</div>'+
+    '<div class="foot">'+src+srcname+'</div>'+
+  '</article>';
+}
+
+function render(){
+  const arr=current();
+  const meta=document.getElementById('meta');
+  const open=arr.filter(i=>i.status==='受付中'||i.status==='通年・随時').length;
+  meta.innerHTML='<b>'+arr.length+'</b> 件を表示'+(state.levels.size?'（'+[...state.levels].join('・')+'）':'')+(state.q?'／「'+esc(state.q)+'」で絞り込み':'')+'　― うち <b style="color:var(--ok)">'+open+'</b> 件がいま申請できます';
+  const list=document.getElementById('list');
+  if(!arr.length){ list.innerHTML='<div class="empty"><div class="e1">🔎</div>条件に合う補助金が見つかりませんでした。<br>タブやフィルタを変えてお試しください。</div>'; return;}
+  list.innerHTML=arr.map(card).join('');
+}
+
+document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value;render();});
+document.getElementById('sort').addEventListener('change',e=>{state.sort=e.target.value;render();});
+renderRec(); renderTabs(); render();
+</script>
+</body></html>
