@@ -157,8 +157,12 @@
   .statusline .det{margin-top:6px;color:#534940;line-height:1.75;}
   .statusline .next{margin-top:10px;color:#3a3129;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 13px;font-size:15px;}
   .statusline .next b{color:var(--hi);}
-  .aiuse{margin-top:13px;font-size:15px;background:#eef3e7;border:1px solid #dde6d0;border-radius:13px;padding:14px 16px;line-height:1.75;}
-  .aiuse .k{font-size:13.5px;color:#3f6030;font-weight:900;letter-spacing:.02em;}
+  .qstat{margin-top:14px;font-size:15px;color:#534940;font-weight:600;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;}
+  .qstat b{font-weight:900;color:var(--ink);}
+  .qstat .qd{color:var(--sub);font-size:13.5px;font-weight:600;}
+  .useline{margin-top:11px;font-size:15.5px;color:#33291f;background:#eef3e7;border:1px solid #dde6d0;border-radius:12px;
+    padding:10px 14px;line-height:1.6;}
+  .useline b{color:#3f6030;font-weight:900;font-size:13px;margin-right:8px;background:#dde9d2;padding:2px 8px;border-radius:6px;}
   .detail{font-size:15px;color:#544c44;margin-top:13px;}
   .detail summary{cursor:pointer;color:var(--accent);font-weight:800;font-size:15px;list-style:none;padding:4px 0;}
   .detail summary::-webkit-details-marker{display:none}
@@ -279,19 +283,19 @@
       <div class="stepcard">
         <div class="sn">1</div>
         <h3>準備する<br><span style="font-size:15px;color:var(--sub);font-weight:700">― 申請の共通パスポート</span></h3>
-        <p>国の補助金の多くは電子申請です。まず <b>GビズIDプライム</b> を取得しましょう。無料ですが<b>発行に2〜3週間</b>かかるため、いちばん最初に動くのがコツです。</p>
+        <p>国の補助金の多くは電子申請。まず無料の <b>GビズIDプライム</b> を取得。<b>発行に2〜3週間</b>かかるので最初に。</p>
         <a class="act" href="https://gbiz-id.go.jp/" target="_blank" rel="noopener">GビズID 公式サイト ↗</a>
       </div>
       <div class="stepcard">
         <div class="sn">2</div>
         <h3>相談する<br><span style="font-size:15px;color:var(--sub);font-weight:700">― 無料で伴走してもらう</span></h3>
-        <p>「自社はどれが使える？」は、ひとりで悩まず窓口へ。<b>大洲商工会議所・よろず支援拠点・AI-OZU事務局</b>が、要件確認から計画づくり・申請まで<b>無料で伴走</b>します。</p>
+        <p>「どれが使える？」は窓口へ。<b>大洲商工会議所・よろず支援拠点・AI-OZU事務局</b>が<b>無料で伴走</b>します。</p>
         <a class="act" href="#contact">相談窓口を見る ↓</a>
       </div>
       <div class="stepcard">
         <div class="sn">3</div>
         <h3>申請する<br><span style="font-size:15px;color:var(--sub);font-weight:700">― 締切までに電子申請</span></h3>
-        <p>下の一覧で<b>「いま申請できる」</b>制度を選び、各カードの<b>公式サイト</b>から最新の公募要領を確認。締切までに電子申請すれば完了です。</p>
+        <p>下の一覧で<b>「いま申請できる」</b>制度を選び、<b>公式サイト</b>で要領を確認 → 締切までに電子申請。</p>
         <a class="act" href="#list-top">補助金一覧へ ↓</a>
       </div>
     </div>
@@ -301,7 +305,7 @@
   <div class="intro">
     <div class="panel">
       <h2>📌 このガイドについて</h2>
-      <p>6/10WS参加の小規模事業者（観光/旅館・飲食・製造・小売・サービス、事務棚卸し→AI/DX入門に関心）が「まず何から検討すべきか」の道筋は3ステップです。【ステップ0：無料の伴走相談から】お金をかける前に、愛媛県よろず支援拠点（大洲サテライトあり・無料）、えひめDX推進プロジェクト（無料伴走・7/31申込締切）、伊予銀行の補助金診断で、自社の事務棚卸しと「何にいくら補助が出るか」を整理するのが最初の一歩。費用ゼロ・失敗リスクなしで動けます。【ステップ1：今すぐ動ける『小さく・速い』補助金】(1)大洲市の経営環境IT化等支援（上限10万・1/2・市役所窓口で完結・通年受付2027/2/26まで＝予算次第で早期終了）でSaaS初期費やキャッシュレスを小さく導入。(2)デジタル化・AI導入補助金2026のインボイス枠（小規模は会計ソフトの4/5補助・最も手厚い）／通常枠（生成AI・業務システム）で本格的な業務システムを。1次締切6/15は直前なので、間に合わなければ2次締切公表を待つ運用が安全。(3)人手不足の現場は省力化投資補助金カタログ注文型（随時受付・申請が簡便）。【ステップ2：秋〜冬に向けた仕込み】多言語POP/メニュー・HP・SNSなど『成果が見えやすい』販促は小規模事業者持続化補助金（第20回・受付11/5〜12/15、大洲商工会議所の様式4発行に時間がかかるので逆算が必須）。社員にAIを使わせる研修は人材開発支援助成金リスキリングコース（経費75%＋賃金助成・ただし研修開始1か月前までに計画届提出が絶対条件）。賃上げ＋設備投資なら業務改善助成金（9/1受付開始）。【重要な共通ポイント】国の補助金はほぼ全てGビズIDプライム（取得2〜3週間）が必須なので今すぐ着手を。補助金は後払い（精算払い）なので、自己負担分・つなぎ資金は伊予銀行や市・県の制度融資で補完。複数併用は可能だが「同一経費の重複受給」は不可（経費を分けて申請）。県の観光・収益力系補助金は令和8年度分が春に締切済のものが多く、令和9年度公募（例年4月）に向けた計画づくりが現実的です。</p>
+      <p>国〜財団の<b>全56制度</b>を、<b>6/8時点の申請可否</b>と<b>公式出典</b>つきで一覧化。事務の棚卸し → AI・DX導入 → 販路開拓まで、自社に合う制度がすぐ探せます。まずは「いま申請できる」から。</p>
     </div>
     <div class="panel howto">
       <h2>🧭 使い方</h2>
@@ -1359,6 +1363,8 @@ function current(){
   return arr;
 }
 
+const trunc = (s,n)=>{ s=String(s||''); return s.length>n ? s.slice(0,n).replace(/[、。・　]+$/,'')+'…' : s; };
+
 function card(i){
   const canApply = (i.status==='受付中'||i.status==='通年・随時');
   const btnLabel = i.sourceVerified
@@ -1368,15 +1374,22 @@ function card(i){
     ? '<a class="src" href="'+esc(i.sourceUrl)+'" target="_blank" rel="noopener">'+btnLabel+'</a>'
     : '<span class="src unverified">出典URLは要確認（窓口へ照会）</span>';
   const srcname = i.sourceName ? '<span class="srcname">出典：'+esc(i.sourceName)+(i.sourceVerified?'（確認済 ✓）':'')+'</span>' : '';
-  const statusBox = '<div class="statusline"><span class="k">📅 申請可否（'+esc(i.asOf)+' 時点）：'+esc(i.status)+'</span>'+
-    '<div class="det">'+esc(i.statusDetail||i.deadline||'—')+'</div>'+
-    (i.nextAction?'<div class="next">▶ 次の一手：<b>'+esc(i.nextAction)+'</b></div>':'')+'</div>';
-  const aiBox = i.aiUse?'<div class="aiuse"><div class="k">🤖 AI・DXでの使い道</div><div style="margin-top:4px">'+esc(i.aiUse)+'</div></div>':'';
-  const detail = (i.eligible||i.notes)?
-    '<details class="detail"><summary>対象経費・備考を見る</summary><div class="dc">'+
-    (i.eligible?'<div><span class="k">対象経費</span><br>'+esc(i.eligible)+'</div>':'')+
-    (i.notes?'<div><span class="k">備考</span><br>'+esc(i.notes)+'</div>':'')+
-    '</div></details>':'';
+  // 表＝要約のみ：使い道1行＋申請可否1行
+  const useLine = i.aiUse ? '<div class="useline"><b>使い道</b>'+esc(trunc(i.aiUse,42))+'</div>' : '';
+  const qstat = '<div class="qstat qs-'+esc(i.status)+'">📅 '+esc(i.asOf)+'時点 <b>'+esc(i.status)+'</b>'+
+    (i.deadline||i.statusDetail ? '<span class="qd">'+esc(trunc((i.deadline||i.statusDetail).replace(/^[^。]*?(受付中|受付前|受付終了|通年|随時)[。、]?/,''),34))+'</span>' : '')+'</div>';
+  // 詳細は折りたたみへ
+  const rows = [];
+  if(i.target) rows.push(['対象', i.target]);
+  if(i.statusDetail) rows.push(['申請可否の詳細', i.statusDetail]);
+  if(i.nextAction) rows.push(['次の一手', i.nextAction]);
+  if(i.aiUse) rows.push(['AI・DXでの使い道', i.aiUse]);
+  if(i.eligible) rows.push(['対象経費', i.eligible]);
+  if(i.notes) rows.push(['備考', i.notes]);
+  const detail = rows.length ?
+    '<details class="detail"><summary>くわしく見る（対象・締切・使い道）</summary><div class="dc">'+
+    rows.map(r=>'<div><span class="k">'+r[0]+'</span><br>'+esc(r[1])+'</div>').join('')+
+    '</div></details>' : '';
   return '<article class="card s-'+esc(i.status)+'">'+
     '<div class="top"><div class="badges">'+
       '<span class="st-pill st-'+esc(i.status)+'">'+esc(i.status)+'</span>'+
@@ -1385,14 +1398,13 @@ function card(i){
       (i.rec?'<span class="rec-tag">おすすめ</span>':'')+
     '</div>'+
     '<h3>'+esc(i.name)+'</h3>'+
-    '<div class="prov">'+esc(i.provider)+(i.category?'　/　'+esc(i.category):'')+'</div></div>'+
+    '<div class="prov">'+esc(i.provider)+'</div></div>'+
     '<div class="body">'+
       '<div class="kvrow">'+
         '<div class="kv"><div class="k">補助上限</div><div class="v amt">'+esc(i.max_amount||'—')+'</div></div>'+
         '<div class="kv"><div class="k">補助率</div><div class="v">'+esc(i.rate||'—')+'</div></div>'+
-        '<div class="kv" style="grid-column:1/-1"><div class="k">対象</div><div class="v">'+esc(i.target||'—')+'</div></div>'+
       '</div>'+
-      statusBox + aiBox + detail +
+      qstat + useLine + detail +
     '</div>'+
     '<div class="foot">'+src+srcname+'</div>'+
   '</article>';
